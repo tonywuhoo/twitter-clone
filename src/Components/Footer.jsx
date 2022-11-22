@@ -1,5 +1,5 @@
-import SignUpModal from "./Components/Modals/Modal-Sign-Up";
-import Modal from "./Components/Modals/Modal-Sign-In";
+import SignUpModal from "../Components/Modals/Modal-Sign-Up";
+import Modal from "../Components/Modals/Modal-Sign-In";
 import { useState } from "react";
 
 function Footer() {
