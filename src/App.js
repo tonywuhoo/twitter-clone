@@ -1,17 +1,14 @@
-import React from 'react';
-import './App.css';
-import Sidebar from './Sidebar';
-import Feed from './Feed';
-import Widget from './Widget';
-import Footer from './Footer';
-import ProfilePage from './Components/Profile/ProfilePage';
-import { Routes, Route } from 'react-router-dom';
+
+// import ProfilePage from './Components/Profile/ProfilePage';
+// import { Routes, Route } from 'react-router-dom';
+import React from "react";
+import "./App.css";
+import Sidebar from "./Components/Sidebar";
+import Feed from "./Screens/Feed";
+import Widget from "./Components/Widget";
+// import Footer from "./Components/Footer";
 
 function App() {
-
-  
-  
- 
   // useEffect(() => {
   //   const callApi = async () => {
   //     const response = await getArtists();
@@ -25,10 +22,8 @@ function App() {
   return (
     // BEM
     <div className="app">
-      <h1>Twotter</h1>
 
-
-      
+      <h1>$hill</h1>
       <Sidebar />
       <Feed />
 
