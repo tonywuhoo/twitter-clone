@@ -1,8 +1,5 @@
 import React from 'react'
 import './Sidebar.css'
-
-
-
 import TwitterIcon from '@mui/icons-material/Twitter';
 import SidebarOption from './SidebarOption';
 import HomeIcon from '@mui/icons-material/Home'
@@ -24,8 +21,6 @@ function Sidebar() {
       {/* Twitter icon, Jacob will make new based on 'tweeder' */}
       <TwitterIcon className="sidebar-twitterIcon" />
 
-      
-    
       <SidebarOption active Icon={<HomeIcon />} text="Home" />
       <SidebarOption Icon={<SearchIcon />} text="Explore" />
       {/* <SidebarOption Icon={<NotificationsNoneIcon />} text="Notifications" /> */}
@@ -34,14 +29,14 @@ function Sidebar() {
       {/* <SidebarOption Icon={<ListAltIcon />} text="Lists" /> */}
       <SidebarOption Icon={<PermIdentityIcon />} text="Profile" />
       <SidebarOption Icon={<MoreHorizIcon />} text="More" />
-
-      
       {/* this is the 'tweet' button */}
-      <Button variant="outlined" className="sidebar_Tweet" fullWidth>Tweed</Button>
-
-
+      
+      <Button variant="outlined" className="sidebar_Tweet" fullWidth>
+        Tweed
+      </Button>
     </div>
-  )
+   
+  );
 }
 
-export default Sidebar
+export default Sidebar;
