@@ -29,11 +29,12 @@ function Sidebar() {
       <SidebarOption Icon={<PermIdentityIcon />} text="Profile" />
       <SidebarOption Icon={<MoreHorizIcon />} text="More" />
       {/* this is the 'tweet' button */}
-      <Footer />
+      
       <Button variant="outlined" className="sidebar_Tweet" fullWidth>
         Tweed
       </Button>
     </div>
+   
   );
 }
 

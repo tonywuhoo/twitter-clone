@@ -14,6 +14,7 @@ function App() {
       <Feed />
       {/* Widget if we decide to popular */}
       <Widget />
+      <Footer />
     </div>
   );
 }
