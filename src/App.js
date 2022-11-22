@@ -12,7 +12,9 @@ function App() {
 			<h1>Twotter</h1>
 
 			<Sidebar />
-			<Routes></Routes>
+			<Routes>
+				<Route path='/profile' element={<Profile />} />
+			</Routes>
 			<Feed />
 
 			{/* Widget if we decide to popular */}
