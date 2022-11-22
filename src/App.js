@@ -6,7 +6,6 @@ import Widget from "./Widget";
 
 
 
-
 function App() {
  
   return (

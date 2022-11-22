@@ -4,6 +4,7 @@ import SignUpModal from "./Components/Modals/Modal-Sign-Up";
 import Modal from "./Components/Modals/Modal-Sign-In";
 import { useState } from "react";
 
+
 function Widget() {
   const [showModal, setShowModal] = useState(false);
   const [showSignUpModal, setSignUpModal] = useState(false);
