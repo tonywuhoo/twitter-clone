@@ -1,0 +1,11 @@
+
+
+.widgets {
+  flex: 0.3;
+}
+
+.widgets > h2 {
+  font-weight: 800;
+  font-size: 20px;
+  background-color: red;
+}
