@@ -1,5 +1,6 @@
 import React from "react";
 import "./SidebarOption.css";
+import SignUpModal from "./Components/Modals/Modal-Sign-Up";
 
 function SidebarOption({ active, text, Icon }) {
   return (

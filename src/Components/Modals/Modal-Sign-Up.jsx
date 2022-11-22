@@ -1,13 +1,12 @@
+import React from 'react'
 
-import { Link } from 'react-router-dom'
-
-function Modal({show, onClose}) {
+function SignUpModal({show, onClose}) {
   if (!show) {
     return null
   }
   
   return (
-    <div className="modal" onClick={onClose}>
+    <div className="modal-background" onClick={onClose}>
       <div className="modal-content" onClick={e => e.stopPropagation()}>
         <div className="modal-header">
         <div className="modal-exit">
@@ -29,4 +28,4 @@ function Modal({show, onClose}) {
 
 }
 
-export default Modal
+export default SignUpModal
