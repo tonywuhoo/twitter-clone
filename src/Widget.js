@@ -4,7 +4,7 @@ import './Widget.css'
 function Widget() {
   return (
     <div className='widgets'>
-      <h2>widgets</h2>
+      <h2>Widgets</h2>
       
     </div>
     

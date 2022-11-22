@@ -1,7 +1,7 @@
 import React from "react";
 import "./TweetBox.css";
 import Button from "@mui/material/Button";
-
+import Avatar from "react-avatar";
 
 // or
 import { IconButton } from "@mui/material";
@@ -12,11 +12,14 @@ function Tweetbox() {
   return (
     <div className="tweetBox">
       <form>
-        <div className="tweetBox-input">
+        <div className="tweetBox__input">
+          <Avatar googleId="118096717852922241760" size="50" round={true} />
           <input placeholder="What's happening, tweed?" type="text" />
         </div>
 
-        <Button variant="contained">Tweed</Button>
+        <Button variant="outlined" className="feed_tweet_BTN" fullWidth>
+          Tweed
+        </Button>
       </form>
     </div>
   );
