@@ -9,6 +9,8 @@ import Widget from "./Widget";
 
 function App() {
  
+
+  
   return (
     // BEM
     <div className="app">
