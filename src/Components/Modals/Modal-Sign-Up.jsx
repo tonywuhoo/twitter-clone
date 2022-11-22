@@ -1,16 +1,16 @@
-import React from 'react'
+import "./Modal.css"
 
-function SignUpModal({show, onClose}) {
-  if (!show) {
+function SignUpModal(props) {
+  if (!props.show) {
     return null
   }
   
   return (
-    <div className="modal-background" onClick={onClose}>
+    <div className="modal" onClick={props.onClose}>
       <div className="modal-content" onClick={e => e.stopPropagation()}>
         <div className="modal-header">
         <div className="modal-exit">
-          <button onClick={onClose} className="Xbutton">X</button>
+          <button onClick={props.onClose} className="Xbutton">X</button>
           </div>
           <h1>Sign Up</h1>
           <input className='create-Username' placeholder='Create Username'></input>
@@ -20,7 +20,7 @@ function SignUpModal({show, onClose}) {
 
           </div>
         
-            <button className="create-profile-button">Create Profile</button>
+            {/* <button className="create-profile-button">Create Profile</button> */}
           
         </div>
       </div>

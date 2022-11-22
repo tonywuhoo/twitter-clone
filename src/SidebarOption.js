@@ -1,9 +1,8 @@
 import React from "react";
 import "./SidebarOption.css";
-import SignUpModal from "./Components/Modals/Modal-Sign-Up";
+// import SignUpModal from "./Components/Modals/Modal-Sign-Up";
 // import Modal from "./Components/Modals/Modal-Sign-In";
 // import { useState } from "react";
-
 
 function SidebarOption({ active, text, Icon }) {
   // const [showModal, setShowModal] = useState(false);
@@ -17,6 +16,10 @@ function SidebarOption({ active, text, Icon }) {
       {/* <div className="sign-in">
         <Modal onClose={() => setShowModal(false)} show={showModal} />
         <button onClick={() => setShowModal(true)}>Sign in!</button>
+      </div>
+      <div>
+        <SignUpModal onClose={() => setShowModal(false)} show={showModal} />
+        <button onClick={() => setShowModal(true)}>Sign up!</button>
       </div> */}
     </>
   );
