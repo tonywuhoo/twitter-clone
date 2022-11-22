@@ -6,12 +6,14 @@ import Widget from "./Widget";
 
 
 
+
 function App() {
  
   return (
     // BEM
     <div className="app">
       <h1>Twotter</h1>
+
       
       <Sidebar />
       <Feed />
@@ -19,6 +21,7 @@ function App() {
       {/* Widget if we decide to popular */}
 
       <Widget />
+
     </div>
   );
 }

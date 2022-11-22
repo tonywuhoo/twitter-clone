@@ -1,7 +1,9 @@
 import React from "react";
 import "./SidebarOption.css";
+import SignUpModal from "./Components/Modals/Modal-Sign-Up";
 // import Modal from "./Components/Modals/Modal-Sign-In";
 // import { useState } from "react";
+
 
 function SidebarOption({ active, text, Icon }) {
   // const [showModal, setShowModal] = useState(false);
