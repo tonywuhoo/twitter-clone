@@ -9,7 +9,7 @@ import { Routes, Route } from 'react-router-dom';
 
 function App() {
 
-  const [toggleApiCall, setToggleApiCall] = useState(false)
+  
   
  
   // useEffect(() => {
