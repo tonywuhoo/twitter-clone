@@ -8,7 +8,7 @@ function App() {
   return (
     // BEM
     <div className="app">
-      <h1>Tweedr Clone</h1>
+      <h1>Twotter</h1>
 
 
       
