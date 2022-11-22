@@ -8,13 +8,28 @@ import ProfilePage from './Components/Profile/ProfilePage';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
-	return (
-		// BEM
-		<div className='app'>
-			<h1>Twotter</h1>
-			<Sidebar />
-			<Routes>
-				<Route path='/profile' element={<ProfilePage />} />
+
+  const [toggleApiCall, setToggleApiCall] = useState(false)
+  
+ 
+  // useEffect(() => {
+  //   const callApi = async () => {
+  //     const response = await getArtists();
+  //     setArtists(response);
+  //     const res = await getAlbums();
+  //     setAlbums(res);
+  //   };
+  //   callApi();
+  // }, [toggleApiCall]);
+
+  return (
+    // BEM
+    <div className="app">
+      <h1>Twotter</h1>
+      <Sidebar />
+      <Routes>
+			//	<Route path='/profile' element={<Profile />} />
+        <Route path='/profile' element={<ProfilePage />} />
 			</Routes>
 			<Feed />
 			{/* Widget if we decide to popular */}
