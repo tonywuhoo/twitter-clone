@@ -9,6 +9,7 @@ function Feed() {
         <h2>Home</h2>
       </div>
       <Tweetbox />
+      
 
 
       <h2>Home Page</h2><h2>Home Page</h2>

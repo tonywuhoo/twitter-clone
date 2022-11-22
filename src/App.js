@@ -9,16 +9,8 @@ function App() {
     // BEM
     <div className="app">
       <h1>Twotter</h1>
-
-
-      
       <Sidebar />
       <Feed />
-
-      
-      
-      {/* Widget if we decide to popular */}
-
       <Widget />
     </div>
   );

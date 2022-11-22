@@ -27,12 +27,13 @@
 }
 
 .feed_tweet_BTN {
-  background-color: var(--twitter-color) !important;
+  background-color: var(--money-color) !important;
   border: none !important;
   color: white !important;
   font-weight: 900 !important;
   text-transform: inherit !important;
-  border-radius: 30px !important;
-  width: 40px !important;
+  
+  /* border-radius: 30px !important; */
+  /* width: 40px !important; */
   display: inline-flexbox;
 }
