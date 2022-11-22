@@ -7,6 +7,20 @@ import Footer from "./Footer";
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
+
+  const [toggleApiCall, setToggleApiCall] = useState(false)
+  
+ 
+  // useEffect(() => {
+  //   const callApi = async () => {
+  //     const response = await getArtists();
+  //     setArtists(response);
+  //     const res = await getAlbums();
+  //     setAlbums(res);
+  //   };
+  //   callApi();
+  // }, [toggleApiCall]);
+
   return (
     // BEM
     <div className="app">
