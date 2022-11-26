@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Feed.css";
 
 import Tweetbox from '../Components/Tweetbox.jsx'
-import FlipMove from "react-flip-move";
+// import FlipMove from "react-flip-move";
 import Post from "../Components/Post.js"
 // import db from 'our django backend'
 

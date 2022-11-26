@@ -6,9 +6,9 @@ import Sidebar from "./Components/Sidebar";
 import Feed from "./Screens/Feed";
 import Widget from "./Components/Widget";
 import Footer from "./Components/Footer";
-import Home from "./Home";
+import "./Home.css"
 
-function App() {
+function Home() {
   // useEffect(() => {
   //   const callApi = async () => {
   //     const response = await getArtists();
@@ -21,17 +21,16 @@ function App() {
 
   return (
     // BEM
-    <div className="app">
+    <div className="home">
       
-      <Home />
-      {/* <Sidebar />
-      <Feed /> */}
+      <Sidebar />
+      <Feed />
       {/* Widget if we decide to popular */}
 
-      {/* <Widget />
-      <Footer /> */}
+      <Widget />
+      <Footer />
     </div>
   );
 }
 
-export default App;
+export default Home;
