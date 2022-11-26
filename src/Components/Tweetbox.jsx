@@ -12,12 +12,28 @@ function Tweetbox() {
   return (
     <div className="tweetBox">
       <form>
-        <div className="tweetBox__input">
-          <Avatar googleId="118096717852922241760" size="50" round={true} />
-          <input placeholder="What's happening, tweed?" type="text" />
+        <div className="tweetBox-input">
+          <input
+            className="tweetBox-input"
+            placeholder="What's happening, tweed?"
+            type="text"
+            size="2rem"
+          />
         </div>
+        <input
+          className="tweetBox-inputImage"
+          placeholder="Enter image URL"
+          type="text"
+      
+        />
 
-        <Button variant="outlined" className="feed_tweet_BTN" fullWidth>
+        <Button
+          variant="outlined"
+          className="feed_tweet_BTN"
+          type="submit"
+          // onClick={sendTweet}
+          fullWidth
+        >
           Tweed
         </Button>
       </form>
