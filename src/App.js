@@ -21,7 +21,7 @@ function App() {
   return (
     // BEM
     <div className="app">
-      <h1>$hill</h1>
+      
       <Sidebar />
       <Feed />
       {/* Widget if we decide to popular */}

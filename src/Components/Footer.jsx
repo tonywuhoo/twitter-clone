@@ -1,6 +1,7 @@
 import SignUpModal from "../Components/Modals/Modal-Sign-Up";
 import Modal from "../Components/Modals/Modal-Sign-In";
 import { useState } from "react";
+import './Modals/Modal.css'
 
 function Footer() {
   const [showModal, setShowModal] = useState(false);
