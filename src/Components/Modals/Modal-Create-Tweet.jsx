@@ -11,6 +11,7 @@ function Modal(props) {
 
   function handleChange(event) {
     setTweet(event.target.value);
+    setCharacterCount(tweet.length);
   }
 
   if (!props.show) {
