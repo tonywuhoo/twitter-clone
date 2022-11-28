@@ -5,20 +5,21 @@
   color: white;
   height:25px;
   margin: 8px;
+  
 }
 .footer-sign-in-up-container {
   display: flex;
   justify-content: center;
-  justify-content: space-between;
-  padding: 20px;
+  justify-content: space-around;
+  padding: 15px;
+  padding-left: 25px;
 }
 
 .modal-button {
+  width: 110px;
   border-radius: 25px !important;
   background-color: #7ed957 !important;
   border-color: #7ed957 !important;
   color: white !important;
   height:40px !important;
-  padding-right: 30px !important;
-  padding-left: 30px !important;
 }

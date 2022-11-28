@@ -34,7 +34,7 @@ function Tweetbox() {
           // onClick={sendTweet}
           fullWidth
         >
-          Tweed
+          Post
         </Button>
       </form>
     </div>
