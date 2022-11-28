@@ -1,20 +1,24 @@
+.feed-container {
+	overflow: scroll;
+	z-index: 1;
+}
+
 .feed {
-  flex: 0.4;
-  border-right: 1px solid var(--twitter-background);
-  min-width: fit-content;
-  overflow-y: scroll;
+	flex: 0.4;
+	border-right: 1px solid var(--twitter-background);
+	min-width: fit-content;
 }
 
 .feed::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
 .feed-header {
-  /* position: sticky; */
-  /* top: 0; */
-  background-color: white;
-  border: 1px solid var(--twitter-background);
-  padding: 15px 20px;
+	/* position: sticky; */
+	/* top: 0; */
+	background-color: white;
+	border: 1px solid var(--twitter-background);
+	padding: 15px 20px;
 }
 
 .feed-header > h2 {
