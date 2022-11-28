@@ -8,6 +8,11 @@ import Widget from "./Components/Widget";
 import Home from "./Screens/Home";
 
 function App() {
+  const [commentCrud, setCommentCrud] = useState([]);
+  const [postCrud, setPostCrud] = useState([]);
+  const [userCrud, setUserCrud] = useState([]);
+  const [toggleApiCall, setToggleApiCall] = useState(false)
+
   // useEffect(() => {
   //   const callApi = async () => {
   //     const response = await getArtists();
