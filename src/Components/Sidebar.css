@@ -24,12 +24,12 @@
 
 
 .sidebar-twitterIcon {
-
   color: var(--twitter-color);
   font-size: 30px;
   margin-left: 20px;
   margin-bottom: 20px;
 }
+
 .sidebar_Tweet {
   background-color: var(--twitter-color) !important;
   border: none !important;
