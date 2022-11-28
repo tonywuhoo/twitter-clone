@@ -1,6 +1,5 @@
 * {
 	margin: 0;
-	overflow: scroll;
 }
 
 body {
@@ -10,7 +9,8 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	overflow: scroll;
+	height: 100%;
+	overflow: hidden;
 }
 
 code {

@@ -16,13 +16,14 @@ function Feed() {
 	// }, []);
 
 	return (
-		<div className='feed'>
-			<div className='feed-header'>
-				<h2>Home</h2>
-			</div>
+		<div className='feed-container'>
+			<div className='feed'>
+				<div className='feed-header'>
+					<h2>Home</h2>
+				</div>
 
-			<Tweetbox />
-			{/* <FlipMove>
+				<Tweetbox />
+				{/* <FlipMove>
         {posts.map((post) => (
           <Post
             key={post.text}
@@ -35,7 +36,8 @@ function Feed() {
           />
         ))}
       </FlipMove> */}
-			<Post />
+				<Post />
+			</div>
 		</div>
 	);
 }

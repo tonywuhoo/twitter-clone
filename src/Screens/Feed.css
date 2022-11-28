@@ -1,8 +1,12 @@
+.feed-container {
+	overflow: scroll;
+	z-index: 1;
+}
+
 .feed {
 	flex: 0.4;
 	border-right: 1px solid var(--twitter-background);
 	min-width: fit-content;
-	overflow: scroll;
 }
 
 .feed::-webkit-scrollbar {

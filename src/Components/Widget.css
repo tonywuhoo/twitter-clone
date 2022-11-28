@@ -1,6 +1,9 @@
 .widgets {
-	flex: 0.7;
-	height: fixed;
+	flex: 0.7 1;
+	height: 100vh;
+	position: sticky;
+	top: 0%;
+	overflow: auto;
 }
 
 .widgets__input {
