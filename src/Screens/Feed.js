@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import './Feed.css';
+import React, { useState, useEffect } from "react";
+import "./Feed.css";
 
-import Tweetbox from '../Components/Tweetbox.jsx';
+import Tweetbox from "../Components/Tweetbox.jsx";
 // import FlipMove from "react-flip-move";
-import Post from '../Components/Post.js';
+import Post from "../Components/Post.js";
 // import db from 'our django backend'
 
 function Feed() {
@@ -16,10 +16,10 @@ function Feed() {
 	// }, []);
 
 	return (
-		<div className='feed-container'>
-			<div className='feed'>
-				<div className='feed-header'>
-					<h2>Home</h2>
+		<div className="feed-container">
+			<div className="feed">
+				<div className="feed-header">
+					<h2>Home Page</h2>
 				</div>
 
 				<Tweetbox />
