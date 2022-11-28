@@ -32,7 +32,7 @@ function Sidebar() {
       {/* this is the 'tweet' button */}
 
       <Button variant="outlined" className="sidebar_Tweet" fullWidth>
-        Tweed
+        Post
       </Button>
     </div>
   );
