@@ -10,8 +10,8 @@ import {
 function Widgets() {
   return (
     <>
-      <Footer />
       <div className="widgets">
+        <Footer />
         <div className="widgets__input">
           <input placeholder="Search Twitter" type="text" />
         </div>

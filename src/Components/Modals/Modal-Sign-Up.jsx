@@ -19,9 +19,6 @@ function SignUpModal(props) {
           <input className='profile-Description' placeholder='Profile Description'></input>
 
           </div>
-        
-            {/* <button className="create-profile-button">Create Profile</button> */}
-          
         </div>
       </div>
   )
