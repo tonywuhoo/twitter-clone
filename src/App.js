@@ -1,6 +1,6 @@
 // import ProfilePage from './Components/Profile/ProfilePage';
 // import { Routes, Route } from 'react-router-dom';
-import React from "react";
+import React, { useState, useEffect} from "react";
 import "./App.css";
 import Sidebar from "./Components/Sidebar";
 import Feed from "./Screens/Feed";
