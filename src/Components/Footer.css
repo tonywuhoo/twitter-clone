@@ -1,0 +1,12 @@
+.footer-sign-in-up-button {
+  border-radius: 25px;
+  background-color: #7ed957;
+  border-color: #7ed957;
+  color: white;
+  height:25px;
+}
+.footer-sign-in-up-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
