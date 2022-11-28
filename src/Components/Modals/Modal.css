@@ -22,6 +22,10 @@
   text-transform: none !important;
 }
 
+.modal-title {
+  color:#7ed957;
+}
+
 /* Sign In Modal */
 
 .modal {
@@ -48,9 +52,7 @@
   justify-content: space-around;
 }
 
-.modal-title {
-  color:#7ed957;
-}
+
 
 /* Signup Modal */
 
