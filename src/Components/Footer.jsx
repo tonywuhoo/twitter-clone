@@ -12,14 +12,14 @@ function Footer() {
 <div className="footer-sign-in-up-container">
      <div className="footer-sign-in">
       <Modal onClose={() => setShowSignInModal(false)} show={showSignInModal} />
-        <button className="footer-sign-in-up-button" onClick={() => setShowSignInModal(true)}>Sign in!</button>
+        <button className="footer-sign-in-up-button" onClick={() => setShowSignInModal(true)}>Sign In!</button>
   </div>
   <div className="footer-sign-up">
         <SignUpModal
           onClose={() => setSignUpModal(false)}
             show={showSignUpModal}
     />
-        <button className="footer-sign-in-up-button" onClick={() => setSignUpModal(true)}>Sign up!</button>
+        <button className="footer-sign-in-up-button" onClick={() => setSignUpModal(true)}>Sign Up!</button>
         </div>
 </div>
     </>
