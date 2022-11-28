@@ -52,13 +52,7 @@
   justify-content: space-around;
 }
 
-
-
 /* Signup Modal */
-
-.modal-title {
-  color:#7ed957;
-}
 
 .modal-signup {
   position: fixed;
