@@ -1,4 +1,6 @@
 import "./Modal.css"
+import Button from '@mui/material/Button';
+
 
 function Modal(props) {
   if (!props.show) {
@@ -11,8 +13,8 @@ function Modal(props) {
         <h2 className="modal-title">Sign In</h2>
           <input className='modal-input' placeholder="username"></input>
           <input className='modal-input' placeholder="password"></input>
-          <button className="modal-button">submit</button>
-          <button onClick={props.onClose} className="modal-button">Close</button>
+          <Button className="modal-button">submit</Button>
+          <Button onClick={props.onClose} className="modal-button">Close</Button>
         </div>
       
       </div>
