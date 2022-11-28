@@ -5,8 +5,7 @@ import "./App.css";
 import Sidebar from "./Components/Sidebar";
 import Feed from "./Screens/Feed";
 import Widget from "./Components/Widget";
-import Footer from "./Components/Footer";
-import Home from "./Home";
+import Home from "./Screens/Home";
 
 function App() {
   // useEffect(() => {
@@ -22,14 +21,12 @@ function App() {
   return (
     // BEM
     <div className="app">
-      
       <Home />
       {/* <Sidebar />
       <Feed /> */}
       {/* Widget if we decide to popular */}
 
-      {/* <Widget />
-      <Footer /> */}
+      {/* <Widget /> */}
     </div>
   );
 }
