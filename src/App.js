@@ -2,9 +2,7 @@
 // import { Routes, Route } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Sidebar from './Components/Sidebar';
-import Feed from './Screens/Feed';
-import Widget from './Components/Widget';
+
 import Home from './Screens/Home';
 
 function App() {
@@ -22,11 +20,6 @@ function App() {
 		// BEM
 		<div className='app'>
 			<Home />
-			{/* <Sidebar />
-      <Feed /> */}
-			{/* Widget if we decide to popular */}
-
-			{/* <Widget /> */}
 		</div>
 	);
 }
