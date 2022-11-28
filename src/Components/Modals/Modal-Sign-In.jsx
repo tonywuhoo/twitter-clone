@@ -10,10 +10,10 @@ function Modal(props) {
 
         <div className="modal-body">
         <h2 className="modal-title">Sign In</h2>
-          <input className="input" placeholder="username"></input>
-          <input className="input" placeholder="password"></input>
-          <button className="button">submit</button>
-          <button onClick={props.onClose} className="button">Close</button>
+          <input className='modal-input' placeholder="username"></input>
+          <input className='modal-input' placeholder="password"></input>
+          <button className="modal-button">submit</button>
+          <button onClick={props.onClose} className="modal-button">Close</button>
         </div>
       
       </div>
