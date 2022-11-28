@@ -1,6 +1,6 @@
 /* Universal Elements */
 
-.input {
+.modal-input {
   height: 30px;
   border-radius: 20px;
   border-color:#7ed957;
@@ -12,7 +12,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.button {
+.modal-button {
   border-radius: 25px;
   background-color: #7ed957;
   border-color: #7ed957;
