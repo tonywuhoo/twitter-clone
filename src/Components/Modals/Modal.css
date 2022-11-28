@@ -18,6 +18,8 @@
   border-color: #7ed957 !important;
   color: white !important;
   height:25px !important;
+  font-weight: bold !important;
+  text-transform: none !important;
 }
 
 /* Sign In Modal */
