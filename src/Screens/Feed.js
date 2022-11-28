@@ -19,7 +19,7 @@ function Feed() {
 		<div className='feed-container'>
 			<div className='feed'>
 				<div className='feed-header'>
-					<h2>Home</h2>
+					<h2>Home In Progress</h2>
 				</div>
 
 				<Tweetbox />
