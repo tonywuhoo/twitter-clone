@@ -7,18 +7,15 @@ function Modal(props) {
   return (
     <div className="modal" onClick={props.onClose}>
       <div className="modal-content" onClick={e => e.stopPropagation()}>
-        <div className="modal-header">
-          <h2 className="modal-title">Sign In!</h2>
-        </div>
+
         <div className="modal-body">
-          <input placeholder="username"></input>
-          <input placeholder="password"></input>
-          <button>submit</button>
-        </div>
-        
-        <div className="modal-footer">
+        <h2 className="modal-title">Sign In</h2>
+          <input className="input" placeholder="username"></input>
+          <input className="input" placeholder="password"></input>
+          <button className="button">submit</button>
           <button onClick={props.onClose} className="button">Close</button>
         </div>
+      
       </div>
     </div>
   )

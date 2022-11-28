@@ -6,17 +6,18 @@ function SignUpModal(props) {
   }
   
   return (
-    <div className="modal" onClick={props.onClose}>
+    <div className="modal-signup" onClick={props.onClose}>
       <div className="modal-content" onClick={e => e.stopPropagation()}>
         <div className="modal-header">
         <div className="modal-exit">
-          <button onClick={props.onClose} className="Xbutton">X</button>
           </div>
-          <h1>Sign Up</h1>
-          <input className='create-Username' placeholder='Create Username'></input>
-          <input className='create-Email' placeholder='Email'></input>
-          <input className='create-Password' placeholder='Create Password'></input>
-          <input className='profile-Description' placeholder='Profile Description'></input>
+          <h1 className="modal-title">Sign Up</h1>
+          <input className='input' placeholder='Create Username'></input>
+          <input className='input' placeholder='Email'></input>
+          <input className='input' placeholder='Create Password'></input>
+          <input className='input' placeholder='Profile Description'></input>
+          <button className="button">Sign Up</button>
+          <button onClick={props.onClose} className="button">Close</button>
 
           </div>
         </div>
