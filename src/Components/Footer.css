@@ -4,6 +4,7 @@
   border-color: #7ed957;
   color: white;
   height:25px;
+  margin: 3px;
 }
 .footer-sign-in-up-container {
   display: flex;

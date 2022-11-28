@@ -7,7 +7,6 @@ function Modal(props) {
   return (
     <div className="modal" onClick={props.onClose}>
       <div className="modal-content" onClick={e => e.stopPropagation()}>
-
         <div className="modal-body">
         <h2 className="modal-title">Sign In</h2>
           <input className='modal-input' placeholder="username"></input>
