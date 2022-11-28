@@ -1,13 +1,24 @@
 .footer-sign-in-up-button {
-  border-radius: 25px;
+  border-radius: 20px;
   background-color: #7ed957;
   border-color: #7ed957;
   color: white;
   height:25px;
-  margin: 3px;
+  margin: 8px;
 }
 .footer-sign-in-up-container {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.modal-button {
+  border-radius: 25px !important;
+  background-color: #7ed957 !important;
+  border-color: #7ed957 !important;
+  color: white !important;
+  height:40px !important;
+  padding-right: 30px !important;
+  padding-left: 30px !important;
 }
