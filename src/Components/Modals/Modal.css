@@ -13,11 +13,13 @@
 }
 
 .modal-button {
-  border-radius: 25px;
-  background-color: #7ed957;
-  border-color: #7ed957;
-  color: white;
-  height:25px;
+  border-radius: 25px !important;
+  background-color: #7ed957 !important;
+  border-color: #7ed957 !important;
+  color: white !important;
+  height:25px !important;
+  font-weight: bold !important;
+  text-transform: none !important;
 }
 
 /* Sign In Modal */
