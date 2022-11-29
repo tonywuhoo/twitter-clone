@@ -11,18 +11,18 @@ import ListAltIcon from '@mui/icons-material/ListAlt';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import SmartButtonIcon from '@mui/icons-material/SmartButton';
+import Logo from '.././Components/shill.png';
 
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 
 
 function Sidebar() {
   return (
-    <div className="sidebar">
-      {/* Twitter icon, Jacob will make new based on 'tweeder' */}
-      <TwitterIcon className="sidebar-twitterIcon" />
-
-      <SidebarOption active Icon={<HomeIcon />} text="Home" />
-      <SidebarOption Icon={<SearchIcon />} text="Explore" />
+    <div className="sidebar"> 
+    <img className="profile-photo" src={Logo} alt={"Shill Site"} width="80px"/>
+      {/* <SidebarOption active Icon={<HomeIcon />} text="$hill" image={Logo}  src="https://freeimage.host/i/HFl919t" /> */}
+      
+      
       {/* <SidebarOption Icon={<NotificationsNoneIcon />} text="Notifications" /> */}
       {/* <SidebarOption Icon={<MailOutlineIcon />} text="Messages" /> */}
       {/* <SidebarOption Icon={<BookmarkBorderIcon />} text="Bookmarks" /> */}
@@ -32,7 +32,7 @@ function Sidebar() {
       {/* this is the 'tweet' button */}
 
       <Button variant="outlined" className="sidebar_Tweet" fullWidth>
-        Tweed
+        Post
       </Button>
     </div>
   );

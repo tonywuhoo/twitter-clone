@@ -1,23 +1,29 @@
 import SignUpModal from "../Components/Modals/Modal-Sign-Up";
 import Modal from "../Components/Modals/Modal-Sign-In";
 import { useState } from "react";
+import './Modals/Modal.css'
+import './Footer.css'
+import Button from '@mui/material/Button';
+
 
 function Footer() {
-  const [showModal, setShowModal] = useState(false);
+  const [showSignInModal, setShowSignInModal] = useState(false);
   const [showSignUpModal, setSignUpModal] = useState(false);
   return (
     <>
-    <div className="sign-in">
-    <Modal onClose={() => setShowModal(false)} show={showModal} />
-    <button onClick={() => setShowModal(true)}>Sign in!</button>
+<div className="footer-sign-in-up-container">
+     <div className="footer-sign-in">
+      <Modal onClose={() => setShowSignInModal(false)} show={showSignInModal} />
+        <Button className="modal-button" onClick={() => setShowSignInModal(true)}>Sign In!</Button>
   </div>
-  <div className="sign-up">
-    <SignUpModal
-      onClose={() => setSignUpModal(false)}
-      show={showSignUpModal}
+  <div className="footer-sign-up">
+        <SignUpModal
+          onClose={() => setSignUpModal(false)}
+            show={showSignUpModal}
     />
-    <button onClick={() => setSignUpModal(true)}>Sign up!</button>
-  </div>
+        <Button className="modal-button" onClick={() => setSignUpModal(true)}>Sign Up!</Button>
+        </div>
+</div>
     </>
   )
 }

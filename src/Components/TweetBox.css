@@ -15,25 +15,30 @@
 .tweetBox input {
   padding: 20px;
   display: flex;
-
 }
 
-.tweetBox__input > input {
-
+.tweetBox-input > input {
   flex: 1;
   margin-left: 20px;
   font-size: 20px;
   border: none;
 }
 
-.feed_tweet_BTN {
+.tweetBox .feed_tweet_BTN {
   background-color: var(--money-color) !important;
   border: none !important;
   color: white !important;
   font-weight: 900 !important;
   text-transform: inherit !important;
   
-  /* border-radius: 30px !important; */
-  /* width: 40px !important; */
+  border-radius: 30px !important;
+  width: 80px !important;
+  height: 40px;
+  margin-top: 20px;
   display: inline-flexbox;
+  margin-left: auto;
+}
+.tweetBox-inputImage {
+  border: none;
+  padding: 10px;
 }

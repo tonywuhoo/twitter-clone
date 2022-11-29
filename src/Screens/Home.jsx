@@ -1,16 +1,12 @@
 // import ProfilePage from './Components/Profile/ProfilePage';
 // import { Routes, Route } from 'react-router-dom';
-import React, { useState, useEffect } from 'react';
-import './App.css';
+import React from "react";
+import Sidebar from "../Components/Sidebar";
+import Feed from "../Screens/Feed";
+import Widget from "../Components/Widget";
+import "./Home.css";
 
-import Home from './Screens/Home';
-
-function App() {
-	const [commentCrud, setCommentCrud] = useState([]);
-	const [postCrud, setPostCrud] = useState([]);
-	const [userCrud, setUserCrud] = useState([]);
-	const [toggleApiCall, setToggleApiCall] = useState(false);
-
+function Home() {
 	// useEffect(() => {
 	//   const callApi = async () => {
 	//     const response = await getArtists();
@@ -23,10 +19,15 @@ function App() {
 
 	return (
 		// BEM
-		<div className='app'>
-			<Home />
+		<div className="home">
+			<Sidebar />
+
+			<Feed />
+			{/* Widget if we decide to popular */}
+
+			<Widget />
 		</div>
 	);
 }
 
-export default App;
+export default Home;
