@@ -61,6 +61,27 @@
   .side-bar-mobile {
     display: block;
     background-color: gray;
+    list-style: none;
+  
+  }
+
+  .side-bar-nav-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-end;
+    align-items: center;
+  }
+
+  .side-bar-nav{
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+  }
+
+  li {
+    list-style: none;
   }
 
 
