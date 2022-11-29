@@ -15,6 +15,7 @@
 .tweetBox input {
   padding: 20px;
   display: flex;
+  outline: none;
 }
 
 .tweetBox-input > input {

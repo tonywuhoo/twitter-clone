@@ -18,7 +18,6 @@ function SignUpModal(props) {
           <input className='modal-input' placeholder=' Password'></input>
           <input className='modal-input2' placeholder='Profile Description'></input>
           <Button className="modal-button">Sign Up</Button>
-          <Button onClick={props.onClose} className="modal-button2">Close</Button>
           </div>
         </div>
       </div>

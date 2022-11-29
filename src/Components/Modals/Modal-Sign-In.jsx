@@ -1,6 +1,9 @@
 import "./Modal.css"
 import Button from '@mui/material/Button';
+import { useEffect, useState } from "react";
 
+function App() {
+}
 
 function Modal(props) {
   if (!props.show) {
@@ -14,7 +17,6 @@ function Modal(props) {
           <input className='modal-input' placeholder="Username"></input>
           <input className='modal-input' placeholder="Password"></input>
           <Button className="modal-button">Sign In</Button>
-          <Button onClick={props.onClose} className="modal-button2">Close</Button>
         </div>
       
       </div>
