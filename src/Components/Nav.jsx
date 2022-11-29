@@ -12,15 +12,17 @@ const Nav = () => {
       <BsFillPersonLinesFill />
       </div>
       <div>
-    
       </div>
+      <div>
+     < IoIosNotificationsOutline/>
+     </div> 
      <div>
       <BiMessageDots/>
       </div>
       </div>
       
      </div>
-  )
+    )
 }
 
 export default Nav
