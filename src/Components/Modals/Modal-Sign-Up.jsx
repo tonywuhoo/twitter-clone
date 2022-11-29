@@ -15,10 +15,10 @@ function SignUpModal(props) {
           <h1 className="modal-title">Sign Up</h1>
           <input className='modal-input' placeholder='Create Username'></input>
           <input className='modal-input' placeholder='Email'></input>
-          <input className='modal-input' placeholder='Create Password'></input>
-          <input className='modal-input' placeholder='Profile Description'></input>
+          <input className='modal-input' placeholder=' Password'></input>
+          <input className='modal-input2' placeholder='Profile Description'></input>
           <Button className="modal-button">Sign Up</Button>
-          <Button onClick={props.onClose} className="modal-button">Close</Button>
+          <Button onClick={props.onClose} className="modal-button2">Close</Button>
           </div>
         </div>
       </div>

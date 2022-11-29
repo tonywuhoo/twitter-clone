@@ -1,17 +1,57 @@
 /* Universal Elements */
 
+
+/* This is modal input.
+It controls not only the modal input fields*/
 .modal-input {
-  height: 30px;
-  border-radius: 20px;
-  border-color:#7ed957;
-  width: 350px;
+  width: 70%;
+  color: rgb(36, 35, 42);
+  font-size: 16px;
+  line-height: 20px;
+  min-height: 28px;
+  border-radius: 4px;
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
+  background: #7ed957;
+  transition: all 0.1s ease 0s;
 }
 
-::placeholder {
-  color: #7ed957;
+.modal-input::placeholder {
+  color: #111111;
   font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.3;
 }
 
+
+/* This is the modal-input2 field. It controld the sign up modal description input field. Feel free to use its dimensions for any inputs you need to be taller than the others. */
+.modal-input2 {
+  width: 80%;
+  height: 90px;
+  color: rgb(36, 35, 42);
+  font-size: 16px;
+  line-height: 20px;
+  min-height: 28px;
+  border-radius: 15px;
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
+  background: #7ed957;
+  transition: all 0.1s ease 0s;
+  text-align: left;
+  outline: none;
+}
+
+.modal-input2::placeholder {
+  color: #111111;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.3;
+  top: 10px;
+  left: 12px;
+}
+
+
+/* Large Modal Buttons with green backgrounds and white text. */
 .modal-button {
   border-radius: 25px !important;
   background-color: #7ed957 !important;
@@ -22,12 +62,24 @@
   text-transform: none !important;
 }
 
+
+/* Small Modal Buttons with white backgrounds and green text. */
+.modal-button2 {
+  border-radius: 25px !important;
+  border-color: #7ed957 !important;
+  color: #7ed957 !important;
+  height:5px !important;
+  font-weight: bold !important;
+  text-transform: none !important;
+  font-size:xx-small !important;
+}
+
+/* Modal Title Text */
 .modal-title {
   color:#7ed957;
 }
 
 /* Sign In Modal */
-
 .modal {
   position: fixed;
   left: 0;
@@ -68,14 +120,14 @@
 
 .modal-header {
   padding: 10px;
-  height: 300px;
+  height: 400px;
   width: 400px;
   border-radius: 40px;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 /* Create Tweet */

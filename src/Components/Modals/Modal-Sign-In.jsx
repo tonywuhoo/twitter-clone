@@ -14,7 +14,7 @@ function Modal(props) {
           <input className='modal-input' placeholder="username"></input>
           <input className='modal-input' placeholder="password"></input>
           <Button className="modal-button">submit</Button>
-          <Button onClick={props.onClose} className="modal-button">Close</Button>
+          <Button onClick={props.onClose} className="modal-button2">Close</Button>
         </div>
       
       </div>
