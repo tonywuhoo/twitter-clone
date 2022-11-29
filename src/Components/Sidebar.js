@@ -47,8 +47,9 @@ function Sidebar() {
         </Button>
       </div>
 
-      <div className="side-bar-mobile"></div>
-      <Nav />
+      <div className="side-bar-mobile">
+        <Nav />
+      </div>
     </div>
   );
 }
