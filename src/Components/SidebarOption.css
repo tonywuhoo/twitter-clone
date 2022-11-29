@@ -27,3 +27,7 @@
 .sidebarOption--active {
   color: var(--twitter-color);
 }
+
+@media only screen and (max-width: 600px) {
+
+}

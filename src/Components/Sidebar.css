@@ -39,3 +39,29 @@
 	margin-top: 20px !important;
 	max-width: 200px;
 }
+
+@media only screen and (max-width: 600px) {
+  
+   .sidebar-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-content: flex-end;
+      align-items: flex-start;
+      height: 100vh;
+  } 
+
+  .sidebar {
+      border-top: 3px solid black;
+      display: inline-flex;
+      height: 50px;
+      position: fixed;
+      background-color: rgba(128, 128, 128, 0.549);
+      order: 0;
+      flex: 0 1 auto;
+      align-self: baseline;
+  }
+
+
+}
