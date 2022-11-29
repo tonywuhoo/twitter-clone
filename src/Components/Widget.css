@@ -1,4 +1,4 @@
-.widgets {
+/* .widgets {
 	flex: 0.7 1;
 	height: 100vh;
 	position: sticky;
@@ -37,4 +37,11 @@
 	font-size: 18px;
 	font-weight: 800;
 	padding: 15px 20px;
-}
+} */
+
+.main-con {
+    height: 200px;
+	width: 200px;
+	box-sizing: content-box;
+	width: 100%;
+  }
