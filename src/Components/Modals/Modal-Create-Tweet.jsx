@@ -1,4 +1,4 @@
-import ".Modal.css"
+import "Modal.css"
 import React, { useState } from 'react';
 
 function modalCreateTweet(props) {
