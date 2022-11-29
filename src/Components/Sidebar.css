@@ -1,3 +1,4 @@
+
 .sidebar {
 	border-right: 1px solid var(--twitter-background);
 	flex: 0.3 1;
@@ -61,6 +62,26 @@
   .side-bar-mobile {
     display: block;
     background-color: gray;
+    list-style: none;
+  
+  }
+
+  .side-bar-nav-container {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-content: flex-end;
+    align-items: center;
+  }
+
+  .side-bar-nav{
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    align-content: flex-end;
+  }
+
+  li {
+    list-style: none;
   }
 
 
