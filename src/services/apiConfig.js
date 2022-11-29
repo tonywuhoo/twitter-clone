@@ -9,7 +9,8 @@ const apiUrls = {
 
 if (window.location.hostname === "localhost") {
   apiUrl = apiUrls.development;
-} else {
+}
+else {
   // apiUrl = apiUrls.production;
 }
 
