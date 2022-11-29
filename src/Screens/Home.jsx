@@ -19,12 +19,9 @@ function Home() {
 
 	return (
 		// BEM
-		<div className="home">
-			<Sidebar />
-
+    <div className="home">
+      <Sidebar />
 			<Feed />
-			{/* Widget if we decide to popular */}
-
 			<Widget />
 		</div>
 	);

@@ -18,28 +18,33 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 function Sidebar() {
   return (
     <div className="sidebar-container">
-    <div className="sidebar">
-      <img
-        className="profile-photo"
-        src={Logo}
-        alt={"Shill Site"}
-        width="80px"
-      />
-      <SidebarOption active Icon={<HomeIcon />} text="$hill" image={Logo}  src="https://freeimage.host/i/HFl919t" /> 
-
-      {/* <SidebarOption Icon={<NotificationsNoneIcon />} text="Notifications" /> */}
-      {/* <SidebarOption Icon={<MailOutlineIcon />} text="Messages" /> */}
-      {/* <SidebarOption Icon={<BookmarkBorderIcon />} text="Bookmarks" /> */}
-      <SidebarOption Icon={<ListAltIcon />} text="Live Feed" />
-      <SidebarOption Icon={<ListAltIcon />} text="News" />
-      <SidebarOption Icon={<PermIdentityIcon />} text="Profile" />
-      <SidebarOption Icon={<MoreHorizIcon />} text="More" />
-      {/* this is the 'tweet' button */}
-      <Button variant="outlined" className="sidebar_Tweet" fullWidth>
-        Post
-      </Button>
+      <div className="sidebar">
+        <img
+          className="profile-photo"
+          src={Logo}
+          alt={"Shill Site"}
+          width="80px"
+        />
+        <SidebarOption
+          active
+          Icon={<HomeIcon />}
+          text="$hill"
+          image={Logo}
+          src="https://freeimage.host/i/HFl919t"
+        />
+        <SidebarOption Icon={<PermIdentityIcon />} text="Profile" />
+        {/* <SidebarOption Icon={<NotificationsNoneIcon />} text="Notifications" /> */}
+        {/* <SidebarOption Icon={<MailOutlineIcon />} text="Messages" /> */}
+        {/* <SidebarOption Icon={<BookmarkBorderIcon />} text="Bookmarks" /> */}
+        <SidebarOption Icon={<ListAltIcon />} text="Live Feed" />
+        <SidebarOption Icon={<ListAltIcon />} text="News" />
+        <SidebarOption Icon={<MoreHorizIcon />} text="More" />
+        {/* this is the 'tweet' button */}
+        <Button variant="outlined" className="sidebar_Tweet" fullWidth>
+          Post
+        </Button>
       </div>
-      </div>
+    </div>
   );
 }
 
