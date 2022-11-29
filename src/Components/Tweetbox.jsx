@@ -8,6 +8,9 @@ import { IconButton } from "@mui/material";
 
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
+function sendTweet() {
+  
+}
 function Tweetbox() {
   return (
     <div className="tweetBox">

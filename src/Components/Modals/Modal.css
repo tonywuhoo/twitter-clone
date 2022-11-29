@@ -15,6 +15,14 @@ It controls not only the modal input fields*/
   box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
   background: #7ed957;
   transition: all 0.1s ease 0s;
+
+ /* height: 30px;
+  border-radius: 20px;
+  border-color:#7ed957;
+  width: 350px;
+  padding-left: 10px;
+  */
+
 }
 
 .modal-input::placeholder {
