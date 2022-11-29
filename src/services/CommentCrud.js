@@ -11,25 +11,25 @@ export const getComments = async () => { //pagination django rest limits all pos
 
 export const getComment = async (id) => {//post id
   try {
-    const response = await api.get(`/comment/${id}`);
+    const response = await api.get(`/comments/${id}`);
     return response.data;
   } catch (error) {
     throw error;
   }
 };
 
-export const createComment = async (userData) => { //date time auto, likes = 0 default
+export const createComment = async (commentData) => { //date time auto, likes = 0 default
   try {
-    const response = await api.post("/comment", userData);
+    const response = await api.post("/comments", commentData);
     return response.data;
   } catch (error) {
     throw error;
   }
 };
 
-export const editComment = async (userData) => {
+export const editComment = async (id, commentData) => {
   try {
-    const response = await api.post("/comment", userData);
+    const response = await api.post(`/comments/${id}`, commentData);
     return response.data;
   } catch (error) {
     throw error;
@@ -39,12 +39,11 @@ export const editComment = async (userData) => {
 
 export const deleteComment = async (id) => {
   try {
-    const response = await api.delete(`/comment/${id}`);
+    const response = await api.delete(`/comments/${id}`);
     return response.data;
   } catch (error) {
     throw error;
   }
-  
 };
 
 
