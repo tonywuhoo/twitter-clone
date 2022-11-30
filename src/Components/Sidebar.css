@@ -10,10 +10,6 @@
 	overflow: auto;
 }
 
-.side-bar-mobile {
-	display: none;
-}
-
 .sidebar_tweet {
 	background-color: var(--twitter-color) !important;
 	border: none !important;
@@ -46,11 +42,11 @@
 
 @media only screen and (max-width: 600px) {
   
-  .sidebar-container {
+  /* .sidebar-container {
     overflow: hidden;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    margin: 0;
     display: flex;
   } 
 
@@ -61,8 +57,7 @@
     text-align: center;
     background-color: red;
     display: inline-flex;
-    height: 50px;
-    width: 1000px;
-  }
+    height: 55px;
+  } */
 
 }
