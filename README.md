@@ -9,7 +9,7 @@
 Social media network for those who want to share their financial goals, give advice, and discuss trends.
 
 ## Team Members
-Kyle Anthony, Tonny Wu, Gary Bowen, Lauren Powers, Andrea Alonso, Suji, Matthew Holcombe, Jacob Csonka, Adam Kaufman, and Mateo Lopez-Castillo .
+Kyle Anthony, Tonny Wu, Gary Bowen, Lauren Powers, Andrea Alonso, Suji, Matthew Holcombe, Jacob Csonka, Adam Kaufman, and Mateo Lopez-Castillo
 
 ## WireFrame
 
