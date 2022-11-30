@@ -8,40 +8,36 @@ import { IconButton } from "@mui/material";
 
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
-function sendTweet() {
-  
-}
+function sendTweet() {}
 function Tweetbox() {
-  return (
-    <div className="tweetBox">
-      <form>
-        <div className="tweetBox-input">
-          <input
-            className="tweetBox-input"
-            placeholder="What's happening, tweed?"
-            type="text"
-            size="2rem"
-          />
-        </div>
-        <input
-          className="tweetBox-inputImage"
-          placeholder="Enter image URL"
-          type="text"
-      
-        />
+	return (
+		<div className="tweetBox">
+			<form>
+				<div className="tweetBox-input">
+					<input
+						className="tweetBox-input"
+						placeholder="What's happening, tweed?"
+						type="text"
+						size="2rem"
+					/>
+				</div>
+				<input
+					className="tweetBox-inputImage"
+					placeholder="Enter image URL"
+					type="text"
+				/>
 
-        <Button
-          variant="outlined"
-          className="feed_tweet_BTN"
-          type="submit"
-          // onClick={sendTweet}
-          fullWidth
-        >
-          Post
-        </Button>
-      </form>
-    </div>
-  );
+				<Button
+					variant="outlined"
+					className="feed_tweet_BTN"
+					type="submit"
+					// onClick={sendTweet}
+					fullWidth>
+					Post
+				</Button>
+			</form>
+		</div>
+	);
 }
 
 export default Tweetbox;

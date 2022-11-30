@@ -10,7 +10,6 @@ function SignUpModal(props) {
 		<div className="modal" onClick={props.onClose}>
 			<div className="modal-content">
 				<div className="modal-header" onClick={(e) => e.stopPropagation()}>
-					<div className="modal-exit"></div>
 					<h1 className="modal-title">Sign Up</h1>
 					<input className="modal-input" placeholder="Create Username"></input>
 					<input className="modal-input" placeholder="Email"></input>

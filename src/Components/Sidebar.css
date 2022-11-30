@@ -10,8 +10,8 @@
 	overflow: auto;
 }
 
-.side-bar-mobile{
-  display: none;
+.side-bar-mobile {
+	display: none;
 }
 
 .sidebar_tweet {
@@ -45,23 +45,20 @@
 }
 
 @media only screen and (max-width: 600px) {
-  
-   .sidebar-container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      margin: 0;
-      padding: 0;
-  } 
+	.sidebar-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 0;
+	}
 
-  .sidebar {
-      display: none;
-  }
+	.sidebar {
+		display: none;
+	}
 
-  .side-bar-mobile {
-    display: block;
-    background-color: gray;
-  }
-
-
+	.side-bar-mobile {
+		display: block;
+		background-color: gray;
+	}
 }
