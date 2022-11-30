@@ -3,7 +3,9 @@ import {BsFillPersonLinesFill} from "react-icons/bs"
 import {BsSearch} from "react-icons/bs"
 import {IoIosNotificationsOutline} from "react-icons/io"
 import {BiMessageDots} from "react-icons/bi"
-import {AiOutlineTag} from "react-icons/ai"
+import { AiOutlineTag } from "react-icons/ai"
+
+
 const nav = () => {
   return (
     <div className=" " >
