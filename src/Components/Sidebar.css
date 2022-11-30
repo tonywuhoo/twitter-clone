@@ -1,3 +1,8 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .sidebar {
 	border-right: 1px solid var(--twitter-background);
 	flex: 0.3 1;
@@ -7,6 +12,10 @@
 	height: 100vh;
 	position: sticky;
 	overflow: auto;
+}
+
+.sidebar-hide-icon{
+  display: none;
 }
 
 .sidebar_tweet {
@@ -55,6 +64,9 @@
     display: none;
   }
 
+  .sidebar-hide-icon{
+    display: block;
+  }
   .sidebar-post-button{
     display: none;
   }
