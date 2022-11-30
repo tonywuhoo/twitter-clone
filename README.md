@@ -1,4 +1,4 @@
-# Shill
+# Shills
 
 
 **Github Repo:** 
@@ -12,8 +12,10 @@ Social media network for those who want to share their financial goals, give adv
 Kyle Anthony, Tonny Wu, Gary Bowen, Lauren Powers, Andrea Alonso, Suji, Matthew Holcombe, Jacob Csonka, Adam Kaufman, and Mateo Lopez-Castillo
 
 ## WireFrame
+[Create Tweet Figma Wireframe](https://www.figma.com/file/uFgKhcOO0DdN8sfvzMljz7/Twidder?node-id=0%3A1&t=K8Vhl0Qc4taEbb8d-0) 
+[Homepage Figma Wireframe](https://www.figma.com/file/EOH0aQ56WyVdGdGoAExalx/Diagram---Homepage?node-id=0%3A1&t=MogDaD4tK6fhEx5d-0)
 
-Please click on Wiki and WireFrame to view images. 
+To view complete Wireframe: please click on Wiki and then click on WireFrame to view images. 
 
 
 ## Team Expectations
