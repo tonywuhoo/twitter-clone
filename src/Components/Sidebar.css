@@ -6,12 +6,8 @@
 	padding-right: 20px;
 	height: 100vh;
 	position: sticky;
-	top: 3%;
+	
 	overflow: auto;
-}
-
-.side-bar-mobile {
-	display: none;
 }
 
 .sidebar_tweet {
@@ -46,23 +42,19 @@
 
 @media only screen and (max-width: 600px) {
   
-  .sidebar-container {
-      display: flex;
-      flex-direction: row;
-      bottom: 0;
-  } 
-
   .sidebar {
-   position: fixed;
-   bottom: 0;
-   flex-direction: row;
+    display: flex;
+    left:0;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    flex-direction: row;
+    background-color: rgb(141, 136, 136);
   }
 
-  .side-bar-nav-container {
-    display: inline-flex;
-    justify-content: flex-start;
-    align-content: flex-end;
-    align-items: center;
+  .sidebar-profile-photo {
+    display: none;
   }
+
 
 }

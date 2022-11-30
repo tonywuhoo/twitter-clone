@@ -8,22 +8,23 @@ import { IconButton } from "@mui/material";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 function Tweetbox() {
-	return (
-		<div className="tweetBox">
-			<form>
-				<div className="tweetBox-input">
-					<input
-						className="tweetBox-input"
-						placeholder="What's happening, tweed?"
-						type="text"
-						size="2rem"
-					/>
-				</div>
-				<input
-					className="tweetBox-inputImage"
-					placeholder="Enter image URL"
-					type="text"
-				/>
+  return (
+    <div className="tweetBox">
+      <form>
+        <div className="tweetBox-input">
+          <input
+            className="tweetBox-input"
+            placeholder="What's happening, tweed?"
+            type="text"
+            size="2rem"
+          />
+        </div>
+        <input
+          className="tweetBox-inputImage"
+          placeholder="Enter image URL"
+          type="text"
+      
+        />
 
 				<Button
 					variant="outlined"

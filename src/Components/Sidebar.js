@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import "./Sidebar.css";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import SidebarOption from "./SidebarOption";
 import HomeIcon from "@mui/icons-material/Home";
 import SearchIcon from "@mui/icons-material/Search";
@@ -12,24 +11,24 @@ import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import SmartButtonIcon from "@mui/icons-material/SmartButton";
 import Logo from ".././Components/shill.png";
-
 import ModalCreateTweet from "./Modals/Modal-Create-Tweet";
-
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import { ImageOutlined } from "@mui/icons-material";
 
 function Sidebar() {
   const [showPost, setShowPost] = useState(false);
   return (
+    <>
     <div className="sidebar-container">
       <div className="sidebar">
         <img
-          className="profile-photo"
+          className="sidebar-profile-photo"
           src={Logo}
           alt={"Shill Site"}
           width="80px"
         />
-        <SidebarOption
+          <SidebarOption
+            className="side-bar-icon"
           active
           Icon={<HomeIcon />}
           text="$hill"
@@ -49,8 +48,9 @@ function Sidebar() {
         </Button>
         <ModalCreateTweet onClose={() => setShowPost(false)} show={showPost} /**profileImage="" profileUsername="" */ />
       </div>
-   
     </div>
+   
+    </>
   );
 }
 

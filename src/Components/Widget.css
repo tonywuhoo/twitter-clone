@@ -1,10 +1,10 @@
-/* .widgets {
-	flex: 0.7 1;
+.widgets {
+	flex: 0.8 1;
 	height: 100vh;
 	position: sticky;
 	top: 0%;
 	overflow: auto;
-	width: 500px;
+  width: 500px;
 }
 
 .widgets__input {
@@ -38,19 +38,11 @@
 	font-size: 18px;
 	font-weight: 800;
 	padding: 15px 20px;
-} */
-
+}
 
 .main-con {
     height: 200px;
-	  width: 200px;
-	  box-sizing: content-box;
-	  width: 100%;
-  }
-
-  @media only screen and (max-width: 600px) {
-    .widgets {
-      display: none;
-    }
-
+	width: 200px;
+	box-sizing: content-box;
+	width: 100%;
   }

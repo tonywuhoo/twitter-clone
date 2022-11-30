@@ -10,20 +10,18 @@
 	flex-direction: column;
 }
 
-.tweetBox input {
-	padding: 20px;
-	display: flex;
+.tweetBox {
+  padding: 20px;
+  display: flex;
 }
 
 .tweetBox-input > input {
-	flex: 1;
-	margin-left: 20px;
-	font-size: 20px;
-	border: none;
-}
-
-.feed_tweet_BTN {
-	position: initial !important;
+  flex: 1;
+  margin-left: 20px;
+  font-size: 20px;
+  border: none;
+  width: 100%;
+  padding-left: 10px;
 }
 
 .tweetBox .feed_tweet_BTN {
