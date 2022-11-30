@@ -1,25 +1,39 @@
 import "./Modal.css"
 import Button from '@mui/material/Button';
 import React, { useState } from "react";
-import { doRegister } from "../../services/RegisterFunction";
-  
+import { doRegister } from "../../services/UserFunctions";
+
 function SignUpModal(props) {
-  const [email, setEmail] = useState("");
-  const [password, setPassword ] = useState("");
-  const [username, setUsername] = useState("");
+  const [Inputemail, setEmail] = useState("");
+  const [Inputpassword, setPassword] = useState("");
+  const [Inputusername, setUsername] = useState("");
 
   const doRegistering = async (event) => {
     event.preventDefault()
     console.log("Registering...")
-    doRegister(email, username, password)
+    try {
+      const credentials = {
+        email: Inputemail,
+        username: Inputusername,
+        password: Inputpassword,
+      }
+      const response = await doRegister(credentials)
+      if (response.status === 201) {
+        alert("Registered! Go ahead and log in !")
+        return
+      }
+    } catch (error) {
+      console.error(error)
+      alert("Email or Username taken, or password is shorter than 6 characters.")
+    }
   };
 
   const handleChange = async (event) => {
     if (event.target.id === "email") {
-      setPassword(event.target.value)
+      setEmail(event.target.value)
     }
     if (event.target.id === "password") {
-      setEmail(event.target.value)
+      setPassword(event.target.value)
     }
     if (event.target.id === "username") {
       setUsername(event.target.value)

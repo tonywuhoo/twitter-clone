@@ -15,6 +15,22 @@
   padding-left: 25px;
 }
 
+.footer-signed-in-container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 15px;
+  padding-left: 25px;
+}
+
+.footer-user-container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 15px;
+  padding-left: 25px;
+}
+
 .modal-button {
   width: 110px;
   border-radius: 25px !important;
