@@ -1,4 +1,12 @@
 import React from "react";
-import Sidebar from "../Components/Sidebar";
-import Feed from "../Screens/Feed";
-import Widget from "../Components/Widget";
+import Widget from "../Widget";
+import "./ProfilePage.module.css"
+
+function ProfilePage() {
+  return (
+      <h1>Profile Page</h1>
+    
+  )
+} 
+
+export default ProfilePage

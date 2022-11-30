@@ -12,16 +12,14 @@ function Tweetbox() {
   const [imageURL, setImageURL] = useState("");
   const [text, setText] = useState("");
   
-  const doSubmit = (event) => {
+  const doSubmit = async (event) => {
     event.preventDefault()
     try {
-      let email = Cookies.get("userEmail")
-      email = email.toString()
       const content = {
         text: text,
         title: imageURL,
       }
-      createPost(content)
+      await createPost(content)
     } catch (error) {
       throw error;
     }
