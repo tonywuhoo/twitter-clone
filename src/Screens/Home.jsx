@@ -6,6 +6,7 @@ import Feed from "../Screens/Feed";
 import Widget from "../Components/Widget";
 import "./Home.css";
 
+
 function Home() {
 	// useEffect(() => {
 	//   const callApi = async () => {
