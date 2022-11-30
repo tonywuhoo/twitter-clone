@@ -15,8 +15,6 @@ function Tweetbox() {
   const doSubmit = (event) => {
     event.preventDefault()
     try {
-      let email = Cookies.get("userEmail")
-      email = email.toString()
       const content = {
         text: text,
         title: imageURL,
@@ -30,11 +28,9 @@ function Tweetbox() {
   const handleChange = (event) => {
     if (event.target.id === "text") {
       setText(event.target.value)
-      console.log(event.target.value)
     }
     if (event.target.id === "image") {
       setImageURL(event.target.value)
-      console.log(event.target.value)
     }
   }  
 

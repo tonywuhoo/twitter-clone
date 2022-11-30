@@ -2,16 +2,16 @@ import api from "./apiConfig.js";
 import Cookies from 'js-cookie'
 import axios from "axios";
 
-export const getPosts = async () => { //pagination django rest limits all posts to (10)
+export const getPosts = async () => {
   try {
-    const response = await api.get("/posts");
-    return response.data;
+    let response = await axios.get("https://twitter-clone-backend-production-c9cc.up.railway.app/allposts/")
+    return response
   } catch (error) {
     throw error;
   }
 };
 
-export const getpost = async (id) => {//post id
+export const getpost = async (id) => {
   try {
     const response = await api.get(`/post/${id}`);
     return response.data;

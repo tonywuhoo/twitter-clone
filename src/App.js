@@ -3,7 +3,8 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Home from "./Screens/Home";
-import Cookies from 'js-cookie'
+import Cookies from 'js-cookie';
+import { getPosts } from "./services/PostCrud";
 
 function App() {
   const [commentCrud, setCommentCrud] = useState([]);
@@ -12,26 +13,14 @@ function App() {
   const [toggleApiCall, setToggleApiCall] = useState(false);
   const [news, setNews] = useState([]);
 
-  // useEffect(() => {
-  //   const callApi = async () => {
-  //     const response = await getArtists();
-  //     setArtists(response);
-  //     const res = await getAlbums();
-  //     setAlbums(res);
-  //   };
-  //   callApi();
-  // }, [toggleApiCall]);
 
   useEffect(() => {
     if (Cookies.get("AccessToken") === undefined) {
       Cookies.set("AccessToken", "loggedout")
     }
-    
   }, []);
-  
 
   return (
-    // BEM
     <>
       <div className="app">
         <Home />
