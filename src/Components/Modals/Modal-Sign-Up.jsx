@@ -56,10 +56,6 @@ function SignUpModal(props) {
 							Close
 						</Button>
 					</form>
-					<Button className="modal-button">Sign Up</Button>
-					<Button onClick={props.onClose} className="modal-button2">
-						Close
-					</Button>
 				</div>
 			</div>
 		</div>
