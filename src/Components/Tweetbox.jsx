@@ -7,9 +7,6 @@ import Avatar from "react-avatar";
 import { IconButton } from "@mui/material";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
-function sendTweet() {
-  
-}
 function Tweetbox() {
   return (
     <div className="tweetBox">
@@ -17,7 +14,7 @@ function Tweetbox() {
         <div className="tweetBox-input">
           <input
             className="tweetBox-input"
-            placeholder="What's happening?"
+            placeholder="What's happening, tweed?"
             type="text"
             size="2rem"
           />
@@ -29,18 +26,17 @@ function Tweetbox() {
       
         />
 
-        <Button
-          variant="outlined"
-          className="feed_tweet_BTN"
-          type="submit"
-          // onClick={sendTweet}
-          fullWidth
-        >
-          Post
-        </Button>
-      </form>
-    </div>
-  );
+				<Button
+					variant="outlined"
+					className="feed_tweet_BTN"
+					type="submit"
+					// onClick={sendTweet}
+					fullWidth>
+					Post
+				</Button>
+			</form>
+		</div>
+	);
 }
 
 export default Tweetbox;

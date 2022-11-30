@@ -3,7 +3,7 @@ import "./Feed.css";
 
 import Tweetbox from "../Components/Tweetbox.jsx";
 // import FlipMove from "react-flip-move";
-import Post from "../Components/Post.js";
+import Post from "../Components/Post.jsx";
 // import db from 'our django backend'
 
 function Feed() {

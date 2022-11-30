@@ -22,6 +22,14 @@
 .feed-header > h2 {
   font-weight: 800;
   font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
   
+  .feed-container{
+    margin: 0;
+    padding: 0;
+  }
+
 }
 
