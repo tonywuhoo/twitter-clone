@@ -50,6 +50,7 @@ function Sidebar() {
 						setCreateTweetModal(false);
 						document.querySelector(".sidebar-container").style.zIndex = 0;
 					}}
+					show={showCreateTweetModal}
 				/>
 				<Button
 					className="sidebar_Tweet"
