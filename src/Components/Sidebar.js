@@ -12,7 +12,7 @@ import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import SmartButtonIcon from "@mui/icons-material/SmartButton";
 import Logo from ".././Components/shill.png";
-import Nav from "./Nav";
+
 import ModalCreateTweet from "./Modals/Modal-Create-Tweet";
 
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
@@ -50,7 +50,6 @@ function Sidebar() {
         <ModalCreateTweet onClose={() => setShowPost(false)} show={showPost} /**profileImage="" profileUsername="" */ />
       </div>
       <div className="side-bar-mobile">
-        <Nav />
       </div>
     </div>
   );
