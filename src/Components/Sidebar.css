@@ -47,22 +47,22 @@
 @media only screen and (max-width: 600px) {
   
   .sidebar-container {
-      display: flex;
-      flex-direction: row;
-      bottom: 0;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
   } 
 
   .sidebar {
-   position: fixed;
-   bottom: 0;
-   flex-direction: row;
-  }
-
-  .side-bar-nav-container {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    background-color: red;
     display: inline-flex;
-    justify-content: flex-start;
-    align-content: flex-end;
-    align-items: center;
+    height: 50px;
+    width: 1000px;
   }
 
 }
