@@ -96,6 +96,7 @@ It controls not only the modal input fields*/
 	align-items: center;
 	justify-content: center;
 	backdrop-filter: blur(8px);
+	z-index: 500;
 }
 
 .modal-body {

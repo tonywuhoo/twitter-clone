@@ -1,4 +1,4 @@
-// import Sidebar from '../../Sidebar';
-// import SidebarOption from '../../SidebarOption';
-// import Feed from '../../Feed';
-// import Widget from '../../Widget';
+import React from "react";
+import Sidebar from "../Components/Sidebar";
+import Feed from "../Screens/Feed";
+import Widget from "../Components/Widget";
