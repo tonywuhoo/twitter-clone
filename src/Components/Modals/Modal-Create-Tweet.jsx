@@ -37,8 +37,8 @@ function ModalCreateTweet(props) {
 						onChange={handleChange}></input>
 				</div>
 				<div className="modal-footer">
-					<p>{characterCount}/280</p>
-					<button className="button">Post</button>
+					<p className="character-counter">{characterCount}/280</p>
+					<button className="modal-button">Post</button>
 				</div>
 			</div>
 		</div>
