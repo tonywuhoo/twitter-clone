@@ -48,7 +48,6 @@ function SignUpModal(props) {
         </div>
       </div>
   )
-
 }
 
-export default SignUpModal
+export default SignUpModal;

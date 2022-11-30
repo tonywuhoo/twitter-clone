@@ -12,8 +12,10 @@ import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import SmartButtonIcon from "@mui/icons-material/SmartButton";
 import Logo from ".././Components/shill.png";
+import Nav from "./Nav";
 
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
+import { ImageOutlined } from "@mui/icons-material";
 
 function Sidebar() {
   return (
@@ -43,6 +45,9 @@ function Sidebar() {
         <Button variant="outlined" className="sidebar_Tweet" fullWidth>
           Post
         </Button>
+      </div>
+      <div className="side-bar-mobile">
+        <Nav />
       </div>
     </div>
   );

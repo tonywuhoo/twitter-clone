@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 function Modal(props) {
   const [email, setEmail] = useState("");
-  const [password, setPassword ] = useState("");
+  const [password, setPassword] = useState("");
   if (!props.show) {
     return null
   }
@@ -36,18 +36,16 @@ function Modal(props) {
       <div className="modal-content" onClick={e => e.stopPropagation()}>
         <div className="modal-body">
           <h2 className="modal-title">Sign In To Shills</h2>
-          <form onSubmit={ doLogging }>
-          <input className='modal-input' onChange={handleChange} id = "email" placeholder="Email"></input>
-          <input className='modal-input' type="password" onChange={handleChange} id = "password" placeholder="Password"></input>
+          <form onSubmit={doLogging}>
+            <input className='modal-input' onChange={handleChange} id="email" placeholder="Email"></input>
+            <input className='modal-input' type="password" onChange={handleChange} id="password" placeholder="Password"></input>
             <input type="submit" className="modal-button" value="Sign In" />
-          <Button onClick={props.onClose} className="modal-button">Close</Button>
-          </form> 
+            <Button onClick={props.onClose} className="modal-button">Close</Button>
+          </form>
         </div>
-      
+
       </div>
     </div>
   )
-
 }
-
-export default Modal
+export default Modal;
