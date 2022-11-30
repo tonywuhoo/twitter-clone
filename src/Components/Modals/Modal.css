@@ -131,6 +131,7 @@ It controls not only the modal input fields*/
   width: 200px;
   background-color: white;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
