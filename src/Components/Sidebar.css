@@ -11,6 +11,7 @@ a {
 	padding-right: 20px;
 	height: 100vh;
 	position: sticky;
+	top: 3%;
 	overflow: auto;
 }
 
@@ -49,16 +50,15 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-  
-  .sidebar {
-    display: flex;
-    left:0;
-    position: fixed;
-    bottom: 0;
-    height: 50px;
-    flex-direction: row;
-    background-color: #f5f8fa;
-  }
+	.sidebar {
+		display: flex;
+		left: 0;
+		position: fixed;
+		bottom: 0;
+		height: 50px;
+		flex-direction: row;
+		background-color: #f5f8fa;
+	}
 
   .sidebar-profile-photo {
     display: none;
@@ -70,8 +70,5 @@ a {
   .sidebar-post-button{
     display: none;
   }
-
-  
-
 
 }

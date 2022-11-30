@@ -38,7 +38,9 @@ function ModalCreateTweet(props) {
 				</div>
 				<div className="modal-footer">
 					<p className="character-counter">{characterCount}/280</p>
-					<button onClick={props.onClose} className="modal-button">Post</button>
+					<button className="modal-button" onClick={props.onClose}>
+						Post
+					</button>
 				</div>
 			</div>
 		</div>
