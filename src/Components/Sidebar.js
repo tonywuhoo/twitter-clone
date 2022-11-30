@@ -13,6 +13,7 @@ import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import SmartButtonIcon from "@mui/icons-material/SmartButton";
 import Logo from ".././Components/shill.png";
 import Nav from "./Nav";
+import ModalCreateTweet from "./Modals/Modal-Create-Tweet";
 
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import { ImageOutlined } from "@mui/icons-material";
@@ -43,9 +44,10 @@ function Sidebar() {
         <SidebarOption Icon={<ListAltIcon />} text="News" />
         <SidebarOption Icon={<MoreHorizIcon />} text="More" />
         {/* this is the 'tweet' button */}
-        <Button variant="outlined" className="sidebar_Tweet" fullWidth>
+        <Button variant="outlined" className="sidebar_Tweet" fullWidth onClick={() => setShowPost(true)}>
           Post
         </Button>
+        <ModalCreateTweet onClose={() => setShowPost(false)} show={showPost} />
       </div>
       <div className="side-bar-mobile">
         <Nav />

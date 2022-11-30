@@ -1,7 +1,7 @@
-import "Modal.css"
+import "./Modal.css"
 import React, { useState } from 'react';
 
-function modalCreateTweet(props) {
+function ModalCreateTweet(props) {
   // props = {
   //  profile-image: "https://www.pic.com",
   //  profile-username: "aalonso",
@@ -21,20 +21,20 @@ function modalCreateTweet(props) {
     <div className="modal">
       <div className="modal-content">
         <div className="modal-header">
-          <img src={props.profile-image} alt="the users profile image"></img>
-          <h1>@{props.profile-username}</h1>
+          <img src={props.profileImage} alt="the users profile image"></img>
+          <h1>@{props.profileUsername}</h1>
         </div>
         <div className="modal-body">
           <input type="text" id="tweetMessage" name="tweetMessage" placeholder="What's Happening?" maxLength="180" onChange={handleChange}></input>
         </div>
         <div className="modal-footer">
           <p>{characterCount}/180</p>
-          <button className="button">Post</button>
+          <button className="button" onClick={props.onClose}>Post</button>
         </div>
       </div>
     </div>
   )
 }
 
-export default modalCreateTweet;
+export default ModalCreateTweet;
 
