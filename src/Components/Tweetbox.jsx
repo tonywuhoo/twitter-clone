@@ -17,7 +17,7 @@ function Tweetbox() {
         <div className="tweetBox-input">
           <input
             className="tweetBox-input"
-            placeholder="What's happening, tweed?"
+            placeholder="What's happening?"
             type="text"
             size="2rem"
           />
