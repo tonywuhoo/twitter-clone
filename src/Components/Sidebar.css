@@ -10,10 +10,6 @@
 	overflow: auto;
 }
 
-.side-bar-mobile {
-	display: none;
-}
-
 .sidebar_tweet {
 	background-color: var(--twitter-color) !important;
 	border: none !important;

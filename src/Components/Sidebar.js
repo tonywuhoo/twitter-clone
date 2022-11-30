@@ -21,6 +21,7 @@ import { ImageOutlined } from "@mui/icons-material";
 function Sidebar() {
   const [showPost, setShowPost] = useState(false);
   return (
+    <>
     <div className="sidebar-container">
       <div className="sidebar">
         <img
@@ -49,8 +50,9 @@ function Sidebar() {
         </Button>
         <ModalCreateTweet onClose={() => setShowPost(false)} show={showPost} /**profileImage="" profileUsername="" */ />
       </div>
-   
     </div>
+   
+    </>
   );
 }
 
