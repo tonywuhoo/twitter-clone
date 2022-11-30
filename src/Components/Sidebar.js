@@ -47,7 +47,7 @@ function Sidebar() {
         <Button variant="outlined" className="sidebar_Tweet" fullWidth onClick={() => setShowPost(true)}>
           Post
         </Button>
-        <ModalCreateTweet onClose={() => setShowPost(false)} show={showPost} />
+        <ModalCreateTweet onClose={() => setShowPost(false)} show={showPost} /**profileImage="" profileUsername="" */ />
       </div>
       <div className="side-bar-mobile">
         <Nav />
