@@ -35,6 +35,8 @@ function SignUpModal(props) {
 			<div className="modal-content">
 				<div className="modal-header" onClick={(e) => e.stopPropagation()}>
 					<h1 className="modal-title">Sign Up</h1>
+				</div>
+				<div className="form-body">
 					<form onSubmit={doRegistering}>
 						<input
 							className="modal-input"
@@ -52,8 +54,11 @@ function SignUpModal(props) {
 							onChange={handleChange}
 							placeholder="Create Password"></input>
 					</form>
-					<input type="submit" className="modal-button" value="Sign Up" />
 				</div>
+				<input type="submit" className="modal-button" value="Sign Up" />
+				<Button onclick={props.onClose} className="modal-button">
+					Close
+				</Button>
 			</div>
 		</div>
 	);
