@@ -4,8 +4,8 @@ import { doLogin } from "../../services/LoginFunction";
 import React, { useState } from "react";
 
 function Modal(props) {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [Inputemail, setEmail] = useState("");
+  const [Inputpassword, setPassword] = useState("");
   if (!props.show) {
     return null
   }
@@ -13,8 +13,8 @@ function Modal(props) {
     event.preventDefault()
     try {
       const credentials = {
-        email: password,
-        password: email,
+        email: Inputemail,
+        password: Inputpassword,
       }
       const response = await doLogin(credentials)
       console.log(response)
@@ -25,9 +25,11 @@ function Modal(props) {
   const handleChange = async (event) => {
     if (event.target.id === "email") {
       setEmail(event.target.value)
+      console.log(event.target.value)
     }
     if (event.target.id === "password") {
       setPassword(event.target.value)
+      console.log(event.target.value)
     }
 
   };
