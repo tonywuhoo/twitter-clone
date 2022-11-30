@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Home from "./Screens/Home";
+import Cookies from 'js-cookie'
 
 function App() {
   const [commentCrud, setCommentCrud] = useState([]);
@@ -20,6 +21,14 @@ function App() {
   //   };
   //   callApi();
   // }, [toggleApiCall]);
+
+  useEffect(() => {
+    if (Cookies.get("AccessToken") === undefined) {
+      Cookies.set("AccessToken", "loggedout")
+    }
+    
+  }, []);
+  
 
   return (
     // BEM

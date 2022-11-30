@@ -1,4 +1,6 @@
 import api from "./apiConfig.js";
+import Cookies from 'js-cookie'
+import axios from "axios";
 
 export const getPosts = async () => { //pagination django rest limits all posts to (10)
   try {
@@ -18,11 +20,23 @@ export const getpost = async (id) => {//post id
   }
 };
 
-export const createPost = async (userData) => { //date time auto, likes = 0 default
+export const createPost = async (content) => {
   try {
-    const response = await api.post("/post", userData);
-    return response.data;
+    if (Cookies.get("AccessToken") === undefined || Cookies.get("AccessToken") === "loggedout") {
+      alert("Please log in to create a post!")
+    }
+    const config = {
+      headers: {
+        "Authorization": `Bearer ${Cookies.get("AccessToken")}`,
+      },
+    };
+    let response = await axios.post(`https://twitter-clone-backend-production-c9cc.up.railway.app/user/posts/`, content, config)
+    console.log(response)
+    if (response.status === 201) {
+      alert("Post successful!")
+    }
   } catch (error) {
+    
     throw error;
   }
 };
