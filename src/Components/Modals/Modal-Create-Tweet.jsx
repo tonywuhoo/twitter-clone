@@ -19,7 +19,7 @@ function ModalCreateTweet(props) {
 	}
 	return (
 		<div className="modal" onClick={props.onClose}>
-			<div className="modal-content">
+			<div className="modal-content"onClick={(e) => e.stopPropagation()}>
 				<div className="modal-header">
 					<img
 						className="profile-image"
@@ -38,7 +38,7 @@ function ModalCreateTweet(props) {
 				</div>
 				<div className="modal-footer">
 					<p className="character-counter">{characterCount}/280</p>
-					<button className="modal-button">Post</button>
+					<button onClick={props.onClose} className="modal-button">Post</button>
 				</div>
 			</div>
 		</div>
