@@ -45,8 +45,13 @@ function Sidebar() {
           {/* <SidebarOption Icon={<NotificationsNoneIcon />} text="Notifications" /> */}
           {/* <SidebarOption Icon={<MailOutlineIcon />} text="Messages" /> */}
           {/* <SidebarOption Icon={<BookmarkBorderIcon />} text="Bookmarks" /> */}
-          <SidebarOption Icon={<ListAltIcon />} text="Feed" />
-          <SidebarOption Icon={<ListAltIcon />} text="News" />
+          <div className="sidebar-hide-icon">
+            <SidebarOption Icon={<ListAltIcon />} text="Feed" />
+          </div>
+
+          
+            <SidebarOption Icon={<ListAltIcon />} text="News" />
+        
 
           {/* this is the 'tweet' button */}
           <div className="sidebar-post-button">

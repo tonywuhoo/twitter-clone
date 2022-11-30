@@ -21,7 +21,6 @@ function Home() {
 	return (
 		// BEM
 		<div className="home">
-      <h2>HOME</h2>
       <Feed />
 			<Widget />
 		</div>
