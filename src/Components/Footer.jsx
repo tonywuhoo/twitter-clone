@@ -9,7 +9,6 @@ import Button from "@mui/material/Button";
 import { SignpostOutlined } from "@mui/icons-material";
 import Cookies from 'js-cookie'
 function Footer() {
-<<<<<<< HEAD
   const [showSignInModal, setShowSignInModal] = useState(false);
   const [showSignUpModal, setSignUpModal] = useState(false);
   const [showUserModal, setUserModal] = useState(false);
@@ -54,43 +53,6 @@ function Footer() {
         </div></>}
     </>
   );
-=======
-	const [showSignInModal, setShowSignInModal] = useState(false);
-	const [showSignUpModal, setSignUpModal] = useState(false);
-	return (
-		<>
-			<div className="footer-sign-in-up-container">
-				<div className="footer-sign-in">
-					<Modal
-						onClose={() => setShowSignInModal(false)}
-						show={showSignInModal}
-					/>
-					<Button
-						className="modal-button"
-						onClick={() => setShowSignInModal(true)}>
-						Sign In
-					</Button>
-				</div>
-				<div className="footer-sign-up">
-					<SignUpModal
-						onClose={() => setSignUpModal(false)}
-						show={showSignUpModal}
-					/>
-					<Button className="modal-button" onClick={() => setSignUpModal(true)}>
-						Sign Up
-					</Button>
-				</div>
-				{/* <div className="footer-sign-out">
-          <Button className="sign-out-button" onClcik={() => signOut()}>
-            Sign Out
-          </Button>
-
-
-        </div> */}
-			</div>
-		</>
-	);
->>>>>>> 4d20fd07228ce0ab4e6ebde326085fa7afd0d6ba
 }
 
 export default Footer;

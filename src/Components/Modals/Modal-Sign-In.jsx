@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import Cookies from 'js-cookie'
 
 function Modal(props) {
-  const [Inputmail, setEmail] = useState("");
+  const [Inputemail, setEmail] = useState("");
   const [Inputpassword, setPassword] = useState("");
   if (!props.show) {
     return null
@@ -15,7 +15,7 @@ function Modal(props) {
     console.log("Logging in...")
     try {
       const credentials = {
-        email: Inputmail,
+        email: Inputemail,
         password: Inputpassword,
       }
       const response = await doLogin(credentials)
