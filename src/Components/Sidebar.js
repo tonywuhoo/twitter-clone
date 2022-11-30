@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Sidebar.css";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import SidebarOption from "./SidebarOption";
@@ -18,6 +18,7 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import { ImageOutlined } from "@mui/icons-material";
 
 function Sidebar() {
+  const [showPost, setShowPost] = useState(false);
   return (
     <div className="sidebar-container">
       <div className="sidebar">
