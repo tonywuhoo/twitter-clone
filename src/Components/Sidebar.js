@@ -14,6 +14,7 @@ import Logo from ".././Components/shill.png";
 import ModalCreateTweet from "./Modals/Modal-Create-Tweet";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import { ImageOutlined } from "@mui/icons-material";
+import { NavLink } from "react-router-dom";
 
 function Sidebar() {
   const [showPost, setShowPost] = useState(false);
@@ -27,22 +28,25 @@ function Sidebar() {
             alt={"Shill Site"}
             width="80px"
           />
-          <SidebarOption
-            className="side-bar-icon"
-            active
-            Icon={<HomeIcon />}
-            text="$hill"
-            image={Logo}
-            src="https://freeimage.host/i/HFl919t"
-          />
-       
-            <SidebarOption Icon={<PermIdentityIcon />} text="Profile" />
-            {/* <SidebarOption Icon={<NotificationsNoneIcon />} text="Notifications" /> */}
-            {/* <SidebarOption Icon={<MailOutlineIcon />} text="Messages" /> */}
-            {/* <SidebarOption Icon={<BookmarkBorderIcon />} text="Bookmarks" /> */}
-            <SidebarOption Icon={<ListAltIcon />} text="Feed" />
-            <SidebarOption Icon={<ListAltIcon />} text="News" />
-   
+          <NavLink to="/">
+            <SidebarOption
+              className="side-bar-icon"
+              active
+              Icon={<HomeIcon />}
+              text="$hill"
+              image={Logo}
+              src="https://freeimage.host/i/HFl919t"
+            />
+          </NavLink>
+
+          <NavLink to="/profile">
+            <SidebarOption Icon={<PermIdentityIcon />} text="Profile" />{" "}
+          </NavLink>
+          {/* <SidebarOption Icon={<NotificationsNoneIcon />} text="Notifications" /> */}
+          {/* <SidebarOption Icon={<MailOutlineIcon />} text="Messages" /> */}
+          {/* <SidebarOption Icon={<BookmarkBorderIcon />} text="Bookmarks" /> */}
+          <SidebarOption Icon={<ListAltIcon />} text="Feed" />
+          <SidebarOption Icon={<ListAltIcon />} text="News" />
 
           {/* this is the 'tweet' button */}
           <div className="sidebar-post-button">
