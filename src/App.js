@@ -1,40 +1,37 @@
-import ProfilePage from './Components/Profile/ProfilePage';
-import { Routes, Route } from 'react-router-dom';
+import ProfilePage from "./Components/Profile/ProfilePage";
+import { Routes, Route } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Home from "./Screens/Home";
-import Cookies from 'js-cookie';
+import Cookies from "js-cookie";
 import { getPosts } from "./services/PostCrud";
-import Sidebar from './Components/Sidebar';
-import Feed from './Screens/Feed';
-import Widget from './Components/Widget';
-
+import Sidebar from "./Components/Sidebar";
+import Feed from "./Screens/Feed";
+import Widget from "./Components/Widget";
 
 function App() {
-  const [commentCrud, setCommentCrud] = useState([]);
-  const [postCrud, setPostCrud] = useState([]);
-  const [userCrud, setUserCrud] = useState([]);
-  const [toggleApiCall, setToggleApiCall] = useState(false);
-  const [news, setNews] = useState([]);
+	const [commentCrud, setCommentCrud] = useState([]);
+	const [postCrud, setPostCrud] = useState([]);
+	const [userCrud, setUserCrud] = useState([]);
+	const [toggleApiCall, setToggleApiCall] = useState(false);
+	const [news, setNews] = useState([]);
 
-  useEffect(() => {
-    if (Cookies.get("AccessToken") === undefined) {
-      Cookies.set("AccessToken", "loggedout")
-    }
-  }, []);
+	useEffect(() => {
+		if (Cookies.get("AccessToken") === undefined) {
+			Cookies.set("AccessToken", "loggedout");
+		}
+	}, []);
 
-  return (
-    <>
-      <div className="app">
-        <Sidebar />
-        
-        <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path="/profile" element={<ProfilePage />} />
-        </Routes>
-      </div>
-    </>
-  );
+	return (
+		<>
+			<div className="app">
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/profile" element={<ProfilePage />} />
+				</Routes>
+			</div>
+		</>
+	);
 }
 
 export default App;

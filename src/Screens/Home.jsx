@@ -20,7 +20,8 @@ function Home() {
 	return (
 		// BEM
 		<div className="home">
-      <Feed />
+			<Sidebar />
+			<Feed />
 			<Widget />
 		</div>
 	);
