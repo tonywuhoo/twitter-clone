@@ -1,11 +1,10 @@
 .widgets {
-	flex: 0.7;
+	flex: 0.7 1;
 	height: 100vh;
 	position: sticky;
 	top: 0%;
 	overflow: auto;
 	width: 500px;
-	z-index: 0;
 }
 
 .widgets__input {
