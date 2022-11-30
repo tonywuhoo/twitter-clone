@@ -60,5 +60,6 @@
 	.side-bar-mobile {
 		display: block;
 		background-color: gray;
+		list-style: none;
 	}
 }

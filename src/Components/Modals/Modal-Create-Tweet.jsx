@@ -1,8 +1,7 @@
-import "./Modal.css";
+import "Modal.css";
 import React, { useState } from "react";
-import Button from "@mui/material/Button";
 
-function CreateTweetModal(props) {
+function ModalCreateTweet(props) {
 	// props = {
 	//  profile-image: "https://www.pic.com",
 	//  profile-username: "aalonso",
@@ -14,20 +13,25 @@ function CreateTweetModal(props) {
 		setTweet(event.target.value);
 		setCharacterCount(tweet.length);
 	}
+	function submitPost() {
+		return props.onClose;
+	}
 
 	if (!props.show) {
 		return null;
 	}
 	return (
-		<div className="modal" onClick={props.onClose}>
+		<div className="modal">
 			<div className="modal-content">
-				{/* <div className="modal-header">
-					<img src={props.profile-image} alt="the users profile image"></img>
-					<h1>@{props.profile - username}</h1>
-				</div> */}
-				<div className="modal-body" onClick={(e) => e.stopPropagation()}>
+				<div className="modal-header">
+					<img
+						className="profile-image"
+						src="https://imageio.forbes.com/specials-images/imageserve/5ceec355142c500008f42068/Rihanna-Diamond-Ball-Forbes-Women/0x0.jpg?format=jpg&crop=1950,1950,x32,y257,safe&height=1950&width=1950"
+						alt="Test profile image"></img>
+					<h1>@Rihanna</h1>
+				</div>
+				<div className="modal-body">
 					<input
-						className="modal-input"
 						type="text"
 						id="tweetMessage"
 						name="tweetMessage"
@@ -37,11 +41,11 @@ function CreateTweetModal(props) {
 				</div>
 				<div className="modal-footer">
 					<p>{characterCount}/280</p>
-					<Button className="button">Post</Button>
+					<button className="button">Post</button>
 				</div>
 			</div>
 		</div>
 	);
 }
 
-export default CreateTweetModal;
+export default ModalCreateTweet;

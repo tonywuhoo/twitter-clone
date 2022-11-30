@@ -4,6 +4,7 @@ import { useState } from "react";
 import "./Modals/Modal.css";
 import "./Footer.css";
 import Button from "@mui/material/Button";
+import { SignpostOutlined } from "@mui/icons-material";
 
 function Footer() {
 	const [showSignInModal, setShowSignInModal] = useState(false);
@@ -31,6 +32,13 @@ function Footer() {
 						Sign Up
 					</Button>
 				</div>
+				{/* <div className="footer-sign-out">
+          <Button className="sign-out-button" onClcik={() => signOut()}>
+            Sign Out
+          </Button>
+
+
+        </div> */}
 			</div>
 		</>
 	);

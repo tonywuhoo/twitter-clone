@@ -4,12 +4,13 @@ let apiUrl;
 
 const apiUrls = {
   production: "",
-  development: "http://127.0.0.1:3000",
+  development: "https://twitter-clone-backend-production-0cca.up.railway.app/",
 };
 
 if (window.location.hostname === "localhost") {
   apiUrl = apiUrls.development;
-} else {
+}
+else {
   // apiUrl = apiUrls.production;
 }
 
