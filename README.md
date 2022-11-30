@@ -18,13 +18,13 @@ Please click on Wiki and WireFrame to view images.
 
 ## Team Expectations
 
-[Team Expectations](https://docs.google.com/document/d/1pFeWx5xNfhRX_BMKo0RtF835iyji6VnHI_Y2zRqspks/edit?usp=sharing)
+[Team Expectations](https://docs.google.com/document/d/1S2xXSK3sKSQJlPsdvnhaWW9cuCgChCm8TbGkdDmYfhI/edit#heading=h.15v6th5y0uyh)
 
 [Project Management](https://github.com/orgs/SEI-Buffleheads/projects/2/views/1)
 
 ## MVP GOALS
 
-- Use MongoDB and Express to create the back-end
+- Use Postman and Django to create the back-end
 - Use React to create the front-end
   - Use multiple functional components
 - Give user capability for full CRUD (products for MVP, see post-MVP... preferred CRUD demonstration)
