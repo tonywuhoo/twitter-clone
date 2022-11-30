@@ -40,9 +40,17 @@
 	padding: 15px 20px;
 } */
 
+
 .main-con {
     height: 200px;
-	width: 200px;
-	box-sizing: content-box;
-	width: 100%;
+	  width: 200px;
+	  box-sizing: content-box;
+	  width: 100%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .widgets {
+      display: none;
+    }
+
   }
