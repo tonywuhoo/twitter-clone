@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./Sidebar.css";
 import SidebarOption from "./SidebarOption";
 import HomeIcon from "@mui/icons-material/Home";
@@ -19,37 +19,48 @@ function Sidebar() {
   const [showPost, setShowPost] = useState(false);
   return (
     <>
-    <div className="sidebar-container">
-      <div className="sidebar">
-        <img
-          className="sidebar-profile-photo"
-          src={Logo}
-          alt={"Shill Site"}
-          width="80px"
-        />
+      <div className="sidebar-container">
+        <div className="sidebar">
+          <img
+            className="sidebar-profile-photo"
+            src={Logo}
+            alt={"Shill Site"}
+            width="80px"
+          />
           <SidebarOption
             className="side-bar-icon"
-          active
-          Icon={<HomeIcon />}
-          text="$hill"
-          image={Logo}
-          src="https://freeimage.host/i/HFl919t"
-        />
-        <SidebarOption Icon={<PermIdentityIcon />} text="Profile" />
-        {/* <SidebarOption Icon={<NotificationsNoneIcon />} text="Notifications" /> */}
-        {/* <SidebarOption Icon={<MailOutlineIcon />} text="Messages" /> */}
-        {/* <SidebarOption Icon={<BookmarkBorderIcon />} text="Bookmarks" /> */}
-        <SidebarOption Icon={<ListAltIcon />} text="Live Feed" />
-        <SidebarOption Icon={<ListAltIcon />} text="News" />
-        
-        {/* this is the 'tweet' button */}
-        <Button variant="outlined" className="sidebar_Tweet" fullWidth onClick={() => setShowPost(true)}>
-          Post
-        </Button>
-        <ModalCreateTweet onClose={() => setShowPost(false)} show={showPost} /**profileImage="" profileUsername="" */ />
-      </div>
-    </div>
+            active
+            Icon={<HomeIcon />}
+            text="$hill"
+            image={Logo}
+            src="https://freeimage.host/i/HFl919t"
+          />
+       
+            <SidebarOption Icon={<PermIdentityIcon />} text="Profile" />
+            {/* <SidebarOption Icon={<NotificationsNoneIcon />} text="Notifications" /> */}
+            {/* <SidebarOption Icon={<MailOutlineIcon />} text="Messages" /> */}
+            {/* <SidebarOption Icon={<BookmarkBorderIcon />} text="Bookmarks" /> */}
+            <SidebarOption Icon={<ListAltIcon />} text="Feed" />
+            <SidebarOption Icon={<ListAltIcon />} text="News" />
    
+
+          {/* this is the 'tweet' button */}
+          <div className="sidebar-post-button">
+            <Button
+              variant="outlined"
+              className="sidebar_Tweet"
+              fullWidth
+              onClick={() => setShowPost(true)}
+            >
+              Post
+            </Button>
+            <ModalCreateTweet
+              onClose={() => setShowPost(false)}
+              show={showPost} /**profileImage="" profileUsername="" */
+            />
+          </div>
+        </div>
+      </div>
     </>
   );
 }
