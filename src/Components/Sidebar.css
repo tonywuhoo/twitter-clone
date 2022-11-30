@@ -47,23 +47,16 @@
 
 @media only screen and (max-width: 600px) {
   
-   .sidebar-container {
+  .sidebar-container {
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
-      margin: 0;
-      padding: 0;
+      bottom: 0;
   } 
 
   .sidebar {
-      display: none;
-  }
-
-  .side-bar-mobile {
-    display: block;
-    background-color: gray;
-    list-style: none;
-  
+   position: fixed;
+   bottom: 0;
+   flex-direction: row;
   }
 
   .side-bar-nav-container {
@@ -72,17 +65,5 @@
     align-content: flex-end;
     align-items: center;
   }
-
-  .side-bar-nav{
-    order: 0;
-    flex: 0 1 auto;
-    align-self: auto;
-    align-content: flex-end;
-  }
-
-  li {
-    list-style: none;
-  }
-
 
 }
