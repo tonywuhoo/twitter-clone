@@ -27,6 +27,7 @@ function CreateTweetModal(props) {
 				</div> */}
 				<div className="modal-body" onClick={(e) => e.stopPropagation()}>
 					<input
+						className="modal-input"
 						type="text"
 						id="tweetMessage"
 						name="tweetMessage"

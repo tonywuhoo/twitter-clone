@@ -50,14 +50,12 @@ function Sidebar() {
 					show={showCreateTweetModal}
 				/>
 				<Button
-					variant="outlined"
 					className="sidebar_Tweet"
 					fullWidth
 					onClick={() => setCreateTweetModal(true)}>
 					Post
 				</Button>
 			</div>
-
 			<div className="side-bar-mobile">
 				<Nav />
 			</div>
