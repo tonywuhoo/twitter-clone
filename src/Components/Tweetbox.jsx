@@ -5,7 +5,6 @@ import Avatar from "react-avatar";
 
 // or
 import { IconButton } from "@mui/material";
-
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 function sendTweet() {
