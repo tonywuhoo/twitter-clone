@@ -10,7 +10,7 @@
 	flex-direction: column;
 }
 
-.tweetBox input {
+.tweetBox {
   padding: 20px;
   display: flex;
 }
@@ -20,6 +20,8 @@
   margin-left: 20px;
   font-size: 20px;
   border: none;
+  width: 100%;
+  padding-left: 10px;
 }
 
 .tweetBox .feed_tweet_BTN {
