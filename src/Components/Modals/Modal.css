@@ -156,3 +156,18 @@ It controls not only the modal input fields*/
   width: 80px;
   height: 80px;
 }
+
+#tweetMessage{
+border: 4px solid black;
+width: 22em;
+height: 10em;
+background-color: #7ed95736;
+border-radius: 25px;
+overflow-y: scroll;
+overflow:hidden;
+
+}
+
+.character-counter{
+  color: red;
+}

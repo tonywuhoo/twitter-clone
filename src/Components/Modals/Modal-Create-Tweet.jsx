@@ -34,8 +34,8 @@ function ModalCreateTweet(props) {
           <input type="text" id="tweetMessage" name="tweetMessage" placeholder="What's Happening?" maxLength="180" onChange={handleChange}></input>
         </div>
         <div className="modal-footer">
-          <p>{characterCount}/180</p>
-          <button className="button" onClick={submitPost()}>Post</button>
+          <p className= "character-counter">{characterCount}/180</p>
+          <button className="modal-button" onClick={submitPost()}>Post</button>
         </div>
       </div>
     </div>
