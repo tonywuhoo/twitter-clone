@@ -1,7 +1,7 @@
 .widget {
 	flex: 0.7 1;
 	height: 100vh;
-	/* position: sticky; */
+	position: sticky;
 	top: 3%;
 	overflow: auto;
 	/* width: 500px; */
