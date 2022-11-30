@@ -54,6 +54,9 @@ function SignUpModal(props) {
 					</form>
 					<input type="submit" className="modal-button" value="Sign Up" />
 				</div>
+          <Button onClick={props.onClose} className="modal-button">
+					  	Close
+					</Button>
 			</div>
 		</div>
 	);
