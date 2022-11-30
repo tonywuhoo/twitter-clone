@@ -20,13 +20,16 @@ function Modal(props) {
       }
       const response = await doLogin(credentials)
       let accessToken = response.data.tokens
+      let emailOwner = response.data.email
+      emailOwner = emailOwner.toString()
+      Cookies.set("userEmail", emailOwner)
       accessToken = accessToken.split("'")
       if (response.data.email === Inputemail) {
         console.log(response.data)
         console.log("Logged in... Token is " + accessToken[7])
         Cookies.set('AccessToken', accessToken[7].toString())
         Cookies.set('User', response.data.username)
-        window.location.reload()
+        // window.location.reload()
       }
     } catch (error) {
       console.error(error)
