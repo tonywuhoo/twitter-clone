@@ -1,7 +1,8 @@
 body {
 	--twitter-color: #7ed957;
 	--money-color: #7ed957;
-	--twitter-background: #e6ecf0;
+	/* --twitter-background: #e6ecf0; */
+  background-color: red;
 }
 
 

@@ -1,9 +1,13 @@
 // import ProfilePage from './Components/Profile/ProfilePage';
-// import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Home from "./Screens/Home";
 import Cookies from 'js-cookie'
+import Sidebar from './Components/Sidebar';
+import Feed from './Screens/Feed';
+import Widget from './Components/Widget';
+import ProfilePage from './Components/Profile/ProfilePage';
 
 function App() {
   const [commentCrud, setCommentCrud] = useState([]);
@@ -12,16 +16,6 @@ function App() {
   const [toggleApiCall, setToggleApiCall] = useState(false);
   const [news, setNews] = useState([]);
 
-  // useEffect(() => {
-  //   const callApi = async () => {
-  //     const response = await getArtists();
-  //     setArtists(response);
-  //     const res = await getAlbums();
-  //     setAlbums(res);
-  //   };
-  //   callApi();
-  // }, [toggleApiCall]);
-
   useEffect(() => {
     if (Cookies.get("AccessToken") === undefined) {
       Cookies.set("AccessToken", "loggedout")
@@ -29,12 +23,15 @@ function App() {
     
   }, []);
   
-
   return (
-    // BEM
     <>
       <div className="app">
-        <Home />
+        <Sidebar />
+        
+        <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path="/profile" element={<ProfilePage />} />
+        </Routes>
       </div>
     </>
   );
