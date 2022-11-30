@@ -96,6 +96,7 @@ It controls not only the modal input fields*/
 /* Modal Title Text */
 .modal-title {
 	color: #7ed957;
+	text-align: center;
 }
 
 /* Sign In Modal */
@@ -147,6 +148,7 @@ It controls not only the modal input fields*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-bottom: 0px;
 }
 
 /* Create Tweet */
