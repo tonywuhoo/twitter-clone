@@ -13,7 +13,7 @@ import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import SmartButtonIcon from "@mui/icons-material/SmartButton";
 import Logo from ".././Components/shill.png";
 import Nav from "./Nav";
-import CreateTweetModal from "./Modals/Modal-Create-Tweet";
+import ModalCreateTweet from "./Modals/Modal-Create-Tweet";
 
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import { ImageOutlined } from "@mui/icons-material";
@@ -45,14 +45,20 @@ function Sidebar() {
 				<SidebarOption Icon={<ListAltIcon />} text="News" />
 				<SidebarOption Icon={<MoreHorizIcon />} text="More" />
 				{/* this is the 'tweet' button */}
-				<CreateTweetModal
-					onClose={() => setCreateTweetModal(false)}
+				<ModalCreateTweet
+					onClose={() => {
+						setCreateTweetModal(false);
+						document.querySelector(".sidebar-container").style.zIndex = 0;
+					}}
 					show={showCreateTweetModal}
 				/>
 				<Button
 					className="sidebar_Tweet"
 					fullWidth
-					onClick={() => setCreateTweetModal(true)}>
+					onClick={() => {
+						console.log("clicked");
+						setCreateTweetModal(true);
+					}}>
 					Post
 				</Button>
 			</div>
