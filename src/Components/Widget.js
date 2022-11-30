@@ -1,7 +1,7 @@
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import Coin from "../Components/Widgets/coin.jsx";
-// import "./Widget.css";
+import "./Widget.css";
 import Footer from "./Footer";
 import {
   TwitterTimelineEmbed,
@@ -54,21 +54,21 @@ function Widgets() {
             options={{ height: 400 }}
           /> */}
           <div className=" main-con h-80 !important">
-          {coins.slice(currentCoin, currentCoin + 10).map((coin) => {
-            return (
-              <Coin
-                key={coin.id}
-                name={coin.name}
-                price={coin.current_price}
-                symbol={coin.symbol}
-                marketcap={coin.total_volume}
-                volume={coin.market_cap}
-                image={coin.image}
-                priceChange={coin.price_change_percentage_24h}
-              />
-            );
-          })}
-        </div>
+            {coins.slice(currentCoin, currentCoin + 10).map((coin) => {
+              return (
+                <Coin
+                  key={coin.id}
+                  name={coin.name}
+                  price={coin.current_price}
+                  symbol={coin.symbol}
+                  marketcap={coin.total_volume}
+                  volume={coin.market_cap}
+                  image={coin.image}
+                  priceChange={coin.price_change_percentage_24h}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </>
