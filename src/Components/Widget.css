@@ -1,11 +1,10 @@
 .widgets {
 	flex: 0.8 1;
 	height: 100vh;
-	position: sticky;
+	position: initial;
 	top: 0%;
 	overflow: auto;
-  width: 500px;
-  
+	width: 500px;
 }
 
 .widgets__input {
@@ -33,6 +32,7 @@
 	padding: 20px;
 	background-color: #f5f8fa;
 	border-radius: 20px;
+	padding-bottom: 340px;
 }
 
 .widgets__widgetContainer > h2 {
@@ -42,8 +42,8 @@
 }
 
 .main-con {
-    height: 200px;
+	height: 200px;
 	width: 200px;
 	box-sizing: content-box;
 	width: 100%;
-  }
+}
