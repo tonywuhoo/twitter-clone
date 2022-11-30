@@ -19,7 +19,7 @@ function ModalCreateTweet(props) {
 	}
 	return (
 		<div className="modal" onClick={props.onClose}>
-			<div className="modal-content">
+			<div className="modal-content"  >
 				<div className="modal-header">
 					<img
 						className="profile-image"
