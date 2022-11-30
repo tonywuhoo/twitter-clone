@@ -41,7 +41,7 @@ function Sidebar() {
         {/* <SidebarOption Icon={<BookmarkBorderIcon />} text="Bookmarks" /> */}
         <SidebarOption Icon={<ListAltIcon />} text="Live Feed" />
         <SidebarOption Icon={<ListAltIcon />} text="News" />
-        <SidebarOption Icon={<MoreHorizIcon />} text="More" />
+        
         {/* this is the 'tweet' button */}
         <Button variant="outlined" className="sidebar_Tweet" fullWidth onClick={() => setShowPost(true)}>
           Post

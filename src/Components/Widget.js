@@ -12,9 +12,7 @@ import {
 function Widgets() {
   const [coins, setCoins] = useState([]);
   const [currentCoin, setCurrentCoin] = useState(0);
-
   let interval;
-
   useEffect(() => {
     const fetchCoinData = async () => {
       let res = await axios.get(
