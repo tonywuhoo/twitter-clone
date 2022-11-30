@@ -51,15 +51,8 @@ function SignUpModal(props) {
 							id="password"
 							onChange={handleChange}
 							placeholder="Create Password"></input>
-						<input type="submit" className="modal-button" value="Sign Up" />
-						<Button onClick={props.onClose} className="modal-button">
-							Close
-						</Button>
 					</form>
-					<Button className="modal-button">Sign Up</Button>
-					<Button onClick={props.onClose} className="modal-button2">
-						Close
-					</Button>
+					<input type="submit" className="modal-button" value="Sign Up" />
 				</div>
 			</div>
 		</div>
