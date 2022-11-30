@@ -1,18 +1,17 @@
 .footer-sign-in-up-button {
-  border-radius: 20px;
-  background-color: #7ed957;
-  border-color: #7ed957;
-  color: white;
-  height:25px;
-  margin: 8px;
-  
+	border-radius: 20px;
+	background-color: #7ed957;
+	border-color: #7ed957;
+	color: white;
+	height: 25px;
+	margin: 8px;
 }
 .footer-sign-in-up-container {
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-  padding: 15px;
-  padding-left: 25px;
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+	padding: 15px;
+	padding-left: 25px;
 }
 
 .footer-signed-in-container {
@@ -32,10 +31,20 @@
 }
 
 .modal-button {
+<<<<<<< HEAD
   width: 110px;
   border-radius: 25px !important;
   background-color: #7ed957 !important;
   border-color: #7ed957 !important;
   color: white !important;
   height:40px !important;
+=======
+	width: 110px;
+	border-radius: 25px !important;
+	background-color: #7ed957 !important;
+	border-color: #7ed957 !important;
+	color: white !important;
+	height: 40px !important;
+	position: initial !important;
+>>>>>>> 4d20fd07228ce0ab4e6ebde326085fa7afd0d6ba
 }

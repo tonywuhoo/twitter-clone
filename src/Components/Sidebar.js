@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Sidebar.css";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import SidebarOption from "./SidebarOption";
@@ -12,13 +12,16 @@ import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import SmartButtonIcon from "@mui/icons-material/SmartButton";
 import Logo from ".././Components/shill.png";
-import Nav from "./Nav";
+
+import ModalCreateTweet from "./Modals/Modal-Create-Tweet";
 
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import { ImageOutlined } from "@mui/icons-material";
 
 function Sidebar() {
+  const [showPost, setShowPost] = useState(false);
   return (
+    <>
     <div className="sidebar-container">
       <div className="sidebar">
         <img
@@ -42,14 +45,14 @@ function Sidebar() {
         <SidebarOption Icon={<ListAltIcon />} text="News" />
         <SidebarOption Icon={<MoreHorizIcon />} text="More" />
         {/* this is the 'tweet' button */}
-        <Button variant="outlined" className="sidebar_Tweet" fullWidth>
+        <Button variant="outlined" className="sidebar_Tweet" fullWidth onClick={() => setShowPost(true)}>
           Post
         </Button>
-      </div>
-      <div className="side-bar-mobile">
-        <Nav />
+        <ModalCreateTweet onClose={() => setShowPost(false)} show={showPost} /**profileImage="" profileUsername="" */ />
       </div>
     </div>
+   
+    </>
   );
 }
 
