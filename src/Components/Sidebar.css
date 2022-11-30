@@ -45,21 +45,24 @@
 }
 
 @media only screen and (max-width: 600px) {
-	.sidebar-container {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		margin: 0;
-		padding: 0;
-	}
+  
+  .sidebar-container {
+      display: flex;
+      flex-direction: row;
+      bottom: 0;
+  } 
 
-	.sidebar {
-		display: none;
-	}
+  .sidebar {
+   position: fixed;
+   bottom: 0;
+   flex-direction: row;
+  }
 
-	.side-bar-mobile {
-		display: block;
-		background-color: gray;
-		list-style: none;
-	}
+  .side-bar-nav-container {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-content: flex-end;
+    align-items: center;
+  }
+
 }

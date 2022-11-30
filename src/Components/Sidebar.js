@@ -49,8 +49,7 @@ function Sidebar() {
         </Button>
         <ModalCreateTweet onClose={() => setShowPost(false)} show={showPost} /**profileImage="" profileUsername="" */ />
       </div>
-      <div className="side-bar-mobile">
-      </div>
+   
     </div>
   );
 }
