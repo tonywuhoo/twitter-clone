@@ -28,11 +28,9 @@ function Tweetbox() {
   const handleChange = (event) => {
     if (event.target.id === "text") {
       setText(event.target.value)
-      console.log(event.target.value)
     }
     if (event.target.id === "image") {
       setImageURL(event.target.value)
-      console.log(event.target.value)
     }
   }  
 

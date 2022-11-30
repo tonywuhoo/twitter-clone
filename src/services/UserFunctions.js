@@ -3,7 +3,7 @@ import Cookies from 'js-cookie'
 
 export const doLogin = async (credentials) => {
   try {
-    const response = await axios.post("https://twitter-clone-backend-production-c9cc.up.railway.app/auth/login/",credentials);
+    const response = await axios.post("https://twitter-clone-backend-production-c9cc.up.railway.app/auth/login/", credentials);
     return response
   } catch (error) {
     throw error;

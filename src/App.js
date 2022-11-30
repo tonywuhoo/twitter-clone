@@ -1,13 +1,14 @@
-// import ProfilePage from './Components/Profile/ProfilePage';
+import ProfilePage from './Components/Profile/ProfilePage';
 import { Routes, Route } from 'react-router-dom';
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Home from "./Screens/Home";
-import Cookies from 'js-cookie'
+import Cookies from 'js-cookie';
+import { getPosts } from "./services/PostCrud";
 import Sidebar from './Components/Sidebar';
 import Feed from './Screens/Feed';
 import Widget from './Components/Widget';
-import ProfilePage from './Components/Profile/ProfilePage';
+
 
 function App() {
   const [commentCrud, setCommentCrud] = useState([]);
@@ -20,9 +21,8 @@ function App() {
     if (Cookies.get("AccessToken") === undefined) {
       Cookies.set("AccessToken", "loggedout")
     }
-    
   }, []);
-  
+
   return (
     <>
       <div className="app">
