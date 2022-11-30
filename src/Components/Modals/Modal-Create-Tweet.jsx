@@ -14,6 +14,10 @@ function ModalCreateTweet(props) {
     setCharacterCount(tweet.length);
   }
 
+  function submitPost() {
+    return props.onClose;
+  }
+
   if (!props.show) {
     return null
   }
@@ -29,7 +33,7 @@ function ModalCreateTweet(props) {
         </div>
         <div className="modal-footer">
           <p>{characterCount}/180</p>
-          <button className="button" onClick={props.onClose}>Post</button>
+          <button className="button" onClick={submitPost()}>Post</button>
         </div>
       </div>
     </div>
