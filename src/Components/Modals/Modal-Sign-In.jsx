@@ -4,7 +4,7 @@ import { doLogin } from "../../services/LoginFunction";
 import React, { useState } from "react";
 
 function Modal(props) {
-  const [Inputemail, setEmail] = useState("");
+  const [Inputmail, setEmail] = useState("");
   const [Inputpassword, setPassword] = useState("");
   if (!props.show) {
     return null
@@ -13,7 +13,7 @@ function Modal(props) {
     event.preventDefault()
     try {
       const credentials = {
-        email: Inputemail,
+        email: Inputmail,
         password: Inputpassword,
       }
       const response = await doLogin(credentials)
