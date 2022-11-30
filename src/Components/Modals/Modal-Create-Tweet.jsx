@@ -1,4 +1,4 @@
-import "Modal.css";
+import "./Modal.css";
 import React, { useState } from "react";
 
 function ModalCreateTweet(props) {
@@ -13,21 +13,18 @@ function ModalCreateTweet(props) {
 		setTweet(event.target.value);
 		setCharacterCount(tweet.length);
 	}
-	function submitPost() {
-		return props.onClose;
-	}
 
 	if (!props.show) {
 		return null;
 	}
 	return (
-		<div className="modal">
-			<div className="modal-content">
+		<div className="modal" onClick={props.onClose}>
+			<div className="modal-content" onClick={(e) => e.stopPropagation()}>
 				<div className="modal-header">
 					<img
 						className="profile-image"
 						src="https://imageio.forbes.com/specials-images/imageserve/5ceec355142c500008f42068/Rihanna-Diamond-Ball-Forbes-Women/0x0.jpg?format=jpg&crop=1950,1950,x32,y257,safe&height=1950&width=1950"
-						alt="Test profile image"></img>
+						alt="Test profile"></img>
 					<h1>@Rihanna</h1>
 				</div>
 				<div className="modal-body">
