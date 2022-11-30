@@ -6,7 +6,7 @@
 	padding-right: 20px;
 	height: 100vh;
 	position: sticky;
-	top: 3%;
+	
 	overflow: auto;
 }
 
@@ -42,22 +42,32 @@
 
 @media only screen and (max-width: 600px) {
   
-  /* .sidebar-container {
-    overflow: hidden;
-    position: fixed;
-    bottom: 0;
-    margin: 0;
-    display: flex;
+  .sidebar-container {
+  
   } 
 
   .sidebar {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    background-color: red;
+	display: flex;
+	
+	left:0;
+   position: fixed;
+   bottom: 0;
+   height: auto;
+   flex-direction: row;
+   background: green;
+ 
+  }
+
+  .side-bar-nav-container {
     display: inline-flex;
-    height: 55px;
-  } */
+    justify-content: flex-start;
+    align-content: flex-end;
+    align-items: center;
+  }
+  .profile-photo {
+	height: 30px;
+	align-items: center;
+
+  }
 
 }
