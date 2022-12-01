@@ -17,65 +17,62 @@ import { ImageOutlined } from "@mui/icons-material";
 import { NavLink } from "react-router-dom";
 
 function Sidebar() {
-	const [showPost, setShowPost] = useState(false);
-	return (
-		<>
-			<div className="sidebar-container">
-				<div className="sidebar">
-					<img
-						className="sidebar-profile-photo"
-						src={Logo}
-						alt={"Shill Site"}
-						width="80px"
-					/>
-					<NavLink to="/">
-						<SidebarOption
-							className="side-bar-icon"
-							active
-							Icon={<HomeIcon />}
-							text="$hill"
-							image={Logo}
-							src="https://freeimage.host/i/HFl919t"
-						/>
-					</NavLink>
+  const [showPost, setShowPost] = useState(false);
+  return (
+    <>
+      <div className="sidebar-container">
+        <div className="sidebar">
+          <img
+            className="sidebar-profile-photo"
+            src={Logo}
+            alt={"Shill Site"}
+            width="80px"
+          />
+          <NavLink to="/">
+            <SidebarOption
+              className="side-bar-icon"
+              active
+              Icon={<HomeIcon />}
+              text="$hill"
+              image={Logo}
+              src="https://freeimage.host/i/HFl919t"
+            />
+          </NavLink>
 
-					<NavLink to="/profile">
-						<SidebarOption Icon={<PermIdentityIcon />} text="Profile" />{" "}
-					</NavLink>
-					{/* <SidebarOption Icon={<NotificationsNoneIcon />} text="Notifications" /> */}
-					{/* <SidebarOption Icon={<MailOutlineIcon />} text="Messages" /> */}
-					{/* <SidebarOption Icon={<BookmarkBorderIcon />} text="Bookmarks" /> */}
-					<div className="sidebar-hide-icon">
-						<SidebarOption Icon={<ListAltIcon />} text="Feed" />
-					</div>
+          <NavLink to="/profile">
+            <SidebarOption Icon={<PermIdentityIcon />} text="Profile" />{" "}
+          </NavLink>
 
-					<SidebarOption Icon={<ListAltIcon />} text="News" />
+          <div className="sidebar-hide-icon">
+            <SidebarOption Icon={<ListAltIcon />} text="Crypto" />
+          </div>
 
-					{/* this is the 'tweet' button */}
-					<div className="sidebar-post-button">
-						<Button
-							variant="outlined"
-							className="sidebar_Tweet"
-							fullWidth
-							onClick={() => {
-								console.log("clicked");
-								setShowPost(true);
-								document.querySelector(".sidebar-container").style.zIndex = 1;
-							}}>
-							Post
-						</Button>
-						<ModalCreateTweet
-							onClose={() => {
-								setShowPost(false);
-								document.querySelector(".sidebar-container").style.zIndex = 0;
-							}}
-							show={showPost} /**profileImage="" profileUsername="" */
-						/>
-					</div>
-				</div>
-			</div>
-		</>
-	);
+          {/* this is the 'tweet' button */}
+          <div className="sidebar-post-button">
+            <Button
+              variant="outlined"
+              className="sidebar_Tweet"
+              fullWidth
+              onClick={() => {
+                console.log("clicked");
+                setShowPost(true);
+                document.querySelector(".sidebar-container").style.zIndex = 1;
+              }}
+            >
+              Post
+            </Button>
+            <ModalCreateTweet
+              onClose={() => {
+                setShowPost(false);
+                document.querySelector(".sidebar-container").style.zIndex = 0;
+              }}
+              show={showPost} /**profileImage="" profileUsername="" */
+            />
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default Sidebar;
