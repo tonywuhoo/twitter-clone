@@ -36,6 +36,7 @@ function Tweetbox() {
 
 	return (
 		<div className="tweetBox">
+<<<<<<< HEAD:src/Components/Screens/Tweetbox.jsx
 			<form onSubmit={doSubmit}>
 				<div className="tweetBox-input">
 					<input
@@ -46,6 +47,17 @@ function Tweetbox() {
 						size="2rem"
 						onChange={handleChange}
 					/>
+=======
+			<form onSubmit={ doSubmit }>
+        <div className="tweetBox-input">
+          <textarea
+            id = "text"
+            className="tweetBox-input"
+            placeholder="What's happening, tweed?"
+            type="text"
+            size="2rem"
+            onChange={handleChange}/>
+>>>>>>> development:src/Components/Tweetbox.jsx
 				</div>
 				<input
 					id="image"
