@@ -43,28 +43,13 @@ function App() {
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/crypto" element={<Widget />} />
           {/* <Route path="/news" element={<Widget />} /> */}
+          <Route path="/news" element=
+            {<News />}
+          />
         </Routes>
       </div>
     </>
   );
-	return (
-		<>
-			<div className="app">
-				<Routes>
-          <Route path="/" element={<Home
-             toggleApiCall={toggleApiCall}
-             setToggleApiCall={setToggleApiCall}
-             post = {post}
-          />} />
-          <Route path="/profile" element={<ProfilePage />}
-          />
-          <Route path="/news" element=
-            {<News />}
-          />
-				</Routes>
-			</div>
-		</>
-	);
 }
 
 export default App;
