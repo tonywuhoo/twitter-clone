@@ -40,7 +40,7 @@ function Sidebar() {
 
           <NavLink to="/crypto" className="sidebar-hide-icon">
             <div className="sidebar-crypto-mobile">Crypto</div>
-            <SidebarOption Icon={<ListAltIcon />} text="Crypto" />
+            <SidebarOption Icon={<BsCoin />} />
           </NavLink>
 
           <NavLink to="/news">

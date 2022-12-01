@@ -4,6 +4,7 @@ import axios from "axios";
 import Coin from "./coin.jsx";
 import "./Widget.css";
 import Footer from "./Footer";
+import Sidebar from "../../Sidebar.js";
 
 function Widgets() {
 	const [coins, setCoins] = useState([]);
@@ -60,13 +61,16 @@ function Widgets() {
 									volume={coin.market_cap}
 									image={coin.image}
 									priceChange={coin.price_change_percentage_24h}
-								/>
+                />
+               
 							);
 						})}
-					</div>
+          </div>
+          <Sidebar />
 				</div>
 			</div>
-		</div>
+    </div>
+
 	);
 }
 
