@@ -3,11 +3,6 @@ import axios from "axios";
 import Coin from "./coin.jsx";
 import "./Widget.css";
 import Footer from "./Footer";
-import {
-	TwitterTimelineEmbed,
-	TwitterShareButton,
-	TwitterTweetEmbed,
-} from "react-twitter-embed";
 
 function Widgets() {
 	const [coins, setCoins] = useState([]);
@@ -42,15 +37,8 @@ function Widgets() {
 				</div>
 
 				<div className="widgets__widgetContainer">
-					<h2>Top $hills</h2>
+					<h2>Crypto</h2>
 
-					{/* <TwitterTweetEmbed tweetId={"1595780526656262148"} />
-
-          <TwitterTimelineEmbed
-            sourceType="profile"
-            screenName="pkedrosky"
-            options={{ height: 400 }}
-          /> */}
 					<div className="main-con">
 						{coins.slice(currentCoin, currentCoin + 10).map((coin) => {
 							return (
