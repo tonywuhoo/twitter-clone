@@ -12,6 +12,25 @@ async function reverseObject(Input) {
   return output
 }
 
+export const editPost = async () => {
+  try {
+  const config = {
+    headers: {
+      "Authorization": `Bearer ${Cookies.get("AccessToken")}`,
+    },
+  };
+  let response = await axios.put(`https://twitter-clone-backend-production-c9cc.up.railway.app/user/posts/99`,
+    { text: "Edit works" }, config)
+    console.log(response)
+    
+
+  } catch (error) {
+    throw error;
+  }
+};
+
+
+
 export const getPosts = async () => {
   try {
     let response = await axios.get("https://twitter-clone-backend-production-c9cc.up.railway.app/allposts/")
@@ -50,9 +69,9 @@ export const createPost = async (content) => {
     }
     return response.data
   } catch (error) {
-    // if (error = "Failed to load resource: the server responded with a status of 500 ()") {
-    //   alert("Image cannot be a .webm, try with jpg/png")
-    // }
+    if (error = "Failed to load resource: the server responded with a status of 500 ()") {
+      alert("Image cannot be a .webm, try with jpg/png")
+    }
     throw error;
   }
 };
