@@ -12,17 +12,17 @@ async function reverseObject(Input) {
   return output
 }
 
-export const editPost = async () => {
+export const editPost = async (content, postID) => {
   try {
   const config = {
     headers: {
       "Authorization": `Bearer ${Cookies.get("AccessToken")}`,
     },
   };
-  let response = await axios.put(`https://twitter-clone-backend-production-c9cc.up.railway.app/user/posts/99`,
-    { text: "Edit works" }, config)
+  let response = await axios.put(`https://twitter-clone-backend-production-c9cc.up.railway.app/user/posts/` + postID,
+    content, config)
     console.log(response)
-    // window.location.reload()
+    window.location.reload()
   } catch (error) {
     throw error;
   }
@@ -63,7 +63,6 @@ export const createPost = async (content) => {
     let response = await axios.post(`https://twitter-clone-backend-production-c9cc.up.railway.app/user/posts/`, content, config)
     console.log(response)
     if (response.status === 201) {
-      alert("Post successful!")
       
     }
     return response.data
@@ -85,7 +84,6 @@ export const deletePost = async (post) => {
     };
     let response = await axios.delete(`https://twitter-clone-backend-production-c9cc.up.railway.app/user/posts/` + post, config)
     console.log(response)
-    alert("Post deleted")
     window.location.reload()
 
     console.log(post)

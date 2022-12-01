@@ -18,9 +18,10 @@ function ModalCreateTweet(props) {
     try {
       const content = {
         text: tweet,
-        title: "Title",
+        title: "Text",
       }
       await createPost(content)
+      window.location.reload()
     } catch (error) {
       throw error;
     }
@@ -38,7 +39,7 @@ function ModalCreateTweet(props) {
 						className="profile-image"
 						src="https://imageio.forbes.com/specials-images/imageserve/5ceec355142c500008f42068/Rihanna-Diamond-Ball-Forbes-Women/0x0.jpg?format=jpg&crop=1950,1950,x32,y257,safe&height=1950&width=1950"
 						alt="Test profile"></img>
-					<h1>{Cookies.get("User")}</h1>
+					<h1>@{Cookies.get("User")}</h1>
 				</div>
         <div className="modal-body">
           <textarea
@@ -49,6 +50,16 @@ function ModalCreateTweet(props) {
             maxLength="280"
             onChange={handleChange}>
           </textarea>
+          <br></br>
+          <textarea
+            className="text-area"
+            id="tweetImage"
+            name="tweetImage"
+            placeholder="Input ImageURL"
+            maxLength="280"
+            onChange={handleChange}>
+          </textarea>
+          
 				</div>
 				<div className="modal-footer">
 					<p className="character-counter">{characterCount}/280</p>
