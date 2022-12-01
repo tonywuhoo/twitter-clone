@@ -1,32 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Feed.css";
-import { getPosts } from "../../services/PostCrud";
 import Tweetbox from "./Tweetbox";
 import Post from "./Post.jsx";
 
-function Feed() {
-	const [post, setPosts] = useState();
-
-	useEffect(() => {
-		async function grabPosts() {
-			let response = await getPosts();
-			// await??
-			setPosts(response.data);
-			console.log(response.data);
-		}
-
-		grabPosts();
-	}, []);
-
+function Feed({ setToggleApiCall, toggleApiCall, post }) {
 	return (
 		<div className="feed-container">
 			<div className="feed">
 			
-				<Tweetbox />
-				<Post post={post} />
+        <Tweetbox
+          post={post}
+          setToggleApiCall={setToggleApiCall}
+          toggleApiCall={toggleApiCall} />
+        <Post
+        post={post}
+        setToggleApiCall={setToggleApiCall}
+        toggleApiCall = {toggleApiCall} />
 			</div>
-			{/* <Tweetbox />
-			<Post /> */}
 		</div>
 	);
 }

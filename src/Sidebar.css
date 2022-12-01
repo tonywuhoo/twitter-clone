@@ -4,14 +4,10 @@ a {
 }
 
 .sidebar {
-	border-right: 1px solid var(--twitter-background);
-	flex: 0.3 1;
-	margin-top: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
+	flex: 0.7 1;
 	height: 100vh;
 	position: sticky;
-	
+	top: 3%;
 	overflow: auto;
 }
 
@@ -56,6 +52,8 @@ a {
 		position: fixed;
 		bottom: 0;
 		height: 50px;
+    width: 100%;
+    align-items: center;
 		flex-direction: row;
 		background-color: #f5f8fa;
 	}
@@ -67,6 +65,7 @@ a {
   .sidebar-hide-icon{
     display: block;
   }
+  
   .sidebar-post-button{
     display: none;
   }

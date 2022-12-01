@@ -4,12 +4,15 @@ import Feed from "./Feed";
 import Widget from "../Widgets/Widget";
 import "./Home.css";
 
-function Home() {
+function Home({setToggleApiCall, post , toggleApiCall}) {
 
 	return (
 		<div className="home">
 			<Sidebar />
-			<Feed />
+      <Feed
+        setToggleApiCall={setToggleApiCall}
+        post={post}
+        toggleApiCall={toggleApiCall}/>
 			<Widget />
 </div>
 	);

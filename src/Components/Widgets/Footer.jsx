@@ -1,18 +1,15 @@
 import SignUpModal from "../Modals/Modal-Sign-Up";
 import Modal from "../Modals/Modal-Sign-In";
 import { doLogout } from "../../services/UserFunctions";
-import UserModal from "../Modals/Modal-UserModal";
 import { useState } from "react";
 import "../Modals/Modal.css";
 import "./Footer.css";
 import Button from "@mui/material/Button";
-import { SignpostOutlined } from "@mui/icons-material";
 import Cookies from "js-cookie";
 function Footer() {
 	const [showSignInModal, setShowSignInModal] = useState(false);
-	const [showSignUpModal, setSignUpModal] = useState(false);
-	const [showUserModal, setUserModal] = useState(false);
-
+  const [showSignUpModal, setSignUpModal] = useState(false);
+  
 	return (
 		<>
 			{Cookies.get("AccessToken") === "loggedout" && (

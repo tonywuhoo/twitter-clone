@@ -1,7 +1,7 @@
 import "./Modal.css";
 import Button from "@mui/material/Button";
 import React, { useState } from "react";
-import { doRegister } from "../../services/UserFunctions";
+import { doRegister } from "../../services/UserFunctions"
 
 function SignUpModal(props) {
   const [Inputemail, setEmail] = useState("");
@@ -29,7 +29,6 @@ function SignUpModal(props) {
       );
     }
   };
-
   const handleChange = async (event) => {
     if (event.target.id === "email") {
       setEmail(event.target.value);
@@ -69,13 +68,15 @@ function SignUpModal(props) {
             ></input>
             <input
               className="modal-input"
+              type = "password"
               id="password"
               onChange={handleChange}
               placeholder="Create Password"
             ></input>
+            <br></br>
+            <input type="submit" className="modal-button" value="Sign Up" />
           </form>
         </div>
-        <input type="submit" className="modal-button" value="Sign Up" />
         <Button onClick={props.onClose} className="modal-button">
           Close
         </Button>
