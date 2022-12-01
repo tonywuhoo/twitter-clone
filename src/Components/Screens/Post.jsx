@@ -18,10 +18,12 @@ function Post({ post }) {
               <div className="postImageURL">
                 <img src = {post.title} />
               </div>
-              <button>Comments</button>
+              <div className ="buttonsContainer"> 
+              <button className= 'commentsButton'>Comments</button>
               {post != null && <>
-              <button>Delete Post</button></>}
-            </div>
+              <button className = "deletePostButton">Delete Post</button></>}
+              </div>
+              </div>
           </div>
       ))}
       </>}
