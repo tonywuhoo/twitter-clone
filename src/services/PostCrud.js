@@ -2,10 +2,23 @@ import api from "./apiConfig.js";
 import Cookies from 'js-cookie'
 import axios from "axios";
 
+async function reverseObject(Input) {
+  let output = []
+  console.log(Input.reverse())
+  for (let i = 0; i < Input; i++){
+    output.push(Input[i])
+    console.log(Input[i])
+  }
+  return output
+}
+
 export const getPosts = async () => {
   try {
     let response = await axios.get("https://twitter-clone-backend-production-c9cc.up.railway.app/allposts/")
-    return response
+    let reversedPost = await reverseObject(response.data)
+    console.log(reversedPost)
+
+    return response.data
   } catch (error) {
     throw error;
   }
@@ -34,6 +47,7 @@ export const createPost = async (content) => {
     console.log(response)
     if (response.status === 201) {
       alert("Post successful!")
+      
     }
   } catch (error) {
     

@@ -10,8 +10,21 @@ function App() {
   const [commentCrud, setCommentCrud] = useState([]);
   const [postCrud, setPostCrud] = useState([]);
   const [userCrud, setUserCrud] = useState([]);
-  const [toggleApiCall, setToggleApiCall] = useState(false);
   const [news, setNews] = useState([]);
+
+
+  const [post, setPosts] = useState()
+  const [toggleApiCall, setToggleApiCall] = useState(false);
+
+
+  useEffect(() => {
+    const grabPosts = async () => {
+      const response = await getPosts();
+      setPosts(response)
+      console.log(response)
+    };
+    grabPosts();
+  }, [toggleApiCall]);
 
 
   useEffect(() => {
@@ -23,7 +36,10 @@ function App() {
   return (
     <>
       <div className="app">
-        <Home />
+        <Home
+          toggleApiCall={toggleApiCall}
+          setToggleApiCall={setToggleApiCall}
+          post = {post} />
       </div>
     </>
   );

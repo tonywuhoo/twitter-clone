@@ -8,21 +8,30 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { useState } from "react";
 import Cookies from 'js-cookie'
 
-function Tweetbox() {
+function Tweetbox({ setToggleApiCall, toggleApiCall }) {
   const [imageURL, setImageURL] = useState("");
   const [text, setText] = useState("");
-  
-  const doSubmit = (event) => {
+
+  function getData() {
+    console.log("Refreshing Feed")
+    if (toggleApiCall === true) {
+      setToggleApiCall(false)
+    }
+    if (toggleApiCall === false) {
+      setToggleApiCall(true)
+    }
+  }
+
+  const doSubmit = async (event) => {
     event.preventDefault()
-    try {
       const content = {
         text: text,
         title: imageURL,
       }
-      createPost(content)
-    } catch (error) {
-      throw error;
-    }
+    await createPost(content)
+    getData()
+    document.getElementById("image").value = ""
+    document.getElementById("text").value = ""
   };
 
   const handleChange = (event) => {

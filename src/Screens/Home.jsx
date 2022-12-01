@@ -7,22 +7,15 @@ import Widget from "../Components/Widget";
 import "./Home.css";
 
 
-function Home() {
-	// useEffect(() => {
-	//   const callApi = async () => {
-	//     const response = await getArtists();
-	//     setArtists(response);
-	//     const res = await getAlbums();
-	//     setAlbums(res);
-	//   };
-	//   callApi();
-	// }, [toggleApiCall]);
-
+function Home({setToggleApiCall, post , toggleApiCall}) {
 	return (
-		// BEM
 		<div className="home">
 			<Sidebar />
-			<Feed />
+      <Feed
+        setToggleApiCall = {setToggleApiCall}
+        post = {post}
+        toggleApiCall = {toggleApiCall}
+      />
 			<Widget />
 		</div>
 	);
