@@ -1,30 +1,30 @@
 import { useState, useEffect } from "react";
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 import axios from "axios";
-import Coin from "./coin.jsx";
+import Coin from "./Coin.jsx";
 import "./Widget.css";
 import Footer from "./Footer";
 import Sidebar from "../../Sidebar.js";
 
 function Widgets() {
 	const [coins, setCoins] = useState([]);
-  const [currentCoin, setCurrentCoin] = useState(0);
-  const { pathname } = useLocation()
-  let interval;
-  
+	const [currentCoin, setCurrentCoin] = useState(0);
+	const { pathname } = useLocation();
+	let interval;
+
 	useEffect(() => {
 		const fetchCoinData = async () => {
 			let res = await axios.get(
 				"https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=300&page=1&sparkline=false",
 			);
 			setCoins(res.data);
-      interval = setInterval(() => updateCurrCoin(res.data), 3000);
-      if (pathname === "/crypto") {
-        document.querySelectorAll(".hidden-mobile").forEach((card) => {
-          card.classList.remove("hidden-mobile")
-        })
-        // document.querySelector(".hidden-mobile").style.width = "100%"
-      }
+			interval = setInterval(() => updateCurrCoin(res.data), 3000);
+			if (pathname === "/crypto") {
+				document.querySelectorAll(".hidden-mobile").forEach((card) => {
+					card.classList.remove("hidden-mobile");
+				});
+				// document.querySelector(".hidden-mobile").style.width = "100%"
+			}
 		};
 
 		fetchCoinData();
