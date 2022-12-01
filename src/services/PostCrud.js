@@ -61,6 +61,16 @@ export const createPost = async (content) => {
 
 export const deletePost = async (post) => {
   try {
+    const config = {
+      headers: {
+        "Authorization": `Bearer ${Cookies.get("AccessToken")}`,
+      },
+    };
+    let response = await axios.delete(`https://twitter-clone-backend-production-c9cc.up.railway.app/user/posts/` + post, config)
+    console.log(response)
+    alert("Post deleted")
+    window.location.reload()
+
     console.log(post)
   } catch (error) {
     throw error;
