@@ -36,7 +36,6 @@ export const createPost = async (content) => {
     if (Cookies.get("AccessToken") === undefined || Cookies.get("AccessToken") === "loggedout") {
       alert("Please log in to create a post!")
     }
-
     const config = {
       headers: {
         "Authorization": `Bearer ${Cookies.get("AccessToken")}`,
@@ -51,9 +50,9 @@ export const createPost = async (content) => {
     }
     return response.data
   } catch (error) {
-    if (error = "Failed to load resource: the server responded with a status of 500 ()") {
-      alert("Image cannot be a .webm, try with jpg/png")
-    }
+    // if (error = "Failed to load resource: the server responded with a status of 500 ()") {
+    //   alert("Image cannot be a .webm, try with jpg/png")
+    // }
     throw error;
   }
 };
