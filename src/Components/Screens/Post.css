@@ -1,18 +1,24 @@
 .post{
   display: flex;
   flex-direction: column;
-  border-radius: 1px;
-  background-color:rgba(255,255,255, 1);
+  background-color:rgba(131, 244, 129, 0.068);
   margin-left: 20px;
+  border-radius: 25px;
+  font-size: 1.2em;
+}
+
+.postText{
 }
 
 .username {
-  border: 1px solid black;
+  font-size: .8em;
+  text-align: center;
 }
 
 .post-container {
   margin: 30px;
-  border: 1px solid green;
+  border: 4px double green;
+  border-radius: 25px;
 }
 
 .buttonsContainer{
@@ -34,7 +40,7 @@
 .deletePostButton{
   width: 110px;
 	border-radius: 25px !important;
-	background-color:#589a3c !important;
+	background-color:#41722c !important;
 	border-color: #7ed957 !important;
 	color: white !important;
 	height: 40px !important;
