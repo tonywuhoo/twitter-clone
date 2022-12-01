@@ -14,7 +14,7 @@ function Home({setToggleApiCall, post , toggleApiCall}) {
         post={post}
         toggleApiCall={toggleApiCall}/>
 			<Widget />
-</div>
+    </div>
 	);
 }
 

@@ -3,29 +3,50 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Components/Screens/Home";
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import Cookies from 'js-cookie';
+import Cookies from "js-cookie";
 import { getPosts } from "./services/PostCrud";
+import Widget from "./Components/Widgets/Widget";
 import News from "./Components/Screens/News.jsx";
 
 function App() {
-  const [post, setPosts] = useState()
+  const [post, setPosts] = useState();
   const [toggleApiCall, setToggleApiCall] = useState(false);
-
 
   useEffect(() => {
     const grabPosts = async () => {
       const response = await getPosts();
-      setPosts(response)
+      setPosts(response);
     };
     grabPosts();
   }, [toggleApiCall]);
 
   useEffect(() => {
     if (Cookies.get("AccessToken") === undefined) {
-      Cookies.set("AccessToken", "loggedout")
+      Cookies.set("AccessToken", "loggedout");
     }
   }, []);
 
+  return (
+    <>
+      <div className="app">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Home
+                toggleApiCall={toggleApiCall}
+                setToggleApiCall={setToggleApiCall}
+                post={post}
+              />
+            }
+          />
+          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/crypto" element={<Widget />} />
+          {/* <Route path="/news" element={<Widget />} /> */}
+        </Routes>
+      </div>
+    </>
+  );
 	return (
 		<>
 			<div className="app">
@@ -47,4 +68,3 @@ function App() {
 }
 
 export default App;
-

@@ -1,6 +1,19 @@
 import React from "react";
 import "./Post.css";
+import Cookies from "js-cookie";
+import { deletePost } from "../../services/PostCrud"
+import { editPost} from "../../services/PostCrud"
+
 function Post({ post }) {
+
+  function doDelete(event) {
+    deletePost(event.target.id)
+  }
+
+  function doEdit(event) {
+    alert("Editing Post...")
+    editPost()
+  }
   
 	return (
     <div className="post">
@@ -8,19 +21,23 @@ function Post({ post }) {
         {post.map((post,i) => (
           <div key = { i } className="post-container">
             <div className="post">
-              <div className="username">
+              <div className="username">2
                 @{post.owner}
               </div>
               <div className="postText"></div>
               {post.text}
               <div className="postText"></div>
-
               <div className="postImageURL">
-                <img src = {post.title} />
+                {post.title != "Text" && post.owner === Cookies.get("userEmail") && <>
+                  <img src={post.title} /></>}
               </div>
-              <button>Comments</button>
-              {post != null && <>
-              <button>Delete Post</button></>}
+              <div className ="buttonsContainer"> 
+              <button className= 'commentsButton'>Comments</button>
+              {post != null && post.owner === Cookies.get("userEmail") && <>
+                <button className = "deletePostButton" id={post.id} onClick={doDelete} >Delete Post</button></>}
+              {post != null && post.owner === Cookies.get("userEmail") && <>
+                <button className= "editPostButton" id= {post.id} onClick= { doEdit } >Edit Post</button></>}
+            </div>
             </div>
           </div>
       ))}
