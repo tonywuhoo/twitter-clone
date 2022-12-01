@@ -61,7 +61,9 @@
 	  display: none;
 	}
 
- 
+ .widget-hide-nav-bar{
+  display: block;
+ }
   .widget-container {
     width: 100%;
   }
