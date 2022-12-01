@@ -2,18 +2,11 @@ import React, { useState } from "react";
 import "./Sidebar.css";
 import SidebarOption from "./Components/SidebarOptions/SidebarOption";
 import HomeIcon from "@mui/icons-material/Home";
-import SearchIcon from "@mui/icons-material/Search";
 import Button from "@mui/material/Button";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import ListAltIcon from "@mui/icons-material/ListAlt";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
-import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
-import SmartButtonIcon from "@mui/icons-material/SmartButton";
 import Logo from "./shill.png";
 import ModalCreateTweet from "./Components/Modals/Modal-Create-Tweet";
-import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
-import { ImageOutlined } from "@mui/icons-material";
 import { NavLink } from "react-router-dom";
 
 function Sidebar() {

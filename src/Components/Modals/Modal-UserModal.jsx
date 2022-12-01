@@ -1,6 +1,6 @@
 import "./Modal.css"
 import Button from '@mui/material/Button';
-import React, { useState } from "react";
+import React from "react";
 
 function UserModal(props) {
   return (

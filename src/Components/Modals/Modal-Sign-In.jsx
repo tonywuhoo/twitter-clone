@@ -16,7 +16,7 @@ function Modal(props) {
 		try {
 			const credentials = {
 				email: Inputemail,
-				password: Inputpassword,
+				password: Inputpassword,  
 			};
 			const response = await doLogin(credentials);
 			let accessToken = response.data.tokens;
@@ -61,10 +61,11 @@ function Modal(props) {
 							type="password"
 							onChange={handleChange}
 							id="password"
-							placeholder="Password"></input>
+              placeholder="Password"></input>
+            <br></br>
+              <input type="submit" className="modal-button" value="Sign In" />
 					</form>
 				</div>
-				<input type="submit" className="modal-button" value="Sign In" />
 				<Button onClick={props.onClose} className="modal-button">
 					Close
 				</Button>

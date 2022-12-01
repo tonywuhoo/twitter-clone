@@ -1,16 +1,22 @@
 import React from "react";
 import "./TweetBox.css";
 import Button from "@mui/material/Button";
-import Avatar from "react-avatar";
 import { createPost } from "../../services/PostCrud";
-import { IconButton } from "@mui/material";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { useState } from "react";
-import Cookies from "js-cookie";
 
-function Tweetbox() {
+function Tweetbox({ setToggleApiCall, toggleApiCall, post }) {
   const [imageURL, setImageURL] = useState("");
   const [text, setText] = useState("");
+
+  function getData() {
+    console.log("Refreshing Feed")
+    if (toggleApiCall === true) {
+      setToggleApiCall(false)
+    }
+    if (toggleApiCall === false) {
+      setToggleApiCall(true)
+    }
+  }
 
   const doSubmit = async (event) => {
     event.preventDefault();
@@ -20,6 +26,9 @@ function Tweetbox() {
         title: imageURL,
       };
       await createPost(content);
+      getData()
+      document.getElementById("image").value = ""
+      document.getElementById("text").value = ""
     } catch (error) {
       throw error;
     }
@@ -47,13 +56,13 @@ function Tweetbox() {
             onChange={handleChange}
           />
         </div>
-        {/* <input
+        <input
 					id="image"
 					className="tweetBox-inputImage"
 					placeholder="Enter image URL"
 					type="text"
 					onChange={handleChange}
-				/> */}
+				/>
 
         <Button
           variant="outlined"

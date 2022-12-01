@@ -1,17 +1,32 @@
-import React, { forwardRef } from "react";
+import React from "react";
 import "./Post.css";
-import { getPosts } from "../../services/PostCrud";
-import { useState, useEffect } from "react";
-
-function Post(props) {
-	function getData() {
-		console.log(props.post);
-	}
+function Post({ post }) {
+  
 	return (
-		<div className="post">
-			<button onClick={getData}>Click</button>
+    <div className="post">
+      { post != null && <>
+        {post.map((post,i) => (
+          <div key = { i } className="post-container">
+            <div className="post">
+              <div className="username">
+                @{post.owner}
+              </div>
+              <div className="postText"></div>
+              {post.text}
+              <div className="postText"></div>
+
+              <div className="postImageURL">
+                <img src = {post.title} />
+              </div>
+              <button>Comments</button>
+              {post != null && <>
+              <button>Delete Post</button></>}
+            </div>
+          </div>
+      ))}
+      </>}
 		</div>
 	);
-}
+};
 
 export default Post;
