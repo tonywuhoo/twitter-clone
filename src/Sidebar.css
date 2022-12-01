@@ -1,0 +1,81 @@
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.sidebar {
+	flex: 0.7 1;
+	/* height: 100vh; */
+	position: sticky;
+	overflow: auto;
+	margin-right: 60px;
+}
+
+.sidebar-hide-icon {
+	display: none;
+}
+
+.sidebar_tweet {
+	background-color: var(--twitter-color) !important;
+	border: none !important;
+	color: white !important;
+	text-transform: inherit !important;
+	font-weight: 900 !important;
+	border-radius: 30px !important;
+	height: 50px !important;
+	margin-top: 20px !important;
+}
+
+.sidebar-twitterIcon {
+	color: var(--twitter-color);
+	font-size: 30px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.sidebar_Tweet {
+	background-color: var(--twitter-color) !important;
+	border: none !important;
+	color: white !important;
+	font-weight: 900 !important;
+	text-transform: inherit !important;
+	border-radius: 30px !important;
+	height: 50px !important;
+	margin-top: 20px !important;
+	max-width: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+	.sidebar {
+		display: flex;
+		left: 0;
+		position: fixed;
+		bottom: 0;
+		height: 50px;
+		width: 100%;
+		align-items: center;
+		flex-direction: row;
+		background-color: #f5f8fa;
+	}
+
+	.sidebar-profile-photo {
+		display: none;
+	}
+
+  .side-bar-coin-icon{
+    height: 80px;
+  }
+
+	.sidebar-hide-icon {
+		display: block;
+	}
+
+	.sidebar-post-button {
+		display: none;
+	}
+
+  .sidebar-crypto-mobile{
+    display: none;
+  
+  }
+}
