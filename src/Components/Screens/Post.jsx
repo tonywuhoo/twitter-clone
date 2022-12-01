@@ -33,19 +33,19 @@ function Post({ post }) {
               {post.text}
               <div className="postText"></div>
               <div className="postImageURL">
-                {post.title != "Text" && post.owner === Cookies.get("userEmail") && <>
+                {post.title != "Text" && <>
                   <img src={post.title} /></>}
               </div>
               <div className ="buttonsContainer"> 
               <button className= 'commentsButton'>Comments</button>
               {post != null && post.owner === Cookies.get("userEmail") && <>
-                <button className = "deletePostButton" id={post.id} onClick={doDelete} >Delete Post</button></>}
               {post != null && post.owner === Cookies.get("userEmail") && <>
                 <ModalEditTweet
                 editID = {editID}
                 onClose={() => setShowEdit(false)}
                 show={showEdit}/>
                 <button className= "editPostButton" id= {post.id} onClick= {doEdit} >Edit Post</button></>}
+                <button className = "deletePostButton" id={post.id} onClick={doDelete} >Delete Post</button></>}
             </div>
             </div>
           </div>
