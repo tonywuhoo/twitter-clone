@@ -21,7 +21,7 @@ function Post({ post }) {
         {post.map((post,i) => (
           <div key = { i } className="post-container">
             <div className="post">
-              <div className="username">
+              <div className="username">2
                 @{post.owner}
               </div>
               <div className="postText"></div>
@@ -36,7 +36,7 @@ function Post({ post }) {
               {post != null && post.owner === Cookies.get("userEmail") && <>
                 <button className = "deletePostButton" id={post.id} onClick={doDelete} >Delete Post</button></>}
               {post != null && post.owner === Cookies.get("userEmail") && <>
-                <button id= {post.id} onClick= { doEdit } >Edit Post</button></>}
+                <button className= "editPostButton" id= {post.id} onClick= { doEdit } >Edit Post</button></>}
             </div>
             </div>
           </div>

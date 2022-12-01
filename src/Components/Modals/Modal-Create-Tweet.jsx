@@ -38,7 +38,7 @@ function ModalCreateTweet(props) {
 						className="profile-image"
 						src="https://imageio.forbes.com/specials-images/imageserve/5ceec355142c500008f42068/Rihanna-Diamond-Ball-Forbes-Women/0x0.jpg?format=jpg&crop=1950,1950,x32,y257,safe&height=1950&width=1950"
 						alt="Test profile"></img>
-					<h1>{Cookies.get("User")}</h1>
+					<h1>@{Cookies.get("User")}</h1>
 				</div>
         <div className="modal-body">
           <textarea

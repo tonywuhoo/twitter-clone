@@ -22,8 +22,7 @@ export const editPost = async () => {
   let response = await axios.put(`https://twitter-clone-backend-production-c9cc.up.railway.app/user/posts/99`,
     { text: "Edit works" }, config)
     console.log(response)
-    
-
+    // window.location.reload()
   } catch (error) {
     throw error;
   }
