@@ -24,5 +24,6 @@ export const doRegister = async (credentials) => {
 
 export const doLogout = async () => {
   Cookies.set("AccessToken", "loggedout")
+  Cookies.set("userEmail", "")
   window.location.reload()
 }

@@ -21,7 +21,7 @@ function Post({ post }) {
         {post.map((post,i) => (
           <div key = { i } className="post-container">
             <div className="post">
-              <div className="username">
+              <div className="username">2
                 @{post.owner}
               </div>
               <div className="postText"></div>
