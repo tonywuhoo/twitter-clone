@@ -55,4 +55,8 @@
 	.hidden-mobile {
 	  display: none;
 	}
+
+  .widget-container {
+    width: 100%;
   }
+}
