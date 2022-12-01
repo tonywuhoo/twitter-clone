@@ -46,6 +46,8 @@ function Footer() {
 					<div className="footer-user-container">
 						<div className="footer-sign-in">
 							<Button className="modal-button">{Cookies.get("User")}</Button>
+						</div>
+						<div className="footer-logout">
 							<Button className="modal-button" onClick={doLogout}>
 								Logout
 							</Button>
