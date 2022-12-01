@@ -25,9 +25,9 @@ function Post({ post }) {
               <div className="postText"></div>
               {post.text}
               <div className="postText"></div>
-
               <div className="postImageURL">
-                <img src = {post.title} />
+                {post.title != "noImage" && post.owner === Cookies.get("userEmail") && <>
+                  <img src={post.title} /></>}
               </div>
               <button>Comments</button>
               {post != null && post.owner === Cookies.get("userEmail") && <>
