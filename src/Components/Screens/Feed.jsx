@@ -10,6 +10,7 @@ function Feed() {
 	useEffect(() => {
 		async function grabPosts() {
 			let response = await getPosts();
+			// await??
 			setPosts(response.data);
 			console.log(response.data);
 		}
