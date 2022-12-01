@@ -17,19 +17,19 @@ function Feed() {
     grabPosts();
   }, []);
 
-  return (
-    <div className="feed-container">
-      <div className="feed">
-        <div className="feed-header">
-          <h2>Home Page</h2>
+	return (
+		<div className="feed-container">
+			<div className="feed">
+				<div className="feed-header">
+					<h2>Home Page</h2>
+				</div>
+				<Tweetbox />
+        <Post post={post}/>
+			  </div>
+				  <Tweetbox />
+				  <Post />
         </div>
-        <Tweetbox />
-        <Post post={post} />
-      </div>
-      <Tweetbox />
-      <Post />
-    </div>
-  );
+	);
 }
 
 export default Feed;

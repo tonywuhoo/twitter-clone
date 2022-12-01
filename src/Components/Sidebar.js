@@ -57,11 +57,18 @@ function Sidebar() {
 							variant="outlined"
 							className="sidebar_Tweet"
 							fullWidth
-							onClick={() => setShowPost(true)}>
+							onClick={() => {
+								console.log("clicked");
+								setShowPost(true);
+								document.querySelector(".sidebar-container").style.zIndex = 1;
+							}}>
 							Post
 						</Button>
 						<ModalCreateTweet
-							onClose={() => setShowPost(false)}
+							onClose={() => {
+								setShowPost(false);
+								document.querySelector(".sidebar-container").style.zIndex = 0;
+							}}
 							show={showPost} /**profileImage="" profileUsername="" */
 						/>
 					</div>
