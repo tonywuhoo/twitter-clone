@@ -6,6 +6,7 @@ import "./App.css";
 import Cookies from "js-cookie";
 import { getPosts } from "./services/PostCrud";
 import Widget from "./Components/Widgets/Widget";
+import News from "./Components/Screens/News.jsx";
 
 function App() {
   const [post, setPosts] = useState();
@@ -46,6 +47,24 @@ function App() {
       </div>
     </>
   );
+	return (
+		<>
+			<div className="app">
+				<Routes>
+          <Route path="/" element={<Home
+             toggleApiCall={toggleApiCall}
+             setToggleApiCall={setToggleApiCall}
+             post = {post}
+          />} />
+          <Route path="/profile" element={<ProfilePage />}
+          />
+          <Route path="/news" element=
+            {<News />}
+          />
+				</Routes>
+			</div>
+		</>
+	);
 }
 
 export default App;

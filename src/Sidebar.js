@@ -8,6 +8,7 @@ import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import Logo from "./shill.png";
 import ModalCreateTweet from "./Components/Modals/Modal-Create-Tweet";
 import { NavLink } from "react-router-dom";
+import News from "./Components/Screens/News.jsx"
 
 function Sidebar() {
   const [showPost, setShowPost] = useState(false);
@@ -39,11 +40,11 @@ function Sidebar() {
           <NavLink to="/crypto" className="sidebar-hide-icon">
             <SidebarOption Icon={<ListAltIcon />} text="Crypto" />
           </NavLink>
-    
+          
           <NavLink to="/news">
-            <SidebarOption Icon={<ListAltIcon />} text="News" />{" "}
+            <SidebarOption Icon={<ListAltIcon />} text="News" />
           </NavLink>
-
+          {/* this is the 'tweet' button */}
           <div className="sidebar-post-button">
             <Button
               variant="outlined"
