@@ -53,6 +53,8 @@ a {
 		position: fixed;
 		bottom: 0;
 		height: 50px;
+    width: 100%;
+    align-items: center;
 		flex-direction: row;
 		background-color: #f5f8fa;
 	}
@@ -64,6 +66,7 @@ a {
   .sidebar-hide-icon{
     display: block;
   }
+  
   .sidebar-post-button{
     display: none;
   }

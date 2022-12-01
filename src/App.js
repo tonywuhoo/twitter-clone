@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Cookies from 'js-cookie';
 import { getPosts } from "./services/PostCrud";
+import Widget from "./Components/Widgets/Widget";
 
 function App() {
   const [post, setPosts] = useState()
@@ -34,7 +35,8 @@ function App() {
              setToggleApiCall={setToggleApiCall}
              post = {post}
           />} />
-					<Route path="/profile" element={<ProfilePage />} />
+          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/crypto" element={<Widget />} />
 				</Routes>
 			</div>
 		</>
