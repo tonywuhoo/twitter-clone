@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Sidebar.css";
 import SidebarOption from "./SidebarOption";
 import HomeIcon from "@mui/icons-material/Home";
-import SearchIcon from "@mui/icons-material/Search";
 import Button from "@mui/material/Button";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
@@ -42,9 +41,6 @@ function Sidebar() {
 					<NavLink to="/profile">
 						<SidebarOption Icon={<PermIdentityIcon />} text="Profile" />{" "}
 					</NavLink>
-					{/* <SidebarOption Icon={<NotificationsNoneIcon />} text="Notifications" /> */}
-					{/* <SidebarOption Icon={<MailOutlineIcon />} text="Messages" /> */}
-					{/* <SidebarOption Icon={<BookmarkBorderIcon />} text="Bookmarks" /> */}
 					<div className="sidebar-hide-icon">
 						<SidebarOption Icon={<ListAltIcon />} text="Feed" />
 					</div>
