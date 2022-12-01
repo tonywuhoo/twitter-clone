@@ -21,14 +21,25 @@ function Tweetbox({ setToggleApiCall, toggleApiCall, post }) {
   const doSubmit = async (event) => {
     event.preventDefault();
     try {
-      const content = {
-        text: text,
-        title: imageURL,
-      };
-      await createPost(content);
-      getData()
-      document.getElementById("image").value = ""
-      document.getElementById("text").value = ""
+      if (imageURL === "") {
+        setImageURL("noImage")
+        const content = {
+          text: text,
+        };
+        await createPost(content);
+        getData()
+        document.getElementById("image").value = ""
+        document.getElementById("text").value = ""
+      } else {
+        const content = {
+          text: text,
+          title: imageURL,
+        };
+        await createPost(content);
+        getData()
+        document.getElementById("image").value = ""
+        document.getElementById("text").value = ""
+      }
     } catch (error) {
       throw error;
     }

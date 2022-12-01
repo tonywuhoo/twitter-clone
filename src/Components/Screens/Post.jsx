@@ -1,6 +1,17 @@
 import React from "react";
 import "./Post.css";
+import Cookies from "js-cookie";
+import {deletePost} from "../../services/PostCrud"
+
 function Post({ post }) {
+
+  function doDelete(event) {
+    deletePost(event.target.id)
+  }
+
+  function doEdit(event) {
+    deletePost(event.target.id)
+  }
   
 	return (
     <div className="post">
@@ -14,13 +25,17 @@ function Post({ post }) {
               <div className="postText"></div>
               {post.text}
               <div className="postText"></div>
-
               <div className="postImageURL">
-                <img src = {post.title} />
+                {post.title != "noImage" && post.owner === Cookies.get("userEmail") && <>
+                  <img src={post.title} /></>}
               </div>
-              <button>Comments</button>
-              {post != null && <>
-              <button>Delete Post</button></>}
+              <div className ="buttonsContainer"> 
+              <button className= 'commentsButton'>Comments</button>
+              {post != null && post.owner === Cookies.get("userEmail") && <>
+                <button className = "deletePostButton" id={post.id} onClick={doDelete} >Delete Post</button></>}
+              {post != null && post.owner === Cookies.get("userEmail") && <>
+                <button id= {post.id} onClick= { doEdit } >Edit Post</button></>}
+            </div>
             </div>
           </div>
       ))}
