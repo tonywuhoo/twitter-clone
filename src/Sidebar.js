@@ -36,10 +36,9 @@ function Sidebar() {
             <SidebarOption Icon={<PermIdentityIcon />} text="Profile" />{" "}
           </NavLink>
 
-          {/* <div className="sidebar-hide-icon"> */}
+       
           <NavLink to="/crypto" className="sidebar-hide-icon">
             <SidebarOption Icon={<ListAltIcon />} text="Crypto" />
-            {/* </div> */}
           </NavLink>
 
           {/* this is the 'tweet' button */}
