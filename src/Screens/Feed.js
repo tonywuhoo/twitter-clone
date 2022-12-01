@@ -25,10 +25,8 @@ function Feed() {
 				</div>
 				<Tweetbox />
         <Post post={post}/>
-			  </div>
-				  <Tweetbox />
-				  <Post />
-        </div>
+      </div>
+    </div>
 	);
 }
 

@@ -1,11 +1,9 @@
 import "./Modal.css";
 import React, { useState } from "react";
+import Cookies from 'js-cookie';
+import { createPost } from "../../services/PostCrud";
 
 function ModalCreateTweet(props) {
-	// props = {
-	//  profile-image: "https://www.pic.com",
-	//  profile-username: "aalonso",
-	// }
 	const [characterCount, setCharacterCount] = useState(0);
 	const [tweet, setTweet] = useState("");
 
@@ -13,6 +11,20 @@ function ModalCreateTweet(props) {
 		setTweet(event.target.value);
 		setCharacterCount(tweet.length);
 	}
+
+  async function doSubmit(event){
+    event.preventDefault()
+    try {
+      const content = {
+        text: tweet,
+        title: "Title",
+      }
+      await createPost(content)
+    } catch (error) {
+      throw error;
+    }
+    return props.onClose;
+  };
 
 	if (!props.show) {
 		return null;
@@ -25,7 +37,7 @@ function ModalCreateTweet(props) {
 						className="profile-image"
 						src="https://imageio.forbes.com/specials-images/imageserve/5ceec355142c500008f42068/Rihanna-Diamond-Ball-Forbes-Women/0x0.jpg?format=jpg&crop=1950,1950,x32,y257,safe&height=1950&width=1950"
 						alt="Test profile"></img>
-					<h1>@Rihanna</h1>
+					<h1>{Cookies.get("User")}</h1>
 				</div>
 				<div className="modal-body">
 					<input
@@ -38,7 +50,7 @@ function ModalCreateTweet(props) {
 				</div>
 				<div className="modal-footer">
 					<p className="character-counter">{characterCount}/280</p>
-					<button className="modal-button" onClick={props.onClose}>
+          <button className="modal-button" onClick={doSubmit}>
 						Post
 					</button>
 				</div>
