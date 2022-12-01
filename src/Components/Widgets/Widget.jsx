@@ -14,11 +14,11 @@ function Widgets() {
 
 	useEffect(() => {
 		const fetchCoinData = async () => {
+			interval = setInterval(() => updateCurrCoin(res.data), 3000);
 			let res = await axios.get(
 				"https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=300&page=1&sparkline=false",
 			);
 			setCoins(res.data);
-			interval = setInterval(() => updateCurrCoin(res.data), 3000);
 			if (pathname === "/crypto") {
 				document.querySelectorAll(".hidden-mobile").forEach((card) => {
 					card.classList.remove("hidden-mobile");
