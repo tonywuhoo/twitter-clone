@@ -64,13 +64,13 @@
 	color: #11d811;
 }
 .main-con {
-	height: 150px;
+	height: 50%;
 	justify-content: start;
 	box-sizing: content-box;
 	width: 100%;
 }
 @media (max-width: 767px) {
 	.hidden-mobile {
-	  display: none;
+		display: none;
 	}
-  }
+}
