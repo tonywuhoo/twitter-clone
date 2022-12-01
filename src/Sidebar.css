@@ -7,7 +7,6 @@ a {
 	flex: 0.7 1;
 	/* height: 100vh; */
 	position: sticky;
-	top: 3%;
 	overflow: auto;
 	margin-right: 60px;
 }
