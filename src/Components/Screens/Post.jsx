@@ -33,7 +33,7 @@ function Post({ post }) {
               {post.text}
               <div className="postText"></div>
               <div className="postImageURL">
-                {post.title != "Text"&& <>
+                {post.title != "Text" && <>
                   <img src={post.title} /></>}
               </div>
               <div className ="buttonsContainer"> 
