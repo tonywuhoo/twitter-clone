@@ -159,9 +159,11 @@ It controls not only the modal input fields*/
 
 .modal-footer {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between !important;
+  width: 90%;
+  padding-top: 20px;
 }
 
 .modal-content {
@@ -196,5 +198,5 @@ word-break: break-all; */
 }
 
 .character-counter {
-	color: red;
+	color: darkgreen;
 }
