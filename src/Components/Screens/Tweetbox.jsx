@@ -4,7 +4,9 @@ import Button from "@mui/material/Button";
 import { createPost } from "../../services/PostCrud";
 import { useState } from "react";
 
-function Tweetbox({ setToggleApiCall, toggleApiCall, post }) {
+
+function Tweetbox({ setToggleApiCall, toggleApiCall, post, characterCount, setCharacterCount}) {
+  // const [characterCount, setCharacterCount] = useState(0);
   const [imageURL, setImageURL] = useState("");
   const [text, setText] = useState("");
 
@@ -66,6 +68,8 @@ function Tweetbox({ setToggleApiCall, toggleApiCall, post }) {
             size="2rem"
             onChange={handleChange}
           />
+          
+        <p className="character-counter">{characterCount}/280</p>
         </div>
         <input
 					id="image"
