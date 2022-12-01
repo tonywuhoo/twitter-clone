@@ -69,4 +69,8 @@ a {
 	.sidebar-post-button {
 		display: none;
 	}
+
+  .sidebar-crypto-mobile{
+    display: none;
+  }
 }

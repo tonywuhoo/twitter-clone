@@ -8,6 +8,7 @@ import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import Logo from "./shill.png";
 import ModalCreateTweet from "./Components/Modals/Modal-Create-Tweet";
 import { NavLink } from "react-router-dom";
+import { BsCoin } from "react-icons/bs";
 
 function Sidebar() {
   const [showPost, setShowPost] = useState(false);
@@ -33,14 +34,17 @@ function Sidebar() {
           </NavLink>
 
           <NavLink to="/profile">
+            <div className="sidebar-crypto-mobile">Profile </div>
             <SidebarOption Icon={<PermIdentityIcon />} text="Profile" />{" "}
           </NavLink>
 
           <NavLink to="/crypto" className="sidebar-hide-icon">
+            <div className="sidebar-crypto-mobile">Crypto</div>
             <SidebarOption Icon={<ListAltIcon />} text="Crypto" />
           </NavLink>
-    
+
           <NavLink to="/news">
+            <div className="sidebar-crypto-mobile"></div>
             <SidebarOption Icon={<ListAltIcon />} text="News" />{" "}
           </NavLink>
 
