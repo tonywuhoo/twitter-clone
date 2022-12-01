@@ -51,16 +51,17 @@ export const createPost = async (content) => {
     }
     return response.data
   } catch (error) {
-    
+    if (error = "Failed to load resource: the server responded with a status of 500 ()") {
+      alert("Image cannot be a .webm, try with jpg/png")
+    }
     throw error;
   }
 };
 
 
-export const deletePost = async (id) => {
+export const deletePost = async (post) => {
   try {
-    const response = await api.delete(`/post/${id}`);
-    return response.data;
+    console.log(post)
   } catch (error) {
     throw error;
   }
