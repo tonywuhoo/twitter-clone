@@ -9,8 +9,8 @@ import Cookies from "js-cookie";
 function Footer() {
   
 	const [showSignInModal, setShowSignInModal] = useState(false);
-	const [showSignUpModal, setSignUpModal] = useState(false);
-
+  const [showSignUpModal, setSignUpModal] = useState(false);
+  
 	return (
 		<>
 			{Cookies.get("AccessToken") === "loggedout" && (
