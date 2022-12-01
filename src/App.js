@@ -2,12 +2,12 @@ import ProfilePage from "./Components/Profile/ProfilePage";
 import { Routes, Route } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import Home from "./Screens/Home";
+import Home from "./Components/Screens/Home";
 import Cookies from "js-cookie";
 import { getPosts } from "./services/PostCrud";
-import Sidebar from "./Components/Sidebar";
-import Feed from "./Screens/Feed";
-import Widget from "./Components/Widget";
+import Sidebar from "./Sidebar";
+import Feed from "./Components/Screens/Feed";
+import Widget from "./Components/Widgets/Widget";
 
 function App() {
 	const [commentCrud, setCommentCrud] = useState([]);

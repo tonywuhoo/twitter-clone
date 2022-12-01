@@ -1,12 +1,9 @@
 import React from "react";
-import Widget from "../Widget";
-import "./ProfilePage.module.css"
+import Widget from "../Widgets/Widget";
+import "./ProfilePage.module.css";
 
 function ProfilePage() {
-  return (
-      <h1>Profile Page</h1>
-    
-  )
-} 
+	return <h1>Profile Page</h1>;
+}
 
-export default ProfilePage
+export default ProfilePage;

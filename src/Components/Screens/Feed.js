@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Feed.css";
-import { getPosts } from "../services/PostCrud";
-import Tweetbox from "../Components/Tweetbox.jsx";
-import Post from "../Components/Post.jsx";
+import { getPosts } from "../../services/PostCrud";
+import Tweetbox from "./Tweetbox";
+import Post from "./Post.jsx";
 
 function Feed() {
 	const [post, setPosts] = useState();
@@ -26,8 +26,8 @@ function Feed() {
 				<Tweetbox />
 				<Post post={post} />
 			</div>
-			<Tweetbox />
-			<Post />
+			{/* <Tweetbox />
+			<Post /> */}
 		</div>
 	);
 }
