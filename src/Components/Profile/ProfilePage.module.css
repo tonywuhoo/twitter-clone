@@ -5,6 +5,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 10px;
+  position: initial;
 }
 
 @media only screen and (max-width: 600px) {
