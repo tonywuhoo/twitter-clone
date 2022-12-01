@@ -17,6 +17,11 @@
 	margin-left: 20px;
 }
 
+.widget-hide-nav-bar{
+  display: none;
+}
+
+
 .widgets__input > input {
 	border: none;
 	background-color: var(--twitter-background);
@@ -56,6 +61,7 @@
 	  display: none;
 	}
 
+ 
   .widget-container {
     width: 100%;
   }

@@ -34,13 +34,12 @@ function Sidebar() {
           </NavLink>
 
           <NavLink to="/profile">
-            <div className="sidebar-crypto-mobile">Profile </div>
             <SidebarOption Icon={<PermIdentityIcon />} text="Profile" />{" "}
           </NavLink>
 
           <NavLink to="/crypto" className="sidebar-hide-icon">
             <div className="sidebar-crypto-mobile">Crypto</div>
-            <SidebarOption Icon={<BsCoin />} />
+            <SidebarOption Icon={<BsCoin />} text="Crypto" />{" "}
           </NavLink>
 
           <NavLink to="/news">
