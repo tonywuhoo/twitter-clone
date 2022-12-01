@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import Coin from "./Widgets/coin.jsx";
+import Coin from "./coin.jsx";
 import "./Widget.css";
 import Footer from "./Footer";
 import {

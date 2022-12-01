@@ -1,9 +1,9 @@
 // import ProfilePage from './Components/Profile/ProfilePage';
 // import { Routes, Route } from 'react-router-dom';
 import React from "react";
-import Sidebar from "../Components/Sidebar";
-import Feed from "../Screens/Feed";
-import Widget from "../Components/Widget";
+import Sidebar from "../../Sidebar";
+import Feed from "./Feed";
+import Widget from "../Widgets/Widget";
 import "./Home.css";
 
 function Home() {
