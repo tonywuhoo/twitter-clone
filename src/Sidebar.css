@@ -9,6 +9,7 @@ a {
 	position: sticky;
 	top: 3%;
 	overflow: auto;
+  margin-right: 60px;
 }
 
 .sidebar-hide-icon{
@@ -52,6 +53,8 @@ a {
 		position: fixed;
 		bottom: 0;
 		height: 50px;
+    width: 100%;
+    align-items: center;
 		flex-direction: row;
 		background-color: #f5f8fa;
 	}
@@ -63,6 +66,7 @@ a {
   .sidebar-hide-icon{
     display: block;
   }
+  
   .sidebar-post-button{
     display: none;
   }
