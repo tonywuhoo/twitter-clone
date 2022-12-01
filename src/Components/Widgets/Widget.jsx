@@ -34,7 +34,7 @@ function Widgets() {
 	};
 
 	return (
-		<div className="widget-container">
+		<div className="widget-container hidden-mobile ">
 			<div className="widget">
 				<Footer />
 				<div className="widgets__input">

@@ -69,3 +69,8 @@
 	box-sizing: content-box;
 	width: 100%;
 }
+@media (max-width: 767px) {
+	.hidden-mobile {
+	  display: none;
+	}
+  }
