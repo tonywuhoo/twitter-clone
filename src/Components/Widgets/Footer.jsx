@@ -7,6 +7,7 @@ import "./Footer.css";
 import Button from "@mui/material/Button";
 import Cookies from "js-cookie";
 function Footer() {
+  
 	const [showSignInModal, setShowSignInModal] = useState(false);
 	const [showSignUpModal, setSignUpModal] = useState(false);
 
