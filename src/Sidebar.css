@@ -62,6 +62,10 @@ a {
 		display: none;
 	}
 
+  .side-bar-coin-icon{
+    height: 80px;
+  }
+
 	.sidebar-hide-icon {
 		display: block;
 	}
@@ -69,4 +73,9 @@ a {
 	.sidebar-post-button {
 		display: none;
 	}
+
+  .sidebar-crypto-mobile{
+    display: none;
+  
+  }
 }
