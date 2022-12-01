@@ -39,8 +39,11 @@ function Sidebar() {
           <NavLink to="/crypto" className="sidebar-hide-icon">
             <SidebarOption Icon={<ListAltIcon />} text="Crypto" />
           </NavLink>
+    
+          <NavLink to="/news">
+            <SidebarOption Icon={<ListAltIcon />} text="News" />{" "}
+          </NavLink>
 
-         
           <div className="sidebar-post-button">
             <Button
               variant="outlined"
