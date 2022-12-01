@@ -4,7 +4,7 @@
 	position: sticky;
 	top: 3%;
 	overflow: auto;
-	/* width: 500px; */
+  margin-left: 40px;
 }
 
 .widgets__input {
