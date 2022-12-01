@@ -36,15 +36,17 @@ function Post({ post }) {
                 {post.title != "Text" && post.owner === Cookies.get("userEmail") && <>
                   <img src={post.title} /></>}
               </div>
-              <button>Comments</button>
+              <div className ="buttonsContainer"> 
+              <button className= 'commentsButton'>Comments</button>
               {post != null && post.owner === Cookies.get("userEmail") && <>
-                <button id={post.id} onClick={doDelete} >Delete Post</button></>}
+                <button className = "deletePostButton" id={post.id} onClick={doDelete} >Delete Post</button></>}
               {post != null && post.owner === Cookies.get("userEmail") && <>
                 <ModalEditTweet
                 editID = {editID}
                 onClose={() => setShowEdit(false)}
                 show={showEdit}/>
-                <button id= {post.id} onClick= {doEdit} >Edit Post</button></>}
+                <button className= "editPostButton" id= {post.id} onClick= {doEdit} >Edit Post</button></>}
+            </div>
             </div>
           </div>
       ))}
