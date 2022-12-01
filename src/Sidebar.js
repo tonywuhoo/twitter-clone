@@ -37,7 +37,7 @@ function Sidebar() {
           </NavLink>
 
           {/* <div className="sidebar-hide-icon"> */}
-          <NavLink to="/crypto">
+          <NavLink to="/crypto" className="sidebar-hide-icon">
             <SidebarOption Icon={<ListAltIcon />} text="Crypto" />
             {/* </div> */}
           </NavLink>
