@@ -4,18 +4,18 @@ import Feed from "../Screens/Feed";
 import NewsItem from "./NewsItem";
 import NewsList from "./NewsList";
 import Widget from "../Widgets/Widget";
-import "../Profile/ProfilePage.module.css";
+import "../Profile/ProfilePage.css";
 import "./newsItem.css";
 import "../Profile/NewsStyle.css";
 
 function News() {
-  return (
-    <div className="wrapper">
-      <Sidebar />
-      <NewsList />
-      <Widget />
-    </div>
-  );
+	return (
+		<div className="wrapper">
+			<Sidebar />
+			<NewsList />
+			<Widget />
+		</div>
+	);
 }
 
 export default News;
