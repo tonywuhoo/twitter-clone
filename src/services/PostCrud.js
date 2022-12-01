@@ -51,16 +51,27 @@ export const createPost = async (content) => {
     }
     return response.data
   } catch (error) {
-    
+    if (error = "Failed to load resource: the server responded with a status of 500 ()") {
+      alert("Image cannot be a .webm, try with jpg/png")
+    }
     throw error;
   }
 };
 
 
-export const deletePost = async (id) => {
+export const deletePost = async (post) => {
   try {
-    const response = await api.delete(`/post/${id}`);
-    return response.data;
+    const config = {
+      headers: {
+        "Authorization": `Bearer ${Cookies.get("AccessToken")}`,
+      },
+    };
+    let response = await axios.delete(`https://twitter-clone-backend-production-c9cc.up.railway.app/user/posts/` + post, config)
+    console.log(response)
+    alert("Post deleted")
+    window.location.reload()
+
+    console.log(post)
   } catch (error) {
     throw error;
   }
