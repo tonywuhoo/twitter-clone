@@ -198,6 +198,19 @@ It controls not only the modal input fields*/
 word-break: break-all; */
 }
 
+#tweetImage {
+  border: 4px solid #7ed957;
+	width: 10em;
+	height: 5em;
+	background-color: #7ed95736;
+	border-radius: 25px;
+	overflow-y: scroll;
+	overflow: hidden;
+	font-size: 17px;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
 .character-counter {
 	color: darkgreen;
 }
