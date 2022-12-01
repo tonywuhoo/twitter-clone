@@ -27,7 +27,7 @@ function Post({ post }) {
           <div key = { i } className="post-container">
             <div className="post">
               <div className="username">
-                @{post.owner}
+                {post.owner}
               </div>
               <div className="postText"></div>
               {post.text}

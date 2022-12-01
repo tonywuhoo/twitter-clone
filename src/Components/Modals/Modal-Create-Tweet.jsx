@@ -18,9 +18,10 @@ function ModalCreateTweet(props) {
     try {
       const content = {
         text: tweet,
-        title: "Title",
+        title: "Text",
       }
       await createPost(content)
+      window.location.reload()
     } catch (error) {
       throw error;
     }
@@ -49,6 +50,16 @@ function ModalCreateTweet(props) {
             maxLength="280"
             onChange={handleChange}>
           </textarea>
+          <br></br>
+          <textarea
+            className="text-area"
+            id="tweetImage"
+            name="tweetImage"
+            placeholder="Input ImageURL"
+            maxLength="280"
+            onChange={handleChange}>
+          </textarea>
+          
 				</div>
 				<div className="modal-footer">
 					<p className="character-counter">{characterCount}/280</p>
