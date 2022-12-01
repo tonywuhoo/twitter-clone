@@ -1,11 +1,9 @@
 import React from "react";
-import { useState } from "react";
-import css from "./coin.css";
+import "./coin.css";
 
 const Coin = ({ name, price, image, priceChange }) => {
-  const [show, setShow] = useState(true);
   return (
-    <div className="coin-container">
+    <div className="coin-container    hidden-mobile  ">
       <div className="coin-1">
         <div className="coin">
           <img src={image} alt="crypto" />

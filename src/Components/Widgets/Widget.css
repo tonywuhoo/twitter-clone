@@ -1,10 +1,10 @@
-.widgets {
-	flex: 0.8 1;
+.widget {
+	flex: 0.7 1;
 	height: 100vh;
 	position: sticky;
-	top: 0%;
+	top: 3%;
 	overflow: auto;
-  width: 500px;
+	/* width: 500px; */
 }
 
 .widgets__input {
@@ -26,12 +26,16 @@
 	color: gray;
 }
 
+.widget-container{
+  width: 30%;
+}
 .widgets__widgetContainer {
 	margin-top: 15px;
 	margin-left: 20px;
 	padding: 20px;
 	background-color: #f5f8fa;
 	border-radius: 20px;
+	padding-bottom: 340px;
 }
 
 .widgets__widgetContainer > h2 {
@@ -41,8 +45,14 @@
 }
 
 .main-con {
-    height: 200px;
+	height: 200px;
 	width: 200px;
 	box-sizing: content-box;
 	width: 100%;
+}
+
+@media (max-width: 767px) {
+	.hidden-mobile {
+	  display: none;
+	}
   }

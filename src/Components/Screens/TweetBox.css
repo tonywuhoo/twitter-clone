@@ -10,20 +10,19 @@
 	flex-direction: column;
 }
 
-.tweetBox input {
+.tweetBox {
 	padding: 20px;
 	display: flex;
 }
 
-.tweetBox-input > input {
+.tweetBox-input > textarea {
+  resize: none;
 	flex: 1;
-	margin-left: 20px;
+	margin-left: 10px;
 	font-size: 20px;
 	border: none;
-}
-
-.feed_tweet_BTN {
-	position: initial !important;
+	width: 100%;
+	padding-left: 10px;
 }
 
 .tweetBox .feed_tweet_BTN {
@@ -39,6 +38,7 @@
 	margin-top: 20px;
 	display: inline-flexbox;
 	margin-left: auto;
+	position: initial;
 }
 .tweetBox-inputImage {
 	border: none;
