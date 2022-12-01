@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
-import Coin from "./coin.jsx";
+import Coin from "./Coin.jsx";
 import "./Widget.css";
 import Footer from "./Footer";
 import Sidebar from "../../Sidebar.js";
@@ -61,18 +61,16 @@ function Widgets() {
 									volume={coin.market_cap}
 									image={coin.image}
 									priceChange={coin.price_change_percentage_24h}
-                />
-               
+								/>
 							);
 						})}
-          </div>
-          <div className="widget-hide-nav-bar">
-            <Sidebar />
-            </div>
+					</div>
+					<div className="widget-hide-nav-bar">
+						<Sidebar />
+					</div>
 				</div>
 			</div>
-    </div>
-
+		</div>
 	);
 }
 
