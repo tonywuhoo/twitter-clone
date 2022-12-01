@@ -38,6 +38,10 @@ It controls not only the modal input fields*/
   */
 }
 
+.text-area {
+  resize: none;
+}
+
 .modal-input::placeholder {
 	color: #111111;
 	font-family: Arial, Helvetica, sans-serif;

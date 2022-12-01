@@ -1,4 +1,5 @@
 import "./Modal.css";
+// import { TextInput } from 'react-native';
 import React, { useState } from "react";
 import Cookies from 'js-cookie';
 import { createPost } from "../../services/PostCrud";
@@ -9,7 +10,7 @@ function ModalCreateTweet(props) {
 
 	function handleChange(event) {
 		setTweet(event.target.value);
-		setCharacterCount(tweet.length);
+		setCharacterCount(event.target.value.length);
 	}
 
   async function doSubmit(event){
@@ -39,14 +40,15 @@ function ModalCreateTweet(props) {
 						alt="Test profile"></img>
 					<h1>{Cookies.get("User")}</h1>
 				</div>
-				<div className="modal-body">
-					<input
-						type="text"
-						id="tweetMessage"
-						name="tweetMessage"
-						placeholder="What's Happening?"
-						maxLength="280"
-						onChange={handleChange}></input>
+        <div className="modal-body">
+          <textarea
+            className="text-area"
+            id="tweetMessage"
+            name="tweetMessage"
+            placeholder="What's Happening?"
+            maxLength="280"
+            onChange={handleChange}>
+          </textarea>
 				</div>
 				<div className="modal-footer">
 					<p className="character-counter">{characterCount}/280</p>

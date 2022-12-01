@@ -37,14 +37,14 @@ function Tweetbox() {
 	return (
 		<div className="tweetBox">
 			<form onSubmit={ doSubmit }>
-				<div className="tweetBox-input">
-					<input id = "text"
-						className="tweetBox-input"
-						placeholder="What's happening, tweed?"
-						type="text"
+        <div className="tweetBox-input">
+          <textarea
+            id = "text"
+            className="tweetBox-input"
+            placeholder="What's happening, tweed?"
+            type="text"
             size="2rem"
-            onChange={handleChange}
-					/>
+            onChange={handleChange}/>
 				</div>
 				<input id = "image"
 					className="tweetBox-inputImage"
