@@ -12,17 +12,17 @@ async function reverseObject(Input) {
   return output
 }
 
-export const editPost = async () => {
+export const editPost = async (content, postID) => {
   try {
   const config = {
     headers: {
       "Authorization": `Bearer ${Cookies.get("AccessToken")}`,
     },
   };
-  let response = await axios.put(`https://twitter-clone-backend-production-c9cc.up.railway.app/user/posts/99`,
-    { text: "Edit works" }, config)
+  let response = await axios.put(`https://twitter-clone-backend-production-c9cc.up.railway.app/user/posts/` + postID,
+    content, config)
     console.log(response)
-    // window.location.reload()
+    window.location.reload()
   } catch (error) {
     throw error;
   }
