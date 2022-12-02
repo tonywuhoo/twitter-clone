@@ -1,62 +1,43 @@
-.post{
-  display: flex;
-  flex-direction: column;
-  background-color:rgba(131, 244, 129, 0.068);
-  margin-left: 20px;
-  border-radius: 25px;
-  font-size: 1.2em;
-}
-
-.postText{
+.post {
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(131, 244, 129, 0.068);
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 25px;
+	font-size: 1.2em;
 }
 
 .username {
-  font-size: .8em;
-  text-align: center;
+	font-size: 0.8em;
+	text-align: center;
 }
 
 .post-container {
-  margin: 30px;
-  border: 4px double green;
-  border-radius: 25px;
+	margin: 30px;
+	border: 4px double green;
+	border-radius: 25px;
 }
 
-.buttonsContainer{
-  display: flex;
-  background-color: rgba(0,0,0,.05);
+.buttonsContainer {
+	display: flex;
 }
-.commentsButton{
-  width: 110px;
+.commentsButton,
+.deletePostButton,
+.editPostButton {
+	width: 110px;
 	border-radius: 25px !important;
 	background-color: #589a3c !important;
 	border-color: #7ed957 !important;
 	color: white !important;
 	height: 40px !important;
 	position: initial !important;
-  display: inline;
-  margin:  auto ;
+	display: inline;
+	margin: auto;
 }
 
-.deletePostButton{
-  width: 110px;
-	border-radius: 25px !important;
-	background-color:#41722c !important;
-	border-color: #7ed957 !important;
-	color: white !important;
-	height: 40px !important;
-	position: initial !important;
-  display: inline;
-  margin: auto ;
-}
-
-.editPostButton{
-  width: 110px;
-	border-radius: 25px !important;
-	background-color:#589a3c !important;
-	border-color: #7ed957 !important;
-	color: white !important;
-	height: 40px !important;
-	position: initial !important;
-  display: inline;
-  margin: auto ;
+.postImg {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
