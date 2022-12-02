@@ -28,7 +28,8 @@ function Modal(props) {
 				console.log(response.data);
 				console.log("Logged in... Token is " + accessToken[7]);
 				Cookies.set("AccessToken", accessToken[7].toString());
-				Cookies.set("User", response.data.username);
+        Cookies.set("User", response.data.username);
+        Cookies.set("CreationDate", response.data.created_at);
 				window.location.reload()
 			}
 		} catch (error) {

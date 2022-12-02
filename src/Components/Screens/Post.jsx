@@ -8,7 +8,7 @@ import { useState } from "react";
 
 function Post({ post }) {
 	const [showEdit, setShowEdit] = useState(false);
-	const [editID, seteditID] = useState(0);
+	const [editID, setEditID] = useState(0);
 
 	function doDelete(event) {
 		deletePost(event.target.id);
@@ -16,7 +16,7 @@ function Post({ post }) {
 
 	function doEdit(event) {
 		setShowEdit(true);
-		seteditID(event.target.id);
+		setEditID(event.target.id);
 	}
 
 	return (
