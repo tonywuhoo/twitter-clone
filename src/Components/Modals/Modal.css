@@ -210,3 +210,7 @@ word-break: break-all; */
 .character-counter {
 	color: darkgreen;
 }
+
+.button-container {
+margin: auto;
+}

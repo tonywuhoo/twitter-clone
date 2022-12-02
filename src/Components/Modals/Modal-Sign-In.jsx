@@ -63,10 +63,13 @@ function Modal(props) {
 							onChange={handleChange}
 							id="password"
 							placeholder="Password"></input>
-						<br></br>
+            <br></br>
+            {/* <input type="submit" className="modal-button" value="Sign In" /> */}
+            <div className="button-container">
+				<input type="submit" className="modal-button" value="Sign In" />
+            </div>
 					</form>
 				</div>
-				<input type="submit" className="modal-button" value="Sign In" />
 				<Button onClick={props.onClose} className="modal-button">
 					Close
 				</Button>
