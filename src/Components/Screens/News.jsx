@@ -1,7 +1,5 @@
 import React from "react";
 import Sidebar from "../../Sidebar";
-import Feed from "../Screens/Feed";
-import NewsItem from "./NewsItem";
 import NewsList from "./NewsList";
 import Widget from "../Widgets/Widget";
 import "../Profile/ProfilePage.css";

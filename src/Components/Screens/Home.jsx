@@ -16,7 +16,7 @@ function Home({setToggleApiCall, post , toggleApiCall, setpostID, postID}) {
         setpostID={setpostID}
         postID={postID } />
 			<Widget />
-    </div>
+		</div>
 	);
 }
 

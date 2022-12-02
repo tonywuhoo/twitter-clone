@@ -1,14 +1,18 @@
 import React from "react";
 import Sidebar from "../../Sidebar";
-import Feed from "../Screens/Feed";
 import Widget from "../Widgets/Widget";
+import ProfileFeed from "./ProfileFeed";
 import "./ProfilePage.css";
 
-function ProfilePage() {
+function ProfilePage({ setToggleApiCall, post, toggleApiCall }) {
 	return (
 		<div className="profile-page">
 			<Sidebar />
-			<Feed />
+      <ProfileFeed
+        setToggleApiCall={setToggleApiCall}
+        post={post}
+        toggleApiCall={toggleApiCall}
+      />
 			<Widget />
 		</div>
 	);

@@ -1,9 +1,9 @@
 # $hills
 
 
-**Github Repo:** 
+**Backend Github Repo:** https://github.com/SEI-Buffleheads/twitter-clone-backend
 
-**Netlify:** 
+**Netlify:** https://shill-social.netlify.app/
 
 ## Overview
 Social media network for those who want to share their financial goals, give advice, and discuss trends.
@@ -30,7 +30,7 @@ To view complete Wireframe: please click on Wiki and then click on WireFrame to 
 - Use React to create the front-end
   - Use multiple functional components
 - Give user capability for full CRUD (products for MVP, see post-MVP... preferred CRUD demonstration)
-- Deploy to Netlify
+- Deploy to Netlify and Heroku
 - Authorization and Authentication (user sign in and sign up)
 - CSS styling to match wireframe and branding
   - Include media queries
