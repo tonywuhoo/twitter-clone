@@ -45,24 +45,28 @@ function ProfileFeed({ setToggleApiCall, toggleApiCall, post}) {
       <div className="feed">
         <div className="edit-profile">
           <h1>{Cookies.get("User")}</h1>
-          <button>Edit Profile</button>
         </div>
         <p>Joined {createdDate}</p>
         <h2 className="tweed-title">Your Tweeds</h2>
 
+        <div class="tweetContainer">
         {displayPost != null && <>
           {displayPost.map((displayPost, index) => { 
-                return (<div key={index}>
+            return (<div key={index}>
+                    <div>
+                    <button id={displayPost.id} onClick={doDelete}>Delete</button>
+                    </div>
                   <div>{displayPost.text}</div>
                   <div>{displayPost.date}</div>
                   {displayPost.title != "Text" && <>
-                    <img src ={displayPost.title} />
+                    <img src={displayPost.title} />
                   </>}
                   <br></br>
             </div>
               )
             })}
-        </>}
+          </>}
+          </div>
 
         {displayPost === undefined && <>
           <div>No Tweeds Yet</div>

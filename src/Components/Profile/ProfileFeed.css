@@ -8,6 +8,7 @@
   flex-direction: row;
 }
 
+
 .tweed-title {
   align-items: center;
 }
@@ -16,4 +17,11 @@
 	flex: 0.9;
 	border-right: 1px solid var(--twitter-background);
 	min-width: fit-content;
+}
+
+.tweetContainer{
+	flex: 0.7 1;
+	height: 100vh;
+	position: sticky;
+	overflow: scroll;
 }
