@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
-import Coin from "./coin.jsx";
+import Coin from "./Coin.jsx";
 import "./Widget.css";
 import Footer from "./Footer";
 import Sidebar from "../../Sidebar.js";
