@@ -1,9 +1,9 @@
 # $hills
 
 
-**Github Repo:** 
+**Backend Github Repo:** https://github.com/SEI-Buffleheads/twitter-clone-backend
 
-**Netlify:** 
+**Netlify:** https://shill-social.netlify.app/
 
 ## Overview
 Social media network for those who want to share their financial goals, give advice, and discuss trends.
