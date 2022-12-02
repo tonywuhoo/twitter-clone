@@ -9,6 +9,8 @@ a {
 	position: sticky;
 	overflow: auto;
 	margin-left: 40px;
+	margin-right: 40px;
+
 	top: 3%;
 }
 
@@ -57,6 +59,7 @@ a {
 		background-color: #f5f8fa;
 		top: 0%;
 		margin-left: 0%;
+		margin-right: 0%;
 		padding: 0px;
 	}
 
