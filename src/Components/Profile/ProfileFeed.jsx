@@ -78,4 +78,3 @@ function ProfileFeed({ setToggleApiCall, toggleApiCall, post}) {
 }
 
 export default ProfileFeed;
-

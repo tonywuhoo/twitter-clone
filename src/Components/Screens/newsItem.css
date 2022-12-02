@@ -1,15 +1,25 @@
 .news-app {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .news-item {
-    width: 100%;
-    padding: 20px;
-    border: 1px solid;
-    margin-bottom: 20px;
+	width: 100%;
+	padding: 20px;
+	border: 1px solid;
+	margin-bottom: 20px;
 }
 
 .news-img {
-    width: 100%;
+	width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+	.news-item,
+	.news-app,
+	.news-img {
+		/* height: 100%; */
+		width: 100%;
+		object-fit: cover;
+	}
 }

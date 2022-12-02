@@ -4,13 +4,13 @@
 }
 
 .edit-profile {
-  display: flex;
-  flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 
 .tweed-title {
-  align-items: center;
+	align-items: center;
 }
 
 .feed {
