@@ -1,41 +1,36 @@
-
-
-
 .sidebarOption {
-  display:flex;
-  align-items: center;
-  cursor: pointer;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
 }
 
-
 .sidebarOption:hover {
-  background-color: #e8f5f3;
-  border-radius: 30px;
-  color: var(--twitter-color);
+	background-color: #e8f5f3;
+	border-radius: 30px;
+	color: var(--twitter-color);
 }
 
 .sidebarOption > .MuiSvgIcon-root {
-  padding: 20px;
+	padding: 20px;
 }
 
 .sidebarOption > h2 {
-  font-weight: 800;
-  font-size: 16px;
-  margin-right: 20px;
+	font-weight: 800;
+	font-size: 16px;
+	margin-right: 20px;
 }
 
 .sidebarOption--active {
-  color: var(--twitter-color);
+	color: var(--twitter-color);
 }
 
 @media only screen and (max-width: 600px) {
-  .sidebarOption {
-    margin: 0;
-    padding: 0;
-  }
+	.sidebarOption {
+		margin: 0;
+		padding: 0;
+	}
 
-  .sidebarOption > .MuiSvgIcon-root {
-    padding: 2px;
-  }
-
+	.sidebarOption > .MuiSvgIcon-root {
+		padding: 2px;
+	}
 }

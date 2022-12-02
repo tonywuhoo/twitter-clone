@@ -17,14 +17,13 @@ function Sidebar() {
 		<>
 			<div className="sidebar-container">
 				<div className="sidebar">
-					<img
-						className="sidebar-profile-photo"
-						src={Logo}
-						alt={"Shill Site"}
-						width="80px"
-					/>
-
-					<div className="sidebar-container">
+					<div className="sidebar-container-mobile">
+						<img
+							className="sidebar-profile-photo"
+							src={Logo}
+							alt={"Shill Site"}
+							width="80px"
+						/>
 						<NavLink to="/">
 							<SidebarOption
 								className="side-bar-icon"
@@ -40,12 +39,10 @@ function Sidebar() {
 						</NavLink>
 
 						<NavLink to="/crypto" className="sidebar-hide-icon">
-							<div className="sidebar-crypto-mobile">Crypto</div>
 							<SidebarOption Icon={<BsCoin />} text="Crypto" />{" "}
 						</NavLink>
 
 						<NavLink to="/news">
-							<div className="sidebar-crypto-mobile"></div>
 							<SidebarOption Icon={<ListAltIcon />} text="News" />{" "}
 						</NavLink>
 					</div>

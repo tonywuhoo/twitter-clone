@@ -13,3 +13,13 @@
 .news-img {
 	width: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+	.news-item,
+	.news-app,
+	.news-img {
+		/* height: 100%; */
+		width: 100%;
+		object-fit: cover;
+	}
+}
