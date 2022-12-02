@@ -39,6 +39,19 @@ export const getPosts = async () => {
     throw error;
   }
 };
+export const fetchUserPosts = async (user) => {
+  try {
+    let response = await axios.get("https://twitter-clone-backend-production-c9cc.up.railway.app/user/")
+    for (let i = 0; i < response.data.length; i++){
+      if (response.data[i]["username"] === user) {
+        return response.data[i]["id"]
+      }
+    }
+  } catch (error) {
+    throw error;
+  }
+};
+
 
 export const getPostByID = async (id) => {
   try {
