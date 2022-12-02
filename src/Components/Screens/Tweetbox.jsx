@@ -56,7 +56,7 @@ function Tweetbox({ setToggleApiCall, toggleApiCall, post }) {
 
   return (
     <div className="tweetBox">
-      <form onSubmit={doSubmit}>
+      <form className = "form" onSubmit={doSubmit}>
         <div className="tweetBox-input">
           <textarea
             id="text"
@@ -73,17 +73,16 @@ function Tweetbox({ setToggleApiCall, toggleApiCall, post }) {
 					placeholder="Enter image URL"
 					type="text"
 					onChange={handleChange}
-				/>
-
-        <Button
+        />
+        {/* <Button
           variant="outlined"
           className="feed_tweet_BTN"
           type="submit"
-          // onClick={sendTweet}
           fullWidth
         >
           Post
-        </Button>
+        </Button> */}
+          <input className="submitButton" type="submit"/>
       </form>
     </div>
   );

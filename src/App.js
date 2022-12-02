@@ -7,10 +7,12 @@ import Cookies from "js-cookie";
 import { getPosts } from "./services/PostCrud";
 import Widget from "./Components/Widgets/Widget";
 import News from "./Components/Screens/News.jsx";
-
+import Postdetail from "./Components/Screens/Postdetail"
+  
 function App() {
   const [post, setPosts] = useState();
   const [toggleApiCall, setToggleApiCall] = useState(false);
+  const [postID, setpostID] = useState()
 
   useEffect(() => {
     const grabPosts = async () => {
@@ -18,6 +20,7 @@ function App() {
       setPosts(response);
     };
     grabPosts();
+
   }, [toggleApiCall]);
 
   useEffect(() => {
@@ -37,14 +40,19 @@ function App() {
                 toggleApiCall={toggleApiCall}
                 setToggleApiCall={setToggleApiCall}
                 post={post}
+                setpostID={setpostID}
+                postID={postID}
               />
             }
           />
-          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/profile" element={<ProfilePage/>} />
           <Route path="/crypto" element={<Widget />} />
+          <Route path="/Post/:id" element={<Postdetail
+          setpostID={setpostID}
+          postID={postID}/>} />
           {/* <Route path="/news" element={<Widget />} /> */}
           <Route path="/news" element=
-            {<News />}
+            {<News/>}
           />
         </Routes>
       </div>

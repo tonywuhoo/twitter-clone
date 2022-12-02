@@ -40,10 +40,10 @@ export const getPosts = async () => {
   }
 };
 
-export const getpost = async (id) => {
+export const getPostByID = async (id) => {
   try {
-    const response = await api.get(`/post/${id}`);
-    return response.data;
+    let response = await axios.get("https://twitter-clone-backend-production-c9cc.up.railway.app/allposts/" + id)
+    return response.data
   } catch (error) {
     throw error;
   }

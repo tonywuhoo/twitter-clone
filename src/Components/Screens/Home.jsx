@@ -4,7 +4,7 @@ import Feed from "./Feed";
 import Widget from "../Widgets/Widget";
 import "./Home.css";
 
-function Home({setToggleApiCall, post , toggleApiCall}) {
+function Home({setToggleApiCall, post , toggleApiCall, setpostID, postID}) {
 
 	return (
 		<div className="home">
@@ -12,7 +12,9 @@ function Home({setToggleApiCall, post , toggleApiCall}) {
       <Feed
         setToggleApiCall={setToggleApiCall}
         post={post}
-        toggleApiCall={toggleApiCall}/>
+        toggleApiCall={toggleApiCall}
+        setpostID={setpostID}
+        postID={postID } />
 			<Widget />
     </div>
 	);
