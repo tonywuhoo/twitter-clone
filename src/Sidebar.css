@@ -4,11 +4,14 @@ a {
 }
 
 .sidebar {
-  flex: 0.7 1;
-  height: 100vh;
-  position: sticky;
-  overflow: auto;
-  margin-left: 40px;
+	flex: 0.7 1;
+	height: 100vh;
+	position: sticky;
+	overflow: auto;
+	margin-left: 40px;
+	margin-right: 40px;
+
+	top: 3%;
 }
 
 .sidebar-hide-icon {
@@ -47,24 +50,41 @@ a {
 
 @media only screen and (max-width: 600px) {
 	.sidebar {
-		display: flex;
-		left: 0;
-		position: fixed;
+		flex: none;
 		bottom: 0;
-		height: 50px;
+		height: 40px;
 		width: 100%;
 		align-items: center;
 		flex-direction: row;
 		background-color: #f5f8fa;
+		top: 0%;
+		margin-left: 0%;
+		margin-right: 0%;
+		padding: 0px;
+	}
+
+	.sidebar-container {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+	}
+	.sidebar-container-mobile {
+		justify-content: space-evenly;
+		margin-bottom: 8.25px;
+		display: flex;
+		align-items: center;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
 	}
 
 	.sidebar-profile-photo {
 		display: none;
 	}
 
-  .side-bar-coin-icon{
-    height: 80px;
-  }
+	.side-bar-coin-icon {
+		height: 80px;
+	}
 
 	.sidebar-hide-icon {
 		display: block;
@@ -74,8 +94,7 @@ a {
 		display: none;
 	}
 
-  .sidebar-crypto-mobile{
-    display: none;
-  
-  }
+	.sidebar-crypto-mobile {
+		display: none;
+	}
 }

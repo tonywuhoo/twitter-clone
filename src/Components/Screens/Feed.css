@@ -4,12 +4,12 @@
 }
 
 .edit-profile {
-  display: flex;
-  flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 .tweed-title {
-  align-items: center;
+	align-items: center;
 }
 
 .feed {
@@ -36,7 +36,7 @@
 
 @media only screen and (max-width: 600px) {
 	.feed-container {
-    width: 100%;
+		width: 100%;
 		margin: 0;
 		padding: 0;
 	}

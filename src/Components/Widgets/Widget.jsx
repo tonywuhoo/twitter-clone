@@ -65,9 +65,9 @@ function Widgets() {
 							);
 						})}
 					</div>
-					<div className="widget-hide-nav-bar">
-						<Sidebar />
-					</div>
+				</div>
+				<div className="widget-hide-nav-bar">
+					<Sidebar />
 				</div>
 			</div>
 		</div>
