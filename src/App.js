@@ -40,7 +40,9 @@ function App() {
               />
             }
           />
-          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/profile" element={<ProfilePage toggleApiCall={toggleApiCall}
+                setToggleApiCall={setToggleApiCall}
+                post={post}/>} />
           <Route path="/crypto" element={<Widget />} />
           {/* <Route path="/news" element={<Widget />} /> */}
           <Route path="/news" element=
