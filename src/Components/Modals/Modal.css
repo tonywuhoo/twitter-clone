@@ -3,10 +3,6 @@
 form {
 	display: flex;
 	flex-direction: column;
-	padding: 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 #username,
@@ -39,7 +35,7 @@ It controls not only the modal input fields*/
 }
 
 .text-area {
-  resize: none;
+	resize: none;
 }
 
 .modal-input::placeholder {
@@ -128,7 +124,7 @@ It controls not only the modal input fields*/
 	justify-content: space-around;
 	padding-left: 15px;
 	padding-right: 15px;
-  padding-top: 15px;
+	padding-top: 15px;
 }
 
 /* Signup Modal */
@@ -163,8 +159,8 @@ It controls not only the modal input fields*/
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between !important;
-  width: 90%;
-  padding-top: 20px;
+	width: 90%;
+	padding-top: 20px;
 }
 
 .modal-content {
@@ -199,7 +195,7 @@ word-break: break-all; */
 }
 
 #tweetImage {
-  border: 4px solid #7ed957;
+	border: 4px solid #7ed957;
 	width: 10em;
 	height: 5em;
 	background-color: #7ed95736;
@@ -213,4 +209,8 @@ word-break: break-all; */
 
 .character-counter {
 	color: darkgreen;
+}
+
+.button-container {
+margin: auto;
 }

@@ -29,10 +29,6 @@
 .widgets__searchIcon {
 	color: gray;
 }
-
-.widget-container {
-	width: 30%;
-}
 .widgets__widgetContainer {
 	margin-top: 15px;
 	margin-left: 20px;
@@ -54,7 +50,22 @@
 	width: 100%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 600px) {
+	.widget,
+	.widgets__widgetContainer {
+		margin: 0px;
+	}
+
+	.widgets__widgetContainer {
+		padding: 30px;
+		padding-top: 10px;
+		margin-top: 10px;
+	}
+
+	.widgets__input {
+		margin: 10px;
+	}
+
 	.hidden-mobile {
 		display: none;
 	}

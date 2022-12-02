@@ -1,29 +1,42 @@
 .tweetBox {
 	background-color: white;
-	padding-bottom: 10px;
+	padding: 30px;
+	padding-bottom: 0px;
 	border-bottom: 8px solid var(--twitter-background);
-	padding-right: 10px;
-}
-.tweetBox > form {
-	display: flex;
-	flex-direction: column;
 }
 
+.form {
+  height: 100px;
+  height:100px;
+  margin: 0 auto;
+}
 .tweetBox {
 	padding: 20px;
 	display: flex;
 }
 
 .tweetBox-input > textarea {
-  resize: none;
+  /* resize: none;
+.tweetBox-input > textarea {
+	resize: none;
+>>>>>>> 6e20e5dc73cae92219a52ddd626079af937fdd7b
 	flex: 1;
 	margin-left: 10px;
 	font-size: 20px;
 	border: none;
 	width: 100%;
-	padding-left: 10px;
+	padding-left: 10px; */
+  text-align: center;
 }
 
+.submitButton{
+  background-color: var(--money-color) !important;
+  color: white !important;
+  border-radius: 30px !important;
+  font-weight: 900 !important;
+  border: none !important;
+
+}
 .tweetBox .feed_tweet_BTN {
 	background-color: var(--money-color) !important;
 	border: none !important;
@@ -34,7 +47,6 @@
 	border-radius: 30px !important;
 	width: 80px !important;
 	height: 40px;
-	margin-top: 20px;
 	display: inline-flexbox;
 	margin-left: auto;
 	position: initial;

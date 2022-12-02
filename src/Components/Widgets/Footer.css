@@ -15,19 +15,19 @@
 }
 
 .footer-signed-in-container {
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-  padding: 15px;
-  padding-left: 25px;
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+	padding: 15px;
+	padding-left: 25px;
 }
 
 .footer-user-container {
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-  padding: 15px;
-  padding-left: 25px;
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+	padding: 15px;
+	padding-left: 25px;
 }
 
 .modal-button {
@@ -38,4 +38,10 @@
 	color: white !important;
 	height: 40px !important;
 	position: initial !important;
+}
+
+@media (max-width: 600px) {
+	.footer-user-container {
+		display: none;
+	}
 }

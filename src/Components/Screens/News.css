@@ -8,3 +8,9 @@
 	position: initial;
 	width: 0.7;
 }
+
+@media only screen and (max-width: 600px) {
+	.wrapper {
+		padding: 0;
+	}
+}

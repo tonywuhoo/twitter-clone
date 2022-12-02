@@ -61,18 +61,16 @@ function Widgets() {
 									volume={coin.market_cap}
 									image={coin.image}
 									priceChange={coin.price_change_percentage_24h}
-                />
-               
+								/>
 							);
 						})}
-          </div>
-          <div className="widget-hide-nav-bar">
-            <Sidebar />
-            </div>
+					</div>
+				</div>
+				<div className="widget-hide-nav-bar">
+					<Sidebar />
 				</div>
 			</div>
-    </div>
-
+		</div>
 	);
 }
 

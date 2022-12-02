@@ -1,13 +1,14 @@
-.post{
-  display: flex;
-  flex-direction: column;
-  border-radius: 1px;
-  background-color:rgba(255,255,255, 1);
-  margin-left: 20px;
+.post {
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(131, 244, 129, 0.068);
+	border-radius: 25px;
+	font-size: 1.2em;
 }
 
 .username {
-  border: 1px solid black;
+	font-size: 0.8em;
+	text-align: center;
 }
 
 .post-container {
@@ -15,32 +16,27 @@
   border: 1px solid green;
 }
 
-.buttonsContainer{
-  display: flex;
-  background-color: rgba(0,0,0,.05);
+.buttonsContainer {
+	display: flex;
 }
-.commentsButton{
-  width: 110px;
+.commentsButton,
+.deletePostButton,
+.editPostButton {
+	width: 110px;
 	border-radius: 25px !important;
 	background-color: #589a3c !important;
 	border-color: #7ed957 !important;
 	color: white !important;
 	height: 40px !important;
 	position: initial !important;
-  display: inline;
-  margin:  auto ;
+	display: inline;
+	margin: auto;
 }
 
-.deletePostButton{
-  width: 110px;
-	border-radius: 25px !important;
-	background-color:#589a3c !important;
-	border-color: #7ed957 !important;
-	color: white !important;
-	height: 40px !important;
-	position: initial !important;
-  display: inline;
-  margin: auto ;
+.postImg {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
 
 .editPostButton{

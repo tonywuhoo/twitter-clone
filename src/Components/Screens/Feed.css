@@ -1,11 +1,22 @@
 .feed-container {
 	overflow: scroll;
 	width: 50%;
+  height: 2000px;
+}
+
+.edit-profile {
+	display: flex;
+	flex-direction: row;
+}
+
+.tweed-title {
+	align-items: center;
 }
 
 .feed {
 	flex: 0.9;
 	border-right: 1px solid var(--twitter-background);
+	border-left: 1px solid var(--twitter-background);
 	min-width: fit-content;
 }
 
@@ -27,7 +38,7 @@
 
 @media only screen and (max-width: 600px) {
 	.feed-container {
-    width: 100%;
+		width: 100%;
 		margin: 0;
 		padding: 0;
 	}
