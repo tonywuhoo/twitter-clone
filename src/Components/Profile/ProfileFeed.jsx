@@ -20,7 +20,7 @@ function ProfileFeed({ setToggleApiCall, toggleApiCall, post }) {
 	}
   const createdDate = dateFormat(Cookies.get('CreationDate'), "mmmm dS, yyyy");
   const updatedPost = [];
-  
+
   post.forEach((listItem) => {
     if (listItem.owner === Cookies.get('userEmail')) {
       updatedPost.push(listItem);
