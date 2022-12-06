@@ -8,8 +8,10 @@ import "./News.css";
 function News() {
 	return (
 		<div className="wrapper">
-			<Sidebar />
-			<NewsList />
+      <Sidebar />
+      <div className="newsContainer">
+        <NewsList />
+        </div>
 			<Widget />
 		</div>
 	);

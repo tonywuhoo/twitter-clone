@@ -14,3 +14,11 @@
 		padding: 0;
 	}
 }
+.newsContainer {
+  flex: 1;
+	height: 90vh;
+	position: sticky;
+	top: 3%;
+	overflow: auto;
+	margin-left: 40px;
+}

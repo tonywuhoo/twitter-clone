@@ -43,24 +43,27 @@ function ProfileFeed({ setToggleApiCall, toggleApiCall, post}) {
   return (
     <div className="feed-container">
       <div className="feed">
-        <div className="edit-profile">
-          <h1>{Cookies.get("User")}</h1>
-        </div>
+        <div className='profileHeader'>
+          <h1 className=''>{Cookies.get("User")}</h1>
         <p>Joined {createdDate}</p>
-        <h2 className="tweed-title">Your Tweeds</h2>
-
+          <h2 className="tweed-title">Your Tweeds</h2>
+          </div>
         <div class="tweetContainer">
         {displayPost != null && <>
           {displayPost.map((displayPost, index) => { 
             return (<div key={index}>
-                    <div>
-                    <button id={displayPost.id} onClick={doDelete}>Delete</button>
-                    </div>
-                  <div>{displayPost.text}</div>
-                  <div>{displayPost.date}</div>
-                  {displayPost.title != "Text" && <>
-                    <img src={displayPost.title} />
-                  </>}
+              <div className='postHeader'>
+                  <div className='postTitle'><strong>{displayPost.text}</strong></div>
+                <div className='postDate'>Posted: {displayPost.date}</div>
+                </div>
+              {displayPost.title != "Text" && <>
+                <div className='ImageContainer'>
+                  <img className='Image' src={displayPost.title} />
+                  </div>
+              </>}
+              <div>
+              <button id={displayPost.id} onClick={doDelete}>Delete</button>
+                </div>
                   <br></br>
             </div>
               )
