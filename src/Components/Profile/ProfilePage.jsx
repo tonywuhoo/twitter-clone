@@ -7,7 +7,8 @@ import "./ProfilePage.css";
 function ProfilePage({ setToggleApiCall, post, toggleApiCall, userPosts ,setUserPosts}) {
   return (
 		<div className="profile-page">
-			<Sidebar />
+      <Sidebar />
+      
       <ProfileFeed
         setToggleApiCall={setToggleApiCall}
         post={post}

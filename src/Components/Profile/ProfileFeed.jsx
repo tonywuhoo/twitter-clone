@@ -6,14 +6,23 @@ import { editPost } from "../../services/PostCrud";
 import ModalEditTweet from "../Modals/Modal-Edit-Post";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function ProfileFeed({ setToggleApiCall, toggleApiCall, post}) {
   const [showEdit, setShowEdit] = useState(false);
   const [editID, setEditID] = useState(0);
   const [displayPost, setdisplayPost] = useState()
 
-	function doDelete(event) {
+	async function doDelete(event) {
 		deletePost(event.target.id);
+  }
+
+  async function doEdit(event) {
+		editPost(event.target.id);
+  }
+
+  function sendPostID(event) {
+    Cookies.set("currentPost", event.target.id)
   }
 
   useEffect(() => {
@@ -38,14 +47,16 @@ function ProfileFeed({ setToggleApiCall, toggleApiCall, post}) {
 		setEditID(event.target.id);
 	}
   const createdDate = dateFormat(Cookies.get('CreationDate'), "mmmm dS, yyyy");
-  const updatedPost = [];
 
   return (
     <div className="feed-container">
+      {Cookies.get("AccessToken") === "loggedout" && <>
+        <div>You're Logged Out</div></>}
+        {Cookies.get("AccessToken") != "loggedout" && <>
       <div className="feed">
         <div className='profileHeader'>
           <h1 className=''>{Cookies.get("User")}</h1>
-        <p>Joined {createdDate}</p>
+          <p>Joined {createdDate}</p>
           <h2 className="tweed-title">Your Tweeds</h2>
           </div>
         <div class="tweetContainer">
@@ -59,23 +70,22 @@ function ProfileFeed({ setToggleApiCall, toggleApiCall, post}) {
               {displayPost.title != "Text" && <>
                 <div className='ImageContainer'>
                   <img className='Image' src={displayPost.title} />
-                  </div>
-              </>}
-              <div>
-              <button id={displayPost.id} onClick={doDelete}>Delete</button>
                 </div>
-                  <br></br>
+              </>}
+              <div className='postOptions'>
+                <button id={displayPost.id} onClick={doDelete}>Delete</button>
+                <button id={displayPost.id} onClick={doEdit}>Edit</button>
+                <Link to={`/Post/${displayPost.id}`}><button id={displayPost.id} onClick={sendPostID}>Reply</button></Link>
+              </div>
             </div>
-              )
-            })}
-          </>}
+            )
+          })}</>}
           </div>
-
-        {displayPost === undefined && <>
-          <div>No Tweeds Yet</div>
-        </>}
-
+          {displayPost === undefined && <>
+            <div>No Tweeds Yet</div>
+          </>}
         </div>
+      </>}
       </div>
   );
 }

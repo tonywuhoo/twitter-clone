@@ -8,6 +8,7 @@ import { getPosts } from "./services/PostCrud";
 import Widget from "./Components/Widgets/Widget";
 import News from "./Components/Screens/News.jsx";
 import Postdetail from "./Components/Screens/Postdetail"
+import viewingProfile from "./Components/Profile/viewingProfile"
 import {fetchUserPosts} from "./services/PostCrud"
   
 function App() {
@@ -62,7 +63,8 @@ function App() {
           />
           <Route path="/profile" element={<ProfilePage
             setUserPosts={userPosts}
-            userPosts= {userPosts} />} />
+            userPosts={userPosts} />} />
+          <Route path="/poop" element={<viewingProfile/>} />
         </Routes>
       </div>
     </>

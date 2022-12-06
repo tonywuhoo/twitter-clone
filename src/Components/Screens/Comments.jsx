@@ -48,7 +48,6 @@ function Comments({postID}) {
       console.log(response)
       comments.push(response.data)
     }
-    console.log(comments)
     setloadedComments(comments)
 
   }
@@ -56,12 +55,15 @@ function Comments({postID}) {
   
   useEffect(() => {
     const grabPostbutByID = async () => {
-      let response = await getPostByID(Cookies.get("currentPost"))
+      let currentLink = window.location.href.split("/")
+      let currentLinkPost = currentLink[currentLink.length - 1]
+      setthisPost(currentLinkPost)
+      Cookies.set('currentPost',currentLinkPost)
+      let response = await getPostByID(currentLinkPost)
       setthisPost(response)
-      let response2 = await getComments(Cookies.get("currentPost"))
-      console.log(response2)
+      let response2 = await getComments(currentLinkPost)
+      console.log(response)
       let response3 = await fillCommentArray(response2)
-
     }
     grabPostbutByID()
 
