@@ -5,13 +5,33 @@ import Coin from "./coin.jsx";
 import "./Widget.css";
 import Footer from "./Footer";
 import Sidebar from "../../Sidebar.js";
+import {getUserProfiles} from "../../services/UserFunctions"
 
 function Widgets() {
-	const [coins, setCoins] = useState([]);
-	const [currentCoin, setCurrentCoin] = useState(0);
-	const { pathname } = useLocation();
-	let interval;
+  const [coins, setCoins] = useState([]);
+  const [currentCoin, setCurrentCoin] = useState(0);
+  const [searchBar, setsearchBar] = useState("")
+  const [searchResult, setsearchResult] = useState()
+  const { pathname } = useLocation();
+  let interval;
+  
+  function handleChange(event) {
+    setsearchBar(event.target.value)
+  }
+  useEffect(() => {
+    async function grabAllUsers() {
+      let matchingUsername = []
+      let response = await getUserProfiles()
+      for (let i = 0; i < response.length; i++){
+        if (response[i].username.includes(searchBar)) {
+          matchingUsername.push(response[i].username)
+        }
+      }
+      setsearchResult(matchingUsername)
+    }
+    grabAllUsers()
 
+  })
 	useEffect(() => {
 		const fetchCoinData = async () => {
 			interval = setInterval(() => updateCurrCoin(res.data), 3000);
@@ -43,7 +63,7 @@ function Widgets() {
 			<div className="widget">
 				<Footer />
 				<div className="widgets__input">
-					<input placeholder="Search Twitter" type="text" />
+					<input placeholder="Search Twitter" onChange={handleChange} type="text" />
 				</div>
 
 				<div className="widgets__widgetContainer">
