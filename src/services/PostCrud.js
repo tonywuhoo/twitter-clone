@@ -80,9 +80,7 @@ export const createPost = async (content) => {
     }
     return response.data
   } catch (error) {
-    if (error = "Failed to load resource: the server responded with a status of 500 ()") {
-      alert("Image cannot be a .webm, try with jpg/png")
-    }
+    console.log(content)
     throw error;
   }
 };

@@ -3,6 +3,7 @@ import "./TweetBox.css";
 import Button from "@mui/material/Button";
 import { createPost } from "../../services/PostCrud";
 import { useState } from "react";
+import Cookies from 'js-cookie';
 
 
 function Tweetbox({ setToggleApiCall, toggleApiCall, post,}) {
@@ -27,6 +28,7 @@ function Tweetbox({ setToggleApiCall, toggleApiCall, post,}) {
         setImageURL("noImage")
         const content = {
           text: text,
+          ownerusername : Cookies.get("User").toString()
         };
         await createPost(content);
         getData()
@@ -36,6 +38,7 @@ function Tweetbox({ setToggleApiCall, toggleApiCall, post,}) {
         const content = {
           text: text,
           title: imageURL,
+          ownerusername : Cookies.get("User").toString()
         };
         await createPost(content);
         getData()
@@ -78,14 +81,6 @@ function Tweetbox({ setToggleApiCall, toggleApiCall, post,}) {
 					type="text"
 					onChange={handleChange}
         />
-        {/* <Button
-          variant="outlined"
-          className="feed_tweet_BTN"
-          type="submit"
-          fullWidth
-        >
-          Post
-        </Button> */}
           <input className="submitButton" type="submit"/>
       </form>
     </div>

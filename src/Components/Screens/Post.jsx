@@ -32,7 +32,7 @@ function Post({ post, setpostID, postID }) {
             <div className="post">
               <br></br>
               <div className="username">
-              <Link to={`/profile/${post.owner}`}>{post.owner}</Link>
+              <Link to={`/profile/${post.ownerusername}`}>{post.ownerusername}</Link>
               </div>
               <br></br>
               <div className="postText"></div>

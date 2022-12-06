@@ -6,3 +6,42 @@
   margin-right: auto;
   padding: 0 10px; 
 }
+
+.ProfileViewUserContainer{
+  width: 620px;
+}
+
+.noUserStatus{
+  text-align: center;
+}
+
+.profileheader{
+  text-align: center;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 5px;
+}
+
+.profilefeed{
+  border: 1px solid black;
+  flex: 1;
+	height: 70vh;
+	position: sticky;
+	overflow: auto;
+  margin: 10px;
+  padding: 5px;
+}
+
+.postOptions {
+  text-align: center;
+}
+
+
+.Image{
+  text-align: center;
+}
+
+.postContainer {
+  border: 1px solid black;
+  margin: 5px;
+}

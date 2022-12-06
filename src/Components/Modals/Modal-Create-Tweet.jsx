@@ -19,6 +19,7 @@ function ModalCreateTweet(props) {
       const content = {
         text: tweet,
         title: "Text",
+        ownerusername : Cookies.get("User").toString()
       }
       await createPost(content)
       window.location.reload()
