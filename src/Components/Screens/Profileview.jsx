@@ -1,9 +1,14 @@
 import React from "react";
+import Sidebar from "../../Sidebar"
+import Widget from "../Widgets/Widget"
+import "./Profileview.css"
 
 function Profileview() {
   return (
-    <div>
-      Testing
+    <div className="ProfileviewContainer">
+      <Sidebar />
+      
+      <Widget />
 		</div>
 	);
 }

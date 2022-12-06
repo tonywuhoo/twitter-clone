@@ -41,7 +41,7 @@ function App() {
     <>
       <div className="app">
         <Routes>
-          <Route path="/poop" element={<Profileview />} />
+          <Route path="/profile/:user" element={<Profileview />} />
           <Route
             path="/"
             element={
