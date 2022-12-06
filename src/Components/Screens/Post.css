@@ -27,35 +27,21 @@
 
 .buttonsContainer {
 	display: flex;
+  justify-content: space-between;
 }
 .commentsButton,
 .deletePostButton,
 .editPostButton {
-	width: 110px;
-	border-radius: 25px !important;
-	background-color: #589a3c !important;
-	border-color: #7ed957 !important;
-	color: white !important;
-	height: 40px !important;
-	position: initial !important;
-	display: inline;
-	margin: auto;
+  background-color: black;
+  color: white !important;
+  border-radius: 30px !important;
+  font-weight: 900 !important;
+  border: none !important;
+  width: 80px;
 }
 
 .postImg {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
-}
-
-.editPostButton{
-  width: 110px;
-	border-radius: 25px !important;
-	background-color:#589a3c !important;
-	border-color: #7ed957 !important;
-	color: white !important;
-	height: 40px !important;
-	position: initial !important;
-  display: inline;
-  margin: auto ;
 }

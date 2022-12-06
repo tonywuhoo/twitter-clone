@@ -31,8 +31,7 @@ function Comments({postID}) {
       setComment(event.target.value)
     }
   }
-
-  let comments = []
+  
   async function fillCommentArray(input) {
     const getComment = async (id) => {
       try {

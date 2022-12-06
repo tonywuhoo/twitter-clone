@@ -5,11 +5,10 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Cookies from "js-cookie";
 import { getPosts } from "./services/PostCrud";
-import Widget from "./Components/Widgets/Widget";
 import News from "./Components/Screens/News.jsx";
 import Postdetail from "./Components/Screens/Postdetail"
-import viewingProfile from "./Components/Profile/viewingProfile"
-import {fetchUserPosts} from "./services/PostCrud"
+import { fetchUserPosts } from "./services/PostCrud"
+import Profileview from "./Components/Screens/Profileview"
   
 function App() {
   const [post, setPosts] = useState();
@@ -42,6 +41,7 @@ function App() {
     <>
       <div className="app">
         <Routes>
+          <Route path="/poop" element={<Profileview />} />
           <Route
             path="/"
             element={
@@ -54,7 +54,6 @@ function App() {
               />
             }
           />
-          <Route path="/crypto" element={<Widget />} />
           <Route path="/Post/:id" element={<Postdetail
           setpostID={setpostID}
           postID={postID}/>} />
@@ -64,7 +63,6 @@ function App() {
           <Route path="/profile" element={<ProfilePage
             setUserPosts={userPosts}
             userPosts={userPosts} />} />
-          <Route path="/poop" element={<viewingProfile/>} />
         </Routes>
       </div>
     </>

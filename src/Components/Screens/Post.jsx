@@ -44,16 +44,15 @@ function Post({ post, setpostID, postID }) {
               </div>
               <br></br>
               <div className ="buttonsContainer"> 
-              
                 <Link to={`/Post/${post.id}`}><button id={post.id} onClick = { sendPostID } className='commentsButton'>Reply</button></Link>
               {post != null && post.owner === Cookies.get("userEmail") && <>
-                <button className = "deletePostButton" id={post.id} onClick={doDelete} >Delete Post</button></>}
+                <button className = "deletePostButton" id={post.id} onClick={doDelete} >Delete</button></>}
               {post != null && post.owner === Cookies.get("userEmail") && <>
                 <ModalEditTweet
                 editID = {editID}
                 onClose={() => setShowEdit(false)}
                 show={showEdit}/>
-                <button className="editPostButton" id={post.id} onClick={doEdit} >Edit Post</button></>}
+                <button className="editPostButton" id={post.id} onClick={doEdit} >Edit</button></>}
             </div>
             </div>
             <br></br>

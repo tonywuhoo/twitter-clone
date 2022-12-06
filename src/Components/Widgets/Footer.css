@@ -1,7 +1,7 @@
 .footer-sign-in-up-button {
 	border-radius: 20px;
-	background-color: #7ed957;
-	border-color: #7ed957;
+	background-color: black;
+	border-color: gray;
 	color: white;
 	height: 25px;
 	margin: 8px;
@@ -33,8 +33,8 @@
 .modal-button {
 	width: 110px;
 	border-radius: 25px !important;
-	background-color: #7ed957 !important;
-	border-color: #7ed957 !important;
+	background-color: black !important;
+	border-color: gray !important;
 	color: white !important;
 	height: 40px !important;
 	position: initial !important;

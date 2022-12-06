@@ -30,7 +30,7 @@
 }
 
 .submitButton{
-  background-color: var(--money-color) !important;
+  background-color: black;
   color: white !important;
   border-radius: 30px !important;
   font-weight: 900 !important;
@@ -38,7 +38,7 @@
 
 }
 .tweetBox .feed_tweet_BTN {
-	background-color: var(--money-color) !important;
+	background-color: black;
 	border: none !important;
 	color: white !important;
 	font-weight: 900 !important;

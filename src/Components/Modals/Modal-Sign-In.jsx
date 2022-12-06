@@ -65,7 +65,6 @@ function Modal(props) {
 							id="password"
 							placeholder="Password"></input>
             <br></br>
-            {/* <input type="submit" className="modal-button" value="Sign In" /> */}
             <div className="button-container">
 				<input type="submit" className="modal-button" value="Sign In" />
             </div>
