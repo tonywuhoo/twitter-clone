@@ -11,9 +11,18 @@
 	text-align: center;
 }
 
+.postoutside {
+	flex: 1;
+	height: 75vh;
+	position: sticky;
+	top: 3%;
+	overflow: auto;
+	margin-left: 40px;
+}
+
 .post-container {
   margin: 30px;
-  border: 1px solid green;
+  border: 1px solid black;
 }
 
 .buttonsContainer {

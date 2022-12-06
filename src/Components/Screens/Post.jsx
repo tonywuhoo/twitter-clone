@@ -57,6 +57,8 @@ function Post({ post, setpostID, postID }) {
             </div>
             </div>
             <br></br>
+            <br></br>
+            <br></br>
           </div>
       ))}
       </>}

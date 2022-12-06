@@ -1,4 +1,4 @@
-.feed-container {
+/* .feed-container {
 	overflow: scroll;
 	width: 50%;
   height: 2000px;
@@ -11,13 +11,6 @@
 
 .tweed-title {
 	align-items: center;
-}
-
-.feed {
-	flex: 0.9;
-	border-right: 1px solid var(--twitter-background);
-	border-left: 1px solid var(--twitter-background);
-	min-width: fit-content;
 }
 
 .feed::-webkit-scrollbar {
@@ -42,4 +35,8 @@
 		margin: 0;
 		padding: 0;
 	}
-}
+} */
+
+.feed {
+  overflow-y: auto;
+} 

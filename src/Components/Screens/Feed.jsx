@@ -6,12 +6,12 @@ import Post from "./Post.jsx";
 function Feed({ setToggleApiCall, toggleApiCall, post,postID,setpostID }) {
 	return (
 		<div className="feed-container">
-			<div className="feed">
 			
         <Tweetbox
           post={post}
           setToggleApiCall={setToggleApiCall}
-          toggleApiCall={toggleApiCall} />
+        toggleApiCall={toggleApiCall} />
+    <div className="feed">
         <Post
         setpostID={setpostID}
         postID={postID}
