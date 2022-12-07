@@ -1,5 +1,4 @@
-/* .feed-container {
-	overflow: scroll;
+.feed-container {
 	width: 50%;
   height: 2000px;
 }
@@ -35,8 +34,4 @@
 		margin: 0;
 		padding: 0;
 	}
-} */
-
-.feed {
-  overflow-y: auto;
-} 
+}
